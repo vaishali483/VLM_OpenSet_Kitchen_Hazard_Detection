@@ -1,0 +1,22 @@
+{
+  "hazards_present": true,
+  "overall_safety_summary": "The food preparation area is mostly clear, but a metal pot on the stove has its handle protruding outwards, which poses a risk of being accidentally bumped.",
+  "hazards": [
+    {
+      "description": "The handle of the metal pot on the stove is pointing outwards, protruding past the edge of the cooking surface.",
+      "explanation": "A protruding pot handle can easily be bumped by the user's arm or body while they are actively working at the adjacent counter, which could cause the pot to knock over and spill its contents.",
+      "severity": "medium",
+      "confidence": 0.95,
+      "evidence_frames": [
+        "frame_0000.jpg",
+        "frame_0001.jpg",
+        "frame_0002.jpg"
+      ],
+      "older_adult_relevance": "Older adults may have reduced reflexes, balance, or peripheral vision, making them more likely to accidentally bump into protruding objects, and they face a higher risk of severe injury or burns from spills.",
+      "recommended_action": "Turn the pot handle inward so that it is safely positioned over the stovetop and does not protrude into the workspace."
+    }
+  ],
+  "uncertainties": [
+    "Whether the stove burner under the pot is currently turned on or if the pot contains hot contents."
+  ]
+}

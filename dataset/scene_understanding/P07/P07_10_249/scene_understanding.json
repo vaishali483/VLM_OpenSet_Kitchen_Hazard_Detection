@@ -1,0 +1,47 @@
+{
+    "summary": "A person is standing at a white stove, interacting with the lid of a saucepan that contains food.",
+    "current_activity": "adjusting the lid of a cooking pot",
+    "activity_confidence": 0.95,
+    "objects_in_use": [
+        "saucepan",
+        "pot lid",
+        "stove"
+    ],
+    "important_objects": [
+        "saucepan with lid",
+        "stove",
+        "frying pan",
+        "packaged tomatoes"
+    ],
+    "environment": {
+        "stove_visible": true,
+        "sink_visible": false,
+        "counter_visible": true,
+        "other_context": [
+            "tiled floor",
+            "person's foot and leg visible"
+        ]
+    },
+    "observations": [
+        "A hand is seen touching and then releasing the handle of a glass lid on a saucepan.",
+        "The saucepan contains light-colored chopped food, possibly potatoes.",
+        "The saucepan is on a white electric stove with solid plate burners.",
+        "A black frying pan is sitting on another burner of the stove.",
+        "A package of red tomatoes is visible on the counter to the right of the stove."
+    ],
+    "uncertainties": [
+        "The exact type of food cooking inside the saucepan is not fully clear.",
+        "It is uncertain if the stove burner is currently switched on or hot."
+    ],
+    "clip_id": "P07_10_249",
+    "participant": "P07",
+    "metadata": {
+        "model": "gemini-3.5-flash",
+        "temperature": 0.2,
+        "timestamp": "2026-07-17 12:48:47",
+        "subset": "P07",
+        "keyframes_used": 2,
+        "human_epic_annotation_removed": true,
+        "task": "scene_understanding_only"
+    }
+}

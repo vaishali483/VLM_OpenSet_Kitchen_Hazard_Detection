@@ -1,0 +1,48 @@
+{
+    "summary": "A person is opening the oven door in a kitchen. On the stovetop above, there is a baking tray with two pieces of pizza toast, along with other cookware.",
+    "current_activity": "Opening the oven door",
+    "activity_confidence": 0.95,
+    "objects_in_use": [
+        "oven door handle"
+    ],
+    "important_objects": [
+        "oven",
+        "baking tray",
+        "pizza toast",
+        "stove",
+        "pots"
+    ],
+    "environment": {
+        "stove_visible": true,
+        "sink_visible": false,
+        "counter_visible": true,
+        "other_context": [
+            "oven door being opened",
+            "cookware on stove",
+            "pizza toast on baking tray"
+        ]
+    },
+    "observations": [
+        "A person is wearing plaid pajama pants and a dark long-sleeve shirt.",
+        "The person's hand is grasping the oven door handle, which has a red and white patterned tea towel hanging on it.",
+        "The oven door is being pulled open.",
+        "On the stovetop, there is a baking tray containing two slices of toast topped with melted cheese and pepperoni.",
+        "There is a pot and a saucepan also on the stovetop.",
+        "A plate is visible on the counter to the right."
+    ],
+    "uncertainties": [
+        "Whether the oven is turned on or preheated.",
+        "The exact contents of the pots on the stove."
+    ],
+    "clip_id": "P07_103_12",
+    "participant": "P07",
+    "metadata": {
+        "model": "gemini-3.5-flash",
+        "temperature": 0.2,
+        "timestamp": "2026-07-16 20:48:14",
+        "subset": "P07",
+        "keyframes_used": 3,
+        "human_epic_annotation_removed": true,
+        "task": "scene_understanding_only"
+    }
+}

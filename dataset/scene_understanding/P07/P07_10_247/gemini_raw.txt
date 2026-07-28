@@ -1,0 +1,40 @@
+{
+  "summary": "A first-person perspective of a kitchen counter where a person is preparing ingredients on a wooden cutting board.",
+  "current_activity": "Preparing food by handling and chopping ingredients on a cutting board.",
+  "activity_confidence": 0.95,
+  "objects_in_use": [
+    "knife",
+    "cutting board",
+    "chopped tomatoes"
+  ],
+  "important_objects": [
+    "knife",
+    "cutting board",
+    "chopped ingredients",
+    "pot",
+    "spoon",
+    "sauce bottle",
+    "bag of greens"
+  ],
+  "environment": {
+    "stove_visible": true,
+    "sink_visible": false,
+    "counter_visible": true,
+    "other_context": [
+      "first-person perspective",
+      "various food containers and jars on the counter",
+      "pot on the stove to the left"
+    ]
+  },
+  "observations": [
+    "The person is holding a long kitchen knife in their right hand.",
+    "Chopped red ingredients, resembling tomatoes, and chopped light-colored ingredients, resembling garlic, are on the cutting board.",
+    "A metal pot is positioned on the stove surface to the left.",
+    "A spoon lies on the counter near the cutting board.",
+    "The person is wearing a black watch or wristband on their left wrist."
+  ],
+  "uncertainties": [
+    "The exact identity of the chopped light-colored ingredient.",
+    "Whether the stove burner under the pot is turned on."
+  ]
+}

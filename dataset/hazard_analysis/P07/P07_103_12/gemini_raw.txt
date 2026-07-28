@@ -1,0 +1,9 @@
+{
+  "hazards_present": false,
+  "overall_safety_summary": "The kitchen scene appears safe with no immediate hazards detected. The cookware handles are turned away from the front walkway, the floor is clear, and the person is actively opening the oven door in a controlled manner.",
+  "hazards": [],
+  "uncertainties": [
+    "Whether the oven or stovetop burners are currently hot or turned on.",
+    "Whether the person intends to retrieve hot items from the oven without protective oven mitts."
+  ]
+}

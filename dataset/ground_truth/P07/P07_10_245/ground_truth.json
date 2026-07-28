@@ -1,0 +1,22 @@
+{
+    "clip_id": "P07_10_245",
+    "participant": "P07",
+    "keyframes": [
+        "frame_0000.jpg",
+        "frame_0003.jpg"
+    ],
+    "clip_contains_hazard": true,
+    "ground_truth_hazards": [
+        {
+            "ground_truth_id": "P07_10_245_GT001",
+            "description": "The person is handling the knife in a very unsafe manner by positioning the hand very close to the blade.",
+            "severity": "high",
+            "evidence_frames": [
+                "frame_0000.jpg",
+                "frame_0003.jpg"
+            ],
+            "is_novel_relative_to_rule_baseline": true,
+            "notes": "Visible spatial hazard; rule-based detector may capture knife unsafety"
+        }
+    ]
+}

@@ -1,0 +1,37 @@
+{
+  "summary": "A first-person view of a person preparing ingredients on a wooden cutting board on a kitchen counter.",
+  "current_activity": "chopping tomatoes",
+  "activity_confidence": 0.95,
+  "objects_in_use": [
+    "knife",
+    "cutting board",
+    "tomatoes"
+  ],
+  "important_objects": [
+    "knife",
+    "cutting board",
+    "chopped tomatoes",
+    "chopped onions",
+    "bag of salad"
+  ],
+  "environment": {
+    "stove_visible": true,
+    "sink_visible": false,
+    "counter_visible": true,
+    "other_context": [
+      "first-person perspective",
+      "wooden cutting board on counter",
+      "bag of salad on the right"
+    ]
+  },
+  "observations": [
+    "The person is holding a knife in their right hand.",
+    "The person's left hand is resting on the cutting board near chopped tomatoes.",
+    "There are chopped tomatoes and chopped white/yellow vegetables on the wooden cutting board.",
+    "A plastic bag containing salad greens is visible on the right side of the counter.",
+    "The person is wearing a black shirt and a black wristband."
+  ],
+  "uncertainties": [
+    "The exact type of white/yellow chopped vegetable on the cutting board is not fully clear, but resembles onion or garlic."
+  ]
+}

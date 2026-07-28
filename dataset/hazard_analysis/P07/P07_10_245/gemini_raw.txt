@@ -1,0 +1,21 @@
+{
+  "hazards_present": true,
+  "overall_safety_summary": "The person is chopping ingredients on a wooden cutting board. While the task is standard, the hand stabilizing the ingredients is positioned with extended fingers close to the knife blade, which increases the risk of accidental cuts.",
+  "hazards": [
+    {
+      "description": "Unsafe finger positioning (flat, extended fingers) while stabilizing ingredients close to the active knife blade.",
+      "explanation": "The person's left hand is stabilizing tomatoes with fingers extended flat on the board rather than curled inward. This lack of a protective 'claw grip' leaves the fingertips highly vulnerable to accidental cuts if the knife slips.",
+      "severity": "medium",
+      "confidence": 0.85,
+      "evidence_frames": [
+        "frame_0000.jpg",
+        "frame_0003.jpg"
+      ],
+      "older_adult_relevance": "Older adults may have reduced hand stability, slower reflexes, or thinner skin, making them more susceptible to accidental cuts that can take longer to heal or lead to complications.",
+      "recommended_action": "Adopt the 'claw grip' technique by curling the fingertips of the stabilizing hand inward, resting the knuckles against the side of the knife blade to guide the cuts safely."
+    }
+  ],
+  "uncertainties": [
+    "It is unclear whether the cutting board has a non-slip mat or damp cloth underneath to prevent it from sliding on the counter surface."
+  ]
+}

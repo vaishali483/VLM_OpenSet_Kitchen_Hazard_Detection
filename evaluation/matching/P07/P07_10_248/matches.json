@@ -1,0 +1,111 @@
+{
+    "clip_id": "P07_10_248",
+    "ground_truth_hazards": [
+        {
+            "id": "P07_10_248_GT001",
+            "description": "The saucepan handle appears to protrude into the active working area.",
+            "severity": "low",
+            "evidence_frames": [
+                "frame_0000.jpg",
+                "frame_0001.jpg",
+                "frame_0002.jpg"
+            ],
+            "is_novel_relative_to_rule_baseline": true
+        }
+    ],
+    "vlm_predictions": [
+        {
+            "id": "P07_10_248_H001",
+            "description": "Pot handle protruding outward over the edge of the stove towards the workspace.",
+            "severity": "medium",
+            "evidence_frames": [
+                "frame_0000.jpg",
+                "frame_0001.jpg",
+                "frame_0002.jpg"
+            ]
+        }
+    ],
+    "baseline_predictions": [
+        {
+            "id": "P07_10_248_B001",
+            "description": "A person is very close to a detected knife.",
+            "severity": "medium",
+            "evidence_frames": [
+                "frame_0000.jpg"
+            ],
+            "triggered_rule_id": "R001",
+            "rule_name": "Person close to knife"
+        },
+        {
+            "id": "P07_10_248_B002",
+            "description": "A detected knife is positioned near the visible image boundary.",
+            "severity": "medium",
+            "evidence_frames": [
+                "frame_0001.jpg"
+            ],
+            "triggered_rule_id": "R003",
+            "rule_name": "Knife near visible boundary"
+        },
+        {
+            "id": "P07_10_248_B003",
+            "description": "A detected cup is positioned near the visible image boundary.",
+            "severity": "low",
+            "evidence_frames": [
+                "frame_0000.jpg",
+                "frame_0001.jpg"
+            ],
+            "triggered_rule_id": "R005",
+            "rule_name": "Cup near visible boundary"
+        },
+        {
+            "id": "P07_10_248_B004",
+            "description": "A detected bottle is positioned near the visible image boundary.",
+            "severity": "low",
+            "evidence_frames": [
+                "frame_0001.jpg"
+            ],
+            "triggered_rule_id": "R006",
+            "rule_name": "Bottle near visible boundary"
+        },
+        {
+            "id": "P07_10_248_B005",
+            "description": "A detected bowl is positioned near the visible image boundary.",
+            "severity": "low",
+            "evidence_frames": [
+                "frame_0000.jpg",
+                "frame_0001.jpg",
+                "frame_0002.jpg"
+            ],
+            "triggered_rule_id": "R007",
+            "rule_name": "Bowl near visible boundary"
+        },
+        {
+            "id": "P07_10_248_B006",
+            "description": "A person is very close to a detected oven.",
+            "severity": "low",
+            "evidence_frames": [
+                "frame_0000.jpg"
+            ],
+            "triggered_rule_id": "R008",
+            "rule_name": "Person close to oven"
+        },
+        {
+            "id": "P07_10_248_B007",
+            "description": "A sharp object is positioned very close to a cup or bottle.",
+            "severity": "low",
+            "evidence_frames": [
+                "frame_0001.jpg"
+            ],
+            "triggered_rule_id": "R010",
+            "rule_name": "Sharp object close to cup or bottle"
+        }
+    ],
+    "vlm_matches": [
+        {
+            "prediction_id": "P07_10_248_H001",
+            "ground_truth_id": "P07_10_248_GT001",
+            "is_match": true
+        }
+    ],
+    "baseline_matches": []
+}

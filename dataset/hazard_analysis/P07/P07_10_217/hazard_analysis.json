@@ -1,0 +1,49 @@
+{
+    "hazards_present": true,
+    "overall_safety_summary": "The scene shows a person slicing tomatoes on a cutting board next to a stove, presenting risks from a protruding pot handle and unsafe finger placement during cutting.",
+    "hazards": [
+        {
+            "description": "The handle of the pot on the stove is turned outward to the right, protruding into the active counter workspace.",
+            "explanation": "An outward-facing pot handle can easily be bumped or snagged by the user's arm, potentially knocking the pot over.",
+            "severity": "medium",
+            "confidence": 0.95,
+            "evidence_frames": [
+                "frame_0000.jpg",
+                "frame_0001.jpg",
+                "frame_0002.jpg",
+                "frame_0003.jpg"
+            ],
+            "older_adult_relevance": "Older adults with reduced peripheral vision or slower reflexes are at a higher risk of accidentally bumping protruding handles.",
+            "recommended_action": "Turn the pot handle inward so it does not protrude over the edge of the stove or into the workspace.",
+            "hazard_id": "P07_10_217_H001"
+        },
+        {
+            "description": "The user is holding the tomato with flat, extended fingers close to the knife blade instead of using a claw grip.",
+            "explanation": "Slicing round, slippery food items with extended fingers increases the risk of the knife slipping and causing a finger injury.",
+            "severity": "medium",
+            "confidence": 0.85,
+            "evidence_frames": [
+                "frame_0001.jpg",
+                "frame_0002.jpg"
+            ],
+            "older_adult_relevance": "Older adults may have reduced hand strength or tremors, making precise knife control more difficult and increasing the risk of cuts.",
+            "recommended_action": "Curl the fingers inward into a claw grip to protect fingertips while stabilizing the tomato.",
+            "hazard_id": "P07_10_217_H002"
+        }
+    ],
+    "uncertainties": [
+        "It is unclear if the pot on the stove is currently hot or contains liquid.",
+        "It is uncertain if there is a non-slip mat underneath the wooden cutting board to prevent it from sliding."
+    ],
+    "clip_id": "P07_10_217",
+    "participant": "P07",
+    "metadata": {
+        "model": "gemini-3.5-flash",
+        "temperature": 0.2,
+        "timestamp": "2026-07-18 15:56:57",
+        "subset": "P07",
+        "task": "open_set_hazard_analysis",
+        "keyframes_used": 4,
+        "predefined_hazard_categories_used": false
+    }
+}

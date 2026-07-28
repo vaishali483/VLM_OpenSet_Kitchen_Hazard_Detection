@@ -1,0 +1,34 @@
+{
+    "hazards_present": true,
+    "overall_safety_summary": "The kitchen workspace is clear, but the user is employing an unsafe knife-handling technique by directing the blade towards their opposite hand, which poses a risk of cuts.",
+    "hazards": [
+        {
+            "description": "The user is directing the knife blade towards their left hand while manipulating ingredients on the cutting board.",
+            "explanation": "Directing a sharp knife towards the opposite hand increases the risk of a slip resulting in a laceration.",
+            "severity": "medium",
+            "confidence": 0.9,
+            "evidence_frames": [
+                "frame_0000.jpg",
+                "frame_0002.jpg",
+                "frame_0003.jpg"
+            ],
+            "older_adult_relevance": "Older adults may have reduced skin thickness and slower reflexes, making knife slips more likely to cause severe bleeding or injury.",
+            "recommended_action": "Keep fingers curled in a protective claw grip and ensure the knife blade is always directed away from the hands and body.",
+            "hazard_id": "P07_10_246_H001"
+        }
+    ],
+    "uncertainties": [
+        "The sharpness of the knife and whether it is the most suitable tool for chopping tomatoes is unclear."
+    ],
+    "clip_id": "P07_10_246",
+    "participant": "P07",
+    "metadata": {
+        "model": "gemini-3.5-flash",
+        "temperature": 0.2,
+        "timestamp": "2026-07-18 16:06:23",
+        "subset": "P07",
+        "task": "open_set_hazard_analysis",
+        "keyframes_used": 3,
+        "predefined_hazard_categories_used": false
+    }
+}

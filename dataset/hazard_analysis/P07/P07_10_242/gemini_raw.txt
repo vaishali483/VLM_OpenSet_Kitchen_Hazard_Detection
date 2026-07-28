@@ -1,0 +1,22 @@
+{
+  "hazards_present": true,
+  "overall_safety_summary": "The person is chopping vegetables on a cutting board. The primary safety concern is the hand placement of the non-dominant hand holding the food, which is flat rather than curled, posing a risk of cuts.",
+  "hazards": [
+    {
+      "description": "Unsafe finger placement (flat hand) while chopping vegetables.",
+      "explanation": "The person's left hand fingers are extended flat on the cutting board close to the knife blade instead of being tucked into a safe 'claw' grip. This increases the risk of the knife slipping and causing a laceration.",
+      "severity": "medium",
+      "confidence": 0.85,
+      "evidence_frames": [
+        "frame_0000.jpg",
+        "frame_0001.jpg"
+      ],
+      "older_adult_relevance": "Older adults may experience reduced hand stability, slower reflexes, or tremors, making proper knife safety techniques like the claw grip crucial to prevent accidental cuts.",
+      "recommended_action": "Curl the fingers of the holding hand inward into a 'claw' position, tucking the fingertips away from the knife blade while guiding the cut."
+    }
+  ],
+  "uncertainties": [
+    "Whether the cutting board has a non-slip backing or mat underneath to prevent sliding.",
+    "The identity and potential hazard of the metal handle/object partially visible on the far-left edge of the frame."
+  ]
+}

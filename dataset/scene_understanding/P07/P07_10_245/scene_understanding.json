@@ -1,0 +1,46 @@
+{
+    "summary": "A person is chopping ingredients on a wooden cutting board placed on a kitchen counter.",
+    "current_activity": "chopping vegetables",
+    "activity_confidence": 0.95,
+    "objects_in_use": [
+        "knife",
+        "cutting board",
+        "tomatoes"
+    ],
+    "important_objects": [
+        "knife",
+        "cutting board",
+        "chopped tomatoes",
+        "chopped onions",
+        "bag of greens"
+    ],
+    "environment": {
+        "stove_visible": true,
+        "sink_visible": false,
+        "counter_visible": true,
+        "other_context": [
+            "wooden cutting board on the counter",
+            "bag of greens on the counter"
+        ]
+    },
+    "observations": [
+        "The person is holding a knife in their right hand and stabilizing ingredients with their left hand.",
+        "There are chopped red tomatoes and chopped white/yellowish ingredients on the cutting board.",
+        "A plastic bag of greens with a label is visible on the right side of the counter.",
+        "The edge of a stove is visible on the left side of the frame."
+    ],
+    "uncertainties": [
+        "The exact identity of the white/yellowish chopped ingredient, which could be onion, garlic, or ginger."
+    ],
+    "clip_id": "P07_10_245",
+    "participant": "P07",
+    "metadata": {
+        "model": "gemini-3.5-flash",
+        "temperature": 0.2,
+        "timestamp": "2026-07-17 12:41:44",
+        "subset": "P07",
+        "keyframes_used": 2,
+        "human_epic_annotation_removed": true,
+        "task": "scene_understanding_only"
+    }
+}

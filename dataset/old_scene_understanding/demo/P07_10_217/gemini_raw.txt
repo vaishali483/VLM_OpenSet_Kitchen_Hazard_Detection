@@ -1,0 +1,22 @@
+{
+    "summary": "A person is slicing a tomato on a wooden cutting board next to a stove.",
+    "current_activity": "cutting tomato",
+    "activity_confidence": 0.95,
+    "objects_in_use": [
+        "knife",
+        "tomato"
+    ],
+    "important_objects": [
+        "cutting board",
+        "pot",
+        "stove"
+    ],
+    "environment": {
+        "stove_visible": true,
+        "sink_visible": false,
+        "counter_visible": true
+    },
+    "potential_hazards": [],
+    "next_probable_action": "continue cutting the tomato",
+    "reasoning": "The images clearly show the user holding a knife in their right hand and slicing a tomato on a wooden cutting board. A pot is visible on the stove to the left, and chopped ingredients are already on the board."
+}

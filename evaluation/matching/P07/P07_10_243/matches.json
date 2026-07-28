@@ -1,0 +1,65 @@
+{
+    "clip_id": "P07_10_243",
+    "ground_truth_hazards": [
+        {
+            "id": "P07_10_243_GT001",
+            "description": "The person is handling the knife in a very unsafe manner by positioning the hand very close to the blade.",
+            "severity": "high",
+            "evidence_frames": [
+                "frame_0000.jpg",
+                "frame_0001.jpg"
+            ],
+            "is_novel_relative_to_rule_baseline": true
+        }
+    ],
+    "vlm_predictions": [
+        {
+            "id": "P07_10_243_H001",
+            "description": "A metal pan handle is protruding outward over the edge of the stove or counter on the left side.",
+            "severity": "medium",
+            "evidence_frames": [
+                "frame_0000.jpg",
+                "frame_0001.jpg"
+            ]
+        },
+        {
+            "id": "P07_10_243_H002",
+            "description": "The person's left hand is resting very close to the active cutting area without using a protective claw grip.",
+            "severity": "medium",
+            "evidence_frames": [
+                "frame_0000.jpg",
+                "frame_0001.jpg"
+            ]
+        }
+    ],
+    "baseline_predictions": [
+        {
+            "id": "P07_10_243_B001",
+            "description": "A person is very close to a detected knife.",
+            "severity": "medium",
+            "evidence_frames": [
+                "frame_0000.jpg"
+            ],
+            "triggered_rule_id": "R001",
+            "rule_name": "Person close to knife"
+        },
+        {
+            "id": "P07_10_243_B002",
+            "description": "A detected knife is positioned near the visible image boundary.",
+            "severity": "medium",
+            "evidence_frames": [
+                "frame_0000.jpg"
+            ],
+            "triggered_rule_id": "R003",
+            "rule_name": "Knife near visible boundary"
+        }
+    ],
+    "vlm_matches": [
+        {
+            "prediction_id": "P07_10_243_H002",
+            "ground_truth_id": "P07_10_243_GT001",
+            "is_match": true
+        }
+    ],
+    "baseline_matches": []
+}

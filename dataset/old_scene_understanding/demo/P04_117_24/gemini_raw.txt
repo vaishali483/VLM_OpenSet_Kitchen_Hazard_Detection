@@ -1,0 +1,25 @@
+{
+    "summary": "The user is slicing a loaf of bread on a wooden cutting board next to a pot of scrambled eggs.",
+    "current_activity": "slicing bread",
+    "activity_confidence": 0.95,
+    "objects_in_use": [
+        "knife",
+        "sandwich"
+    ],
+    "important_objects": [
+        "knife",
+        "sandwich",
+        "bowl",
+        "spoon",
+        "bottle",
+        "cup"
+    ],
+    "environment": {
+        "stove_visible": true,
+        "sink_visible": false,
+        "counter_visible": true
+    },
+    "potential_hazards": [],
+    "next_probable_action": "buttering the sliced bread",
+    "reasoning": "The user is holding a loaf of bread (detected as a sandwich by the object detector) and slicing it with a knife on a cutting board. A pot of scrambled eggs (detected as a bowl with a spoon) and a container of butter are nearby on the stove surface, indicating the preparation of a breakfast meal."
+}

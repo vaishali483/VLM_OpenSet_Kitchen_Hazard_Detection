@@ -1,0 +1,35 @@
+{
+    "clip_id": "P07_103_12",
+    "participant": "P07",
+    "system": "rule_based_baseline",
+    "ruleset": {
+        "name": "kitchen_rules",
+        "version": "1.0",
+        "frozen_before_final_evaluation": false
+    },
+    "predefined_hazard_categories_used": true,
+    "hazards_present": true,
+    "overall_safety_summary": "One or more predefined rules were triggered.",
+    "hazards": [
+        {
+            "hazard_id": "P07_103_12_B001",
+            "triggered_rule_id": "R008",
+            "rule_name": "Person close to oven",
+            "description": "A person is very close to a detected oven.",
+            "explanation": "Close interaction with an oven may create a burn risk if the appliance or nearby cookware is hot.",
+            "severity": "low",
+            "confidence": 0.5489,
+            "evidence_frames": [
+                "frame_0000.jpg",
+                "frame_0002.jpg",
+                "frame_0003.jpg"
+            ],
+            "older_adult_relevance": "Reduced heat sensitivity, balance or reaction speed may increase burn risk.",
+            "recommended_action": "Maintain a stable posture and use appropriate protection when interacting with the oven."
+        }
+    ],
+    "uncertainties": [
+        "The baseline is limited to predefined rules and YOLO detections.",
+        "It cannot reason about hazards outside its fixed rule set."
+    ]
+}

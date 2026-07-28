@@ -39,18 +39,20 @@ logs/
 # Dataset (Large Files)
 # ==========================================================
 
+Data_Extraction/
+
 dataset/raw_videos/
 dataset/clips/
 dataset/frames/
 dataset/annotated_frames/
-dataset/annotations/
 dataset/detections/
 dataset/scene_json/
 dataset/keyframes/
-dataset/selected_clips/
 
 # Keep demo dataset if desired
 !dataset/demo/
+!dataset/keyframes/demo/
+!dataset/annotated_frames/demo/
 
 # ==========================================================
 # Generated Outputs

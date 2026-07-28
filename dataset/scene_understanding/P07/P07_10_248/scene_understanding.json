@@ -1,0 +1,49 @@
+{
+    "summary": "A person is preparing food in a kitchen, chopping tomatoes on a wooden cutting board next to a stove with a pot on it.",
+    "current_activity": "chopping vegetables",
+    "activity_confidence": 0.9,
+    "objects_in_use": [
+        "cutting board",
+        "knife",
+        "tomato"
+    ],
+    "important_objects": [
+        "pot",
+        "stove",
+        "cutting board",
+        "knife",
+        "tomatoes",
+        "spoon"
+    ],
+    "environment": {
+        "stove_visible": true,
+        "sink_visible": false,
+        "counter_visible": true,
+        "other_context": [
+            "spice jars",
+            "electric stove",
+            "tiled wall"
+        ]
+    },
+    "observations": [
+        "A pot with a lid is sitting on an electric stove burner.",
+        "A wooden cutting board is on the counter with chopped tomatoes and onions.",
+        "The person is wearing a black watch on their left wrist.",
+        "A package of whole tomatoes is on the counter next to a green jar."
+    ],
+    "uncertainties": [
+        "The exact contents of the pot on the stove are not visible due to the lid.",
+        "The knife is partially obscured by the hand in some frames."
+    ],
+    "clip_id": "P07_10_248",
+    "participant": "P07",
+    "metadata": {
+        "model": "gemini-3.5-flash",
+        "temperature": 0.2,
+        "timestamp": "2026-07-17 12:47:10",
+        "subset": "P07",
+        "keyframes_used": 3,
+        "human_epic_annotation_removed": true,
+        "task": "scene_understanding_only"
+    }
+}

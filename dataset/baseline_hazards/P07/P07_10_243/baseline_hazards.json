@@ -1,0 +1,47 @@
+{
+    "clip_id": "P07_10_243",
+    "participant": "P07",
+    "system": "rule_based_baseline",
+    "ruleset": {
+        "name": "kitchen_rules",
+        "version": "1.0",
+        "frozen_before_final_evaluation": false
+    },
+    "predefined_hazard_categories_used": true,
+    "hazards_present": true,
+    "overall_safety_summary": "One or more predefined rules were triggered.",
+    "hazards": [
+        {
+            "hazard_id": "P07_10_243_B001",
+            "triggered_rule_id": "R001",
+            "rule_name": "Person close to knife",
+            "description": "A person is very close to a detected knife.",
+            "explanation": "Close interaction with a knife may create a cutting risk.",
+            "severity": "medium",
+            "confidence": 0.3542,
+            "evidence_frames": [
+                "frame_0000.jpg"
+            ],
+            "older_adult_relevance": "Reduced grip stability, vision or reaction time may increase the likelihood of injury.",
+            "recommended_action": "Use a stable cutting surface and keep fingers away from the knife blade."
+        },
+        {
+            "hazard_id": "P07_10_243_B002",
+            "triggered_rule_id": "R003",
+            "rule_name": "Knife near visible boundary",
+            "description": "A detected knife is positioned near the visible image boundary.",
+            "explanation": "The knife may be close to the edge of the working surface and could fall or be knocked off.",
+            "severity": "medium",
+            "confidence": 0.3542,
+            "evidence_frames": [
+                "frame_0000.jpg"
+            ],
+            "older_adult_relevance": "A knife near the edge may be difficult to notice and avoid, particularly with reduced peripheral vision.",
+            "recommended_action": "Move the knife to a stable position away from the counter edge."
+        }
+    ],
+    "uncertainties": [
+        "The baseline is limited to predefined rules and YOLO detections.",
+        "It cannot reason about hazards outside its fixed rule set."
+    ]
+}

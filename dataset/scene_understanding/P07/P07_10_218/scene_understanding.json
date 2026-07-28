@@ -1,0 +1,47 @@
+{
+    "summary": "A person is slicing tomatoes on a wooden cutting board on a kitchen counter.",
+    "current_activity": "slicing tomatoes",
+    "activity_confidence": 0.95,
+    "objects_in_use": [
+        "knife",
+        "cutting board",
+        "tomato"
+    ],
+    "important_objects": [
+        "knife",
+        "cutting board",
+        "tomato",
+        "pot",
+        "stove"
+    ],
+    "environment": {
+        "stove_visible": true,
+        "sink_visible": false,
+        "counter_visible": true,
+        "other_context": [
+            "pot on the stove",
+            "jars and ingredients on the counter",
+            "bag of greens"
+        ]
+    },
+    "observations": [
+        "The person is holding a knife in their right hand and stabilizing a tomato with their left hand.",
+        "The tomato is being sliced into smaller pieces on a wooden cutting board.",
+        "There is a pile of chopped garlic or onion on the cutting board.",
+        "A metal pot is sitting on the stove to the left of the cutting board."
+    ],
+    "uncertainties": [
+        "The exact identity of the white chopped ingredient on the cutting board is uncertain."
+    ],
+    "clip_id": "P07_10_218",
+    "participant": "P07",
+    "metadata": {
+        "model": "gemini-3.5-flash",
+        "temperature": 0.2,
+        "timestamp": "2026-07-17 12:36:56",
+        "subset": "P07",
+        "keyframes_used": 4,
+        "human_epic_annotation_removed": true,
+        "task": "scene_understanding_only"
+    }
+}

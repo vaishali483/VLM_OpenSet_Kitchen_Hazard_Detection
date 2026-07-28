@@ -1,0 +1,26 @@
+{
+    "summary": "The user is cutting a tomato on a wooden cutting board using a knife.",
+    "current_activity": "cutting tomato",
+    "activity_confidence": 0.95,
+    "objects_in_use": [
+        "knife",
+        "tomato",
+        "cutting board"
+    ],
+    "important_objects": [
+        "knife",
+        "cutting board",
+        "tomato",
+        "bag of greens"
+    ],
+    "environment": {
+        "stove_visible": true,
+        "sink_visible": false,
+        "counter_visible": true
+    },
+    "potential_hazards": [],
+    "next_probable_action": "continue cutting tomato",
+    "reasoning": "The images show the user holding a knife in their right hand and stabilizing a tomato with their left hand on a wooden cutting board, actively slicing it. Chopped tomatoes and onions are already present on the board.",
+    "clip_id": "P07_10_244",
+    "participant": "P07"
+}

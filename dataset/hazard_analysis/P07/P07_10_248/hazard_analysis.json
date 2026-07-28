@@ -1,0 +1,35 @@
+{
+    "hazards_present": true,
+    "overall_safety_summary": "The kitchen environment is mostly orderly, but a significant hazard is present due to the pot handle protruding over the edge of the stove towards the active prep area, posing a risk of accidental contact and spills.",
+    "hazards": [
+        {
+            "description": "Pot handle protruding outward over the edge of the stove towards the workspace.",
+            "explanation": "The handle of the pot on the stove is pointing directly towards the right, extending over the edge of the stove and into the adjacent counter area where the user is actively chopping vegetables. This creates a high risk of the handle being accidentally bumped or snagged, which could knock the pot over and spill hot contents.",
+            "severity": "medium",
+            "confidence": 0.95,
+            "evidence_frames": [
+                "frame_0000.jpg",
+                "frame_0001.jpg",
+                "frame_0002.jpg"
+            ],
+            "older_adult_relevance": "Older adults may have reduced peripheral vision, slower reflexes, or mobility challenges, increasing the likelihood of accidentally bumping into protruding objects. Spills of hot liquids can cause severe burns, which are particularly dangerous for older adults due to thinner skin and slower healing times.",
+            "recommended_action": "Turn the pot handle inward so that it is positioned over the stovetop and does not protrude over the edge or towards the workspace.",
+            "hazard_id": "P07_10_248_H001"
+        }
+    ],
+    "uncertainties": [
+        "The temperature or state of the contents inside the pot is unknown as the lid is on.",
+        "The exact grip and safety of the knife usage are partially obscured by the hand."
+    ],
+    "clip_id": "P07_10_248",
+    "participant": "P07",
+    "metadata": {
+        "model": "gemini-3.5-flash",
+        "temperature": 0.2,
+        "timestamp": "2026-07-17 14:41:54",
+        "subset": "P07",
+        "task": "open_set_hazard_analysis",
+        "keyframes_used": 3,
+        "predefined_hazard_categories_used": false
+    }
+}

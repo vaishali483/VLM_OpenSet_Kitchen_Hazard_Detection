@@ -36,6 +36,10 @@ ANNOTATED_FRAMES_DIR = DATASET_DIR / "annotated_frames"
 
 KEYFRAMES_DIR = DATASET_DIR / "keyframes"
 
+SCENE_UNDERSTANDING_DIR = DATASET_DIR / "scene_understanding"
+
+HAZARD_ANALYSIS_DIR = DATASET_DIR / "hazard_analysis"
+
 # ==========================================================
 # Models
 # ==========================================================
@@ -43,8 +47,6 @@ KEYFRAMES_DIR = DATASET_DIR / "keyframes"
 MODELS_DIR = PROJECT_ROOT / "models"
 
 YOLO_MODEL = "yolo11n.pt"
-
-GEMINI_MODEL = "gemini-2.5-flash"
 
 # ==========================================================
 # Frame Extraction
@@ -78,6 +80,8 @@ for folder in [
     OUTPUTS_DIR,
     LOGS_DIR,
     KEYFRAMES_DIR,
+    SCENE_UNDERSTANDING_DIR,
+    HAZARD_ANALYSIS_DIR,
 ]:
     folder.mkdir(parents=True, exist_ok=True)
 
@@ -122,8 +126,21 @@ KEEP_OBJECT_CHANGE = True
 
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 
-GEMINI_MODEL = "gemini-2.5-flash"
+if not GEMINI_API_KEY:
+    raise ValueError(
+        "GEMINI_API_KEY not found. Please set it in your .env file."
+    )
 
-MAX_OUTPUT_TOKENS = 2048
+GEMINI_MODEL = "gemini-3.5-flash"
+
+MAX_OUTPUT_TOKENS = 4096
 
 TEMPERATURE = 0.2
+
+# ==========================================================
+# Prompts
+# ==========================================================
+
+SCENE_PROMPT = PROMPTS_DIR / "scene_understanding_prompt.txt"
+
+HAZARD_PROMPT = PROMPTS_DIR / "hazard_analysis_prompt.txt"

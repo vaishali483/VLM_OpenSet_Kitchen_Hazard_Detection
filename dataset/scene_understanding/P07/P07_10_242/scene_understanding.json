@@ -1,0 +1,47 @@
+{
+    "summary": "A person is chopping tomatoes on a wooden cutting board on a kitchen counter.",
+    "current_activity": "chopping tomatoes",
+    "activity_confidence": 0.95,
+    "objects_in_use": [
+        "knife",
+        "cutting board",
+        "tomatoes"
+    ],
+    "important_objects": [
+        "knife",
+        "cutting board",
+        "tomatoes",
+        "chopped onions",
+        "plastic bag of greens"
+    ],
+    "environment": {
+        "stove_visible": true,
+        "sink_visible": false,
+        "counter_visible": true,
+        "other_context": [
+            "overhead view",
+            "person wearing a black wristband",
+            "plastic bag with label on the counter"
+        ]
+    },
+    "observations": [
+        "The person is using a knife to chop red tomatoes on a wooden cutting board.",
+        "There are already chopped onions and tomatoes on the board.",
+        "A plastic bag containing greens is on the right side of the counter."
+    ],
+    "uncertainties": [
+        "The exact type of knife is partially obscured by the hand and angle.",
+        "Only the edge of the appliance on the left is visible."
+    ],
+    "clip_id": "P07_10_242",
+    "participant": "P07",
+    "metadata": {
+        "model": "gemini-3.5-flash",
+        "temperature": 0.2,
+        "timestamp": "2026-07-16 20:56:46",
+        "subset": "P07",
+        "keyframes_used": 2,
+        "human_epic_annotation_removed": true,
+        "task": "scene_understanding_only"
+    }
+}

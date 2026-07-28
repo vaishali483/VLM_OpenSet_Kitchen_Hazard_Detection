@@ -1,0 +1,21 @@
+{
+  "hazards_present": true,
+  "overall_safety_summary": "The scene is generally safe, but the user is chopping ingredients with their fingers extended flat on the cutting board close to the knife blade, which increases the risk of accidental cuts.",
+  "hazards": [
+    {
+      "description": "The user is chopping ingredients with their left-hand fingers extended flat on the cutting board very close to the active knife blade.",
+      "explanation": "Failing to use a protective claw grip increases the risk of the knife slipping and causing a laceration to the fingers.",
+      "severity": "medium",
+      "confidence": 0.85,
+      "evidence_frames": [
+        "frame_0000.jpg",
+        "frame_0001.jpg"
+      ],
+      "older_adult_relevance": "Older adults may have reduced hand stability, slower reflexes, or thinner skin, making them more susceptible to severe cuts from knife slips.",
+      "recommended_action": "Curl the fingers of the non-dominant hand inward into a 'claw grip' to keep fingertips safe while stabilizing food."
+    }
+  ],
+  "uncertainties": [
+    "It is unclear if the cutting board has a non-slip mat underneath to prevent sliding during use."
+  ]
+}

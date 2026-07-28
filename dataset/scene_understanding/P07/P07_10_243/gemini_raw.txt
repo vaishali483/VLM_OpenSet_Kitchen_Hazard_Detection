@@ -1,0 +1,36 @@
+{
+  "summary": "A person is chopping tomatoes and onions on a wooden cutting board placed on a kitchen counter.",
+  "current_activity": "chopping vegetables",
+  "activity_confidence": 0.95,
+  "objects_in_use": [
+    "knife",
+    "cutting board",
+    "tomatoes"
+  ],
+  "important_objects": [
+    "knife",
+    "cutting board",
+    "tomatoes",
+    "onions",
+    "bag of salad"
+  ],
+  "environment": {
+    "stove_visible": true,
+    "sink_visible": false,
+    "counter_visible": true,
+    "other_context": [
+      "wooden cutting board",
+      "bag of salad on the counter"
+    ]
+  },
+  "observations": [
+    "The person is holding a knife in their right hand.",
+    "Chopped red tomatoes and chopped white onions are on the wooden cutting board.",
+    "The person's left hand is resting near the chopped tomatoes.",
+    "A plastic bag containing salad greens is visible on the right side of the counter."
+  ],
+  "uncertainties": [
+    "The exact type of knife is partially obscured by the hand and angle.",
+    "The appliance on the far left is only partially visible."
+  ]
+}

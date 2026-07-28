@@ -1,0 +1,24 @@
+{
+    "summary": "A person is filling a glass cup with water from the kitchen tap.",
+    "current_activity": "filling a glass with water",
+    "activity_confidence": 0.95,
+    "objects_in_use": [
+        "cup",
+        "faucet"
+    ],
+    "important_objects": [
+        "cup",
+        "sink",
+        "dish rack"
+    ],
+    "environment": {
+        "stove_visible": false,
+        "sink_visible": true,
+        "counter_visible": true
+    },
+    "potential_hazards": [],
+    "next_probable_action": "turn off the faucet",
+    "reasoning": "The images show the user holding a glass cup under the running kitchen faucet to fill it with water. The sink and a dish rack are clearly visible in the scene.",
+    "clip_id": "P03_07_19",
+    "participant": "P03"
+}

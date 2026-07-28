@@ -1,0 +1,36 @@
+{
+    "hazards_present": true,
+    "overall_safety_summary": "The user is slicing tomatoes on a cutting board. While the workspace is relatively clear, a metal pot on the stove has its handle protruding directly into the active preparation area, creating a collision and spill hazard.",
+    "hazards": [
+        {
+            "description": "The handle of the metal pot on the stove is pointing outwards to the right, protruding into the active workspace.",
+            "explanation": "An outward-pointing pot handle can easily be bumped by the user's arm or body while they are actively slicing food. This could knock the pot over, leading to spills, potential burns, or startling the user while they are holding a sharp knife.",
+            "severity": "medium",
+            "confidence": 0.95,
+            "evidence_frames": [
+                "frame_0000.jpg",
+                "frame_0001.jpg",
+                "frame_0002.jpg",
+                "frame_0003.jpg"
+            ],
+            "older_adult_relevance": "Older adults may have reduced peripheral vision, slower reflexes, or decreased mobility, making them more prone to accidentally bumping into protruding objects. A sudden startle or spill can also lead to a loss of balance or a knife slip.",
+            "recommended_action": "Turn the pot handle inward so that it is positioned over the stovetop and does not protrude into the workspace.",
+            "hazard_id": "P07_10_218_H001"
+        }
+    ],
+    "uncertainties": [
+        "It is uncertain whether the pot on the stove is hot or contains liquid.",
+        "The exact identity of the white chopped ingredient on the cutting board is unclear."
+    ],
+    "clip_id": "P07_10_218",
+    "participant": "P07",
+    "metadata": {
+        "model": "gemini-3.5-flash",
+        "temperature": 0.2,
+        "timestamp": "2026-07-17 13:58:05",
+        "subset": "P07",
+        "task": "open_set_hazard_analysis",
+        "keyframes_used": 4,
+        "predefined_hazard_categories_used": false
+    }
+}

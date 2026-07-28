@@ -1,0 +1,25 @@
+{
+    "summary": "A person is mixing chopped vegetables in a small bowl on a kitchen counter next to a stove with cooking pans.",
+    "current_activity": "mixing ingredients in a bowl",
+    "activity_confidence": 0.95,
+    "objects_in_use": [
+        "bowl",
+        "spoon"
+    ],
+    "important_objects": [
+        "bowl",
+        "spoon",
+        "knife",
+        "bottle"
+    ],
+    "environment": {
+        "stove_visible": true,
+        "sink_visible": true,
+        "counter_visible": true
+    },
+    "potential_hazards": [],
+    "next_probable_action": "continue mixing the ingredients",
+    "reasoning": "The user is holding a small bowl and mixing chopped green vegetables inside it. In the background, an induction stove is visible with pans containing carrots and patties, and a cutting board with chopped onions is on the counter.",
+    "clip_id": "P04_02_298",
+    "participant": "P04"
+}

@@ -1,0 +1,15 @@
+{
+    "summary": "The user is opening a cupboard door under the kitchen countertop.",
+    "current_activity": "opening cupboard",
+    "activity_confidence": 0.95,
+    "objects_in_use": ["cupboard door"],
+    "important_objects": ["cupboard door", "sink", "countertop", "stove"],
+    "environment": {
+        "stove_visible": true,
+        "sink_visible": true,
+        "counter_visible": true
+    },
+    "potential_hazards": [],
+    "next_probable_action": "take object from cupboard",
+    "reasoning": "The user's hand is seen reaching for and opening the cupboard door beneath the countertop, as confirmed by the annotation 'open cupboard'."
+}

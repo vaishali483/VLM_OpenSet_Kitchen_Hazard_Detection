@@ -1,0 +1,47 @@
+{
+    "hazards_present": true,
+    "overall_safety_summary": "The scene is generally organized, but safety risks are present due to a protruding pan handle on the left and improper hand positioning close to the knife blade while chopping.",
+    "hazards": [
+        {
+            "description": "A metal pan handle is protruding outward over the edge of the stove or counter on the left side.",
+            "explanation": "This creates a risk of accidentally bumping into the handle, which could cause the pan to fall or spill its contents.",
+            "severity": "medium",
+            "confidence": 0.85,
+            "evidence_frames": [
+                "frame_0000.jpg",
+                "frame_0001.jpg"
+            ],
+            "older_adult_relevance": "Older adults with reduced peripheral vision or mobility limitations are at a higher risk of bumping into protruding objects.",
+            "recommended_action": "Turn the pan handle inward so it does not extend past the edge of the counter or stove.",
+            "hazard_id": "P07_10_243_H001"
+        },
+        {
+            "description": "The person's left hand is resting very close to the active cutting area without using a protective claw grip.",
+            "explanation": "Improper hand placement increases the risk of accidental cuts or slips of the knife blade.",
+            "severity": "medium",
+            "confidence": 0.8,
+            "evidence_frames": [
+                "frame_0000.jpg",
+                "frame_0001.jpg"
+            ],
+            "older_adult_relevance": "Older adults may experience reduced hand stability or slower reflexes, making safe knife techniques especially critical to prevent injuries.",
+            "recommended_action": "Curl the fingers of the non-dominant hand inward into a claw grip to keep them safe from the knife blade.",
+            "hazard_id": "P07_10_243_H002"
+        }
+    ],
+    "uncertainties": [
+        "It is unclear whether the pan on the left is hot or contains liquid.",
+        "It is uncertain if the cutting board has a non-slip backing or mat underneath to prevent sliding."
+    ],
+    "clip_id": "P07_10_243",
+    "participant": "P07",
+    "metadata": {
+        "model": "gemini-3.5-flash",
+        "temperature": 0.2,
+        "timestamp": "2026-07-18 16:00:08",
+        "subset": "P07",
+        "task": "open_set_hazard_analysis",
+        "keyframes_used": 2,
+        "predefined_hazard_categories_used": false
+    }
+}

@@ -1,0 +1,34 @@
+{
+    "hazards_present": true,
+    "overall_safety_summary": "The kitchen environment is mostly clear, but the saucepan handle is positioned pointing directly outward over the front edge of the stove, which poses a risk of being bumped.",
+    "hazards": [
+        {
+            "description": "The handle of the saucepan on the stove is pointing directly outward over the front edge of the cooker.",
+            "explanation": "A handle protruding forward can easily be bumped by the user's body or clothing, which could tip the saucepan over and cause spills, burns, or physical injury.",
+            "severity": "medium",
+            "confidence": 0.95,
+            "evidence_frames": [
+                "frame_0000.jpg",
+                "frame_0001.jpg"
+            ],
+            "older_adult_relevance": "Older adults may have reduced mobility, slower reflexes, or balance impairments, increasing the likelihood of accidentally bumping into protruding handles.",
+            "recommended_action": "Turn the saucepan handle to the side or inward so it does not protrude over the edge of the stove.",
+            "hazard_id": "P07_10_249_H001"
+        }
+    ],
+    "uncertainties": [
+        "It is uncertain whether the stove burner is currently active or hot.",
+        "It is unclear if the lid knob is hot to the touch when handled without protection."
+    ],
+    "clip_id": "P07_10_249",
+    "participant": "P07",
+    "metadata": {
+        "model": "gemini-3.5-flash",
+        "temperature": 0.2,
+        "timestamp": "2026-07-17 14:46:37",
+        "subset": "P07",
+        "task": "open_set_hazard_analysis",
+        "keyframes_used": 2,
+        "predefined_hazard_categories_used": false
+    }
+}
