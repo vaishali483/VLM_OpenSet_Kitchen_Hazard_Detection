@@ -1,0 +1,12 @@
+Add these rules to your existing live_hazard_analysis.txt prompt:
+
+SESSION-AWARE OUTPUT
+- Return current_activity, action_confidence and up to five short scene_observations.
+- Give every hazard a stable canonical_name.
+- Give every hazard hazard_status: present or possible.
+- Present means the current evidence supports an immediate current hazard.
+- Possible means a visible arrangement could become hazardous under a clear trigger, or a previous state creates an unverified residual risk.
+- Do not infer future user intention.
+- Do not claim residual heat without sensor evidence; classify it as possible.
+- For possible hazards return a short trigger_condition. For present hazards return null.
+- Use the recent session context only as supporting evidence. Current image evidence remains primary.

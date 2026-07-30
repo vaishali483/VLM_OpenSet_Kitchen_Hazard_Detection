@@ -1,4 +1,4 @@
-"""Optimised YOLO-grounded Gemini live analysis."""
+"""YOLO-grounded Gemini live and session-aware analysis."""
 
 from __future__ import annotations
 
@@ -76,6 +76,7 @@ LIVE_ANALYSIS_PROMPT = load_prompt(
     "live_hazard_analysis.txt"
 )
 
+
 class GeminiServiceUnavailableError(RuntimeError):
     """Raised when all configured Gemini models are unavailable."""
 
@@ -83,11 +84,6 @@ class GeminiServiceUnavailableError(RuntimeError):
 def _is_transient_gemini_error(
     error: Exception,
 ) -> bool:
-    """
-    Return True for temporary Gemini capacity, timeout,
-    rate-limit and server-side failures.
-    """
-
     status_code = getattr(
         error,
         "status_code",
@@ -154,8 +150,6 @@ def _parse_response(
     response: object,
     schema: type[SchemaType],
 ) -> SchemaType:
-    """Parse a Gemini structured-output response."""
-
     parsed = getattr(
         response,
         "parsed",
@@ -185,16 +179,9 @@ def _parse_response(
 
 
 def _limit_words(
-    text: str,
+    text: str | None,
     maximum_words: int,
 ) -> str:
-    """
-    Enforce a final server-side word limit.
-
-    Prompt instructions are not guaranteed, so this protects the
-    mobile UI even when Gemini returns longer wording.
-    """
-
     cleaned = " ".join(
         (text or "").split()
     ).strip()
@@ -219,28 +206,50 @@ def _limit_words(
 def _normalise_generated_hazard(
     hazard: GeneratedHazard,
 ) -> None:
-    """Apply mobile UI length and localisation consistency rules."""
+    hazard.canonical_name = _limit_words(
+        hazard.canonical_name
+        or hazard.description,
+        7,
+    )
 
     hazard.description = _limit_words(
         hazard.description,
-        maximum_words=8,
+        8,
     )
 
     hazard.explanation = _limit_words(
         hazard.explanation,
-        maximum_words=14,
+        14,
     )
 
     hazard.recommended_action = _limit_words(
         hazard.recommended_action,
-        maximum_words=12,
+        12,
     )
 
-    if hazard.localisation_kind != "exact_object":
-        hazard.localisation_kind = "none"
+    if hazard.hazard_status == "possible":
+        hazard.trigger_condition = _limit_words(
+            hazard.trigger_condition
+            or "Relevant conditions become active",
+            12,
+        )
+    else:
+        hazard.trigger_condition = None
+
+    if hazard.localisation_kind == "exact_object":
+        hazard.estimated_bbox_normalized = None
+        return
+
+    if hazard.localisation_kind == "approximate_region":
         hazard.target_detection_id = None
         hazard.target_class_name = None
-        hazard.localisation_confidence = 0.0
+        return
+
+    hazard.localisation_kind = "none"
+    hazard.target_detection_id = None
+    hazard.target_class_name = None
+    hazard.estimated_bbox_normalized = None
+    hazard.localisation_confidence = 0.0
 
 
 def _generate_analysis(
@@ -248,25 +257,33 @@ def _generate_analysis(
     image_bytes: bytes,
     mime_type: str,
     detections: list[YoloDetection],
+    session_context: dict[str, object] | None,
 ) -> tuple[CombinedLiveAnalysis, str]:
-    """
-    Run the analysis using the primary Gemini model.
-
-    A fallback model is used only when the previous model
-    fails with a temporary capacity or server error.
-    """
-
     detection_context = [
         detection.model_dump()
         for detection in detections
     ]
 
+    # This context contains text and structured metadata only.
+    # No previous images are included or sent back to Gemini.
+    effective_session_context = (
+        session_context
+        or {
+            "session_active": False,
+            "recent_frames": [],
+            "known_hazards": [],
+        }
+    )
+
     prompt = (
         f"{LIVE_ANALYSIS_PROMPT}\n\n"
         "YOLO DETECTIONS:\n"
-        f"{json.dumps(detection_context, indent=2)}"
+        f"{json.dumps(detection_context, indent=2)}\n\n"
+        "SESSION CONTEXT (TEXT ONLY; NO PREVIOUS IMAGES):\n"
+        f"{json.dumps(effective_session_context, indent=2)}"
     )
 
+    # This is the one current image that is being analysed now.
     image_part = types.Part.from_bytes(
         data=image_bytes,
         mime_type=mime_type,
@@ -296,16 +313,13 @@ def _generate_analysis(
                     image_part,
                 ],
                 config=types.GenerateContentConfig(
-                    max_output_tokens=1536,
-
+                    max_output_tokens=1800,
                     response_mime_type=(
                         "application/json"
                     ),
-
                     response_schema=(
                         CombinedLiveAnalysis
                     ),
-
                     thinking_config=(
                         types.ThinkingConfig(
                             thinking_level=(
@@ -313,7 +327,6 @@ def _generate_analysis(
                             )
                         )
                     ),
-
                     media_resolution=(
                         MEDIA_RESOLUTION_MAP[
                             GEMINI_MEDIA_RESOLUTION
@@ -329,19 +342,27 @@ def _generate_analysis(
 
             analysis.scene_summary = _limit_words(
                 analysis.scene_summary,
-                maximum_words=16,
+                16,
             )
 
             analysis.current_activity = _limit_words(
                 analysis.current_activity,
-                maximum_words=8,
+                8,
             )
 
-            analysis.overall_safety_summary = (
+            analysis.scene_observations = [
                 _limit_words(
-                    analysis.overall_safety_summary,
-                    maximum_words=10,
+                    observation,
+                    12,
                 )
+                for observation
+                in analysis.scene_observations[:5]
+                if observation.strip()
+            ]
+
+            analysis.overall_safety_summary = _limit_words(
+                analysis.overall_safety_summary,
+                10,
             )
 
             for hazard in analysis.hazards:
@@ -354,7 +375,7 @@ def _generate_analysis(
             )
 
             print(
-                f"Gemini analysis succeeded with "
+                "Gemini analysis succeeded with "
                 f"{model_name}"
             )
 
@@ -366,22 +387,16 @@ def _generate_analysis(
             if not _is_transient_gemini_error(
                 error
             ):
-                # Invalid prompt, schema, API key or other
-                # non-temporary errors should not silently
-                # switch models.
                 raise
 
             print(
-                f"Gemini model temporarily unavailable: "
+                "Gemini model temporarily unavailable: "
                 f"{model_name}"
             )
-
             print(
                 type(error).__name__,
                 error,
             )
-
-            # Continue to the next configured model.
 
     raise GeminiServiceUnavailableError(
         "All configured Gemini models are temporarily unavailable."
@@ -392,6 +407,7 @@ def analyse_live_image(
     *,
     image_bytes: bytes,
     mime_type: str,
+    session_context: dict[str, object] | None = None,
 ) -> LiveAnalysisResult:
     """Run YOLO followed by one Gemini reasoning request."""
 
@@ -407,6 +423,7 @@ def analyse_live_image(
         image_bytes=image_bytes,
         mime_type=mime_type,
         detections=detections,
+        session_context=session_context,
     )
 
     gemini_ms = (

@@ -48,6 +48,7 @@ dataset/annotated_frames/
 dataset/detections/
 dataset/scene_json/
 dataset/keyframes/
+data/sessions/
 
 # Keep demo dataset if desired
 !dataset/demo/

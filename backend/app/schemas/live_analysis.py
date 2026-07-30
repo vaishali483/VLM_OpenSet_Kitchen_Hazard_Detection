@@ -8,44 +8,29 @@ from pydantic import BaseModel, Field
 
 
 class NormalizedBoundingBox(BaseModel):
-    """Bounding-box coordinates normalised to 0–1."""
-
-    x_min: float = Field(
-        ge=0.0,
-        le=1.0,
-    )
-
-    y_min: float = Field(
-        ge=0.0,
-        le=1.0,
-    )
-
-    x_max: float = Field(
-        ge=0.0,
-        le=1.0,
-    )
-
-    y_max: float = Field(
-        ge=0.0,
-        le=1.0,
-    )
+    x_min: float = Field(ge=0.0, le=1.0)
+    y_min: float = Field(ge=0.0, le=1.0)
+    x_max: float = Field(ge=0.0, le=1.0)
+    y_max: float = Field(ge=0.0, le=1.0)
 
 
 class YoloDetection(BaseModel):
-    """One YOLO object detection."""
-
     detection_id: str
     class_name: str
-
-    confidence: float = Field(
-        ge=0.0,
-        le=1.0,
-    )
-
+    confidence: float = Field(ge=0.0, le=1.0)
     bbox_normalized: NormalizedBoundingBox
 
 
 class GeneratedHazard(BaseModel):
+    canonical_name: str
+
+    hazard_status: Literal[
+        "present",
+        "possible",
+    ]
+
+    trigger_condition: str | None = None
+
     description: str
     explanation: str
 
@@ -84,10 +69,19 @@ class GeneratedHazard(BaseModel):
 
 
 class CombinedLiveAnalysis(BaseModel):
-    """Scene understanding and hazards from one Gemini call."""
-
     scene_summary: str
     current_activity: str
+
+    action_confidence: float = Field(
+        default=0.0,
+        ge=0.0,
+        le=1.0,
+    )
+
+    scene_observations: list[str] = Field(
+        default_factory=list,
+        max_length=5,
+    )
 
     hazards_present: bool
     overall_safety_summary: str

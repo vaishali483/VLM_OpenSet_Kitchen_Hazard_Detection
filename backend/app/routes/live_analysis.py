@@ -40,10 +40,6 @@ from app.schemas.live_analysis import (
     YoloDetection,
 )
 from app.services.live_analysis_service import (
-    analyse_live_image,
-)
-
-from app.services.live_analysis_service import (
     GeminiServiceUnavailableError,
     analyse_live_image,
 )
@@ -62,62 +58,50 @@ CLASS_TEXT_TERMS: dict[str, tuple[str, ...]] = {
         "kitchen knife",
         "cutting knife",
     ),
-
     "scissors": (
         "scissors",
         "shears",
     ),
-
     "bottle": (
         "bottle",
         "container",
     ),
-
     "wine glass": (
         "wine glass",
         "glass",
         "drinking glass",
     ),
-
     "cup": (
         "cup",
         "mug",
     ),
-
     "fork": (
         "fork",
     ),
-
     "spoon": (
         "spoon",
         "utensil",
     ),
-
     "bowl": (
         "bowl",
         "dish",
     ),
-
     "microwave": (
         "microwave",
         "microwave oven",
     ),
-
     "oven": (
         "oven",
         "cooker",
         "stove",
     ),
-
     "toaster": (
         "toaster",
     ),
-
     "sink": (
         "sink",
         "basin",
     ),
-
     "refrigerator": (
         "refrigerator",
         "fridge",
@@ -126,17 +110,13 @@ CLASS_TEXT_TERMS: dict[str, tuple[str, ...]] = {
 
 
 def _normalise_text(value: str | None) -> str:
-    """Normalise text for conservative class-name comparison."""
-
     if not value:
         return ""
-
-    lowered = value.strip().lower()
 
     return re.sub(
         r"\s+",
         " ",
-        lowered,
+        value.strip().lower(),
     )
 
 
@@ -144,8 +124,6 @@ def _text_contains_term(
     text: str,
     term: str,
 ) -> bool:
-    """Check a complete word or phrase instead of a substring."""
-
     pattern = (
         r"\b"
         + re.escape(term)
@@ -163,14 +141,10 @@ def _hazard_mentions_class(
     hazard: GeneratedHazard,
     class_name: str,
 ) -> bool:
-    """
-    Require the displayed hazard wording to identify the
-    same object class as the proposed detection.
-    """
-
     combined_text = _normalise_text(
         " ".join(
             [
+                hazard.canonical_name,
                 hazard.description,
                 hazard.explanation,
                 hazard.recommended_action,
@@ -199,8 +173,6 @@ def _hazard_mentions_class(
 def _warning_only(
     reason: str,
 ) -> HazardVisualisation:
-    """Create a text-only localisation result."""
-
     return HazardVisualisation(
         mode="warning_label",
         bbox_normalized=None,
@@ -210,21 +182,10 @@ def _warning_only(
         validation_reason=reason,
     )
 
+
 def _validate_approximate_region(
     hazard: GeneratedHazard,
 ) -> HazardVisualisation:
-    """
-    Validate a Gemini-estimated approximate hazard region.
-
-    This region is less reliable than a detector-confirmed box,
-    so it is returned with a different visualisation mode.
-    """
-
-    if hazard.localisation_kind != "approximate_region":
-        return _warning_only(
-            "not_an_approximate_region"
-        )
-
     bbox = hazard.estimated_bbox_normalized
 
     if bbox is None:
@@ -266,26 +227,23 @@ def _validate_approximate_region(
 
     return HazardVisualisation(
         mode="approximate_box",
-
         bbox_normalized=NormalizedBoundingBox(
             x_min=bbox.x_min,
             y_min=bbox.y_min,
             x_max=bbox.x_max,
             y_max=bbox.y_max,
         ),
-
         source_detection_id=None,
         source_class_name=None,
-
         localisation_confidence=round(
             hazard.localisation_confidence,
             4,
         ),
-
         validation_reason=(
             "accepted_gemini_approximate_region"
         ),
     )
+
 
 def _validate_localisation(
     *,
@@ -397,22 +355,18 @@ def _validate_localisation(
 
     return HazardVisualisation(
         mode="bounding_box",
-
         bbox_normalized=NormalizedBoundingBox(
             x_min=bbox.x_min,
             y_min=bbox.y_min,
             x_max=bbox.x_max,
             y_max=bbox.y_max,
         ),
-
         source_detection_id=(
             detection.detection_id
         ),
-
         source_class_name=(
             detection.class_name
         ),
-
         localisation_confidence=round(
             min(
                 detection.confidence,
@@ -420,11 +374,100 @@ def _validate_localisation(
             ),
             4,
         ),
-
         validation_reason=(
             "accepted_exact_object_match"
         ),
     )
+
+
+def _build_hazard_items(
+    *,
+    capture_id: str,
+    generated_hazards: list[GeneratedHazard],
+    detections: list[YoloDetection],
+) -> list[HazardItem]:
+    detection_lookup = {
+        detection.detection_id: detection
+        for detection in detections
+    }
+
+    hazards: list[HazardItem] = []
+
+    for index, generated_hazard in enumerate(
+        generated_hazards,
+        start=1,
+    ):
+        visualisation = _validate_localisation(
+            hazard=generated_hazard,
+            detection_lookup=detection_lookup,
+        )
+
+        print(
+            f"Hazard {index} localisation: "
+            f"{visualisation.validation_reason}"
+        )
+
+        hazards.append(
+            HazardItem(
+                hazard_id=(
+                    f"{capture_id}_H{index:03d}"
+                ),
+                canonical_name=(
+                    generated_hazard.canonical_name
+                ),
+                hazard_status=(
+                    generated_hazard.hazard_status
+                ),
+                trigger_condition=(
+                    generated_hazard.trigger_condition
+                ),
+                description=(
+                    generated_hazard.description
+                ),
+                explanation=(
+                    generated_hazard.explanation
+                ),
+                severity=(
+                    generated_hazard.severity
+                ),
+                confidence=(
+                    generated_hazard.confidence
+                ),
+                recommended_action=(
+                    generated_hazard.recommended_action
+                ),
+                visualisation=visualisation,
+            )
+        )
+
+    return hazards
+
+
+def _build_detection_items(
+    detections: list[YoloDetection],
+) -> list[DetectionItem]:
+    return [
+        DetectionItem(
+            detection_id=detection.detection_id,
+            class_name=detection.class_name,
+            confidence=detection.confidence,
+            bbox_normalized=NormalizedBoundingBox(
+                x_min=(
+                    detection.bbox_normalized.x_min
+                ),
+                y_min=(
+                    detection.bbox_normalized.y_min
+                ),
+                x_max=(
+                    detection.bbox_normalized.x_max
+                ),
+                y_max=(
+                    detection.bbox_normalized.y_max
+                ),
+            ),
+        )
+        for detection in detections
+    ]
 
 
 @router.post(
@@ -449,8 +492,6 @@ async def analyse_image(
         ),
     ],
 ) -> HazardAnalysisResponse:
-    """Analyse one AR camera image using YOLO and Gemini."""
-
     if image.content_type not in ALLOWED_IMAGE_TYPES:
         raise HTTPException(
             status_code=415,
@@ -500,14 +541,10 @@ async def analyse_image(
             analyse_live_image,
             image_bytes=image_bytes,
             mime_type=image.content_type,
+            session_context=None,
         )
 
     except GeminiServiceUnavailableError as error:
-        print(
-            "All Gemini models are temporarily unavailable:",
-            error,
-        )
-
         raise HTTPException(
             status_code=503,
             detail=(
@@ -534,153 +571,61 @@ async def analyse_image(
             ),
         ) from error
 
-    detection_lookup = {
-        detection.detection_id: detection
-        for detection in result.detections
-    }
-
     generated = result.analysis
 
-    hazards: list[HazardItem] = []
+    hazards = _build_hazard_items(
+        capture_id=capture_id,
+        generated_hazards=generated.hazards,
+        detections=result.detections,
+    )
 
-    for index, generated_hazard in enumerate(
-        generated.hazards,
-        start=1,
-    ):
-        visualisation = _validate_localisation(
-            hazard=generated_hazard,
-            detection_lookup=detection_lookup,
-        )
-
-        print(
-            f"Hazard {index} localisation: "
-            f"{visualisation.validation_reason}"
-        )
-
-        hazards.append(
-            HazardItem(
-                hazard_id=(
-                    f"{capture_id}_H{index:03d}"
-                ),
-
-                description=(
-                    generated_hazard.description
-                ),
-
-                explanation=(
-                    generated_hazard.explanation
-                ),
-
-                severity=(
-                    generated_hazard.severity
-                ),
-
-                confidence=(
-                    generated_hazard.confidence
-                ),
-
-                recommended_action=(
-                    generated_hazard
-                    .recommended_action
-                ),
-
-                visualisation=visualisation,
-            )
-        )
-
-    detections = [
-        DetectionItem(
-            detection_id=detection.detection_id,
-            class_name=detection.class_name,
-            confidence=detection.confidence,
-
-            bbox_normalized=NormalizedBoundingBox(
-                x_min=(
-                    detection
-                    .bbox_normalized
-                    .x_min
-                ),
-
-                y_min=(
-                    detection
-                    .bbox_normalized
-                    .y_min
-                ),
-
-                x_max=(
-                    detection
-                    .bbox_normalized
-                    .x_max
-                ),
-
-                y_max=(
-                    detection
-                    .bbox_normalized
-                    .y_max
-                ),
-            ),
-        )
-        for detection in result.detections
-    ]
+    detections = _build_detection_items(
+        result.detections
+    )
 
     return HazardAnalysisResponse(
         event_type=(
             "hazard_analysis_completed"
         ),
-
         mode="live_yolo_vlm",
-        model_used=result.model_used,
-
         capture_id=capture_id,
-
         completed_at_utc=datetime.now(
             timezone.utc
         ).isoformat(),
-
         image_received=ImageReceipt(
             filename=(
                 image.filename
                 or "ar_camera_frame.jpg"
             ),
-
-            content_type=image.content_type,
+            content_type=(
+                image.content_type
+                or "image/jpeg"
+            ),
             size_bytes=len(image_bytes),
             width=width,
             height=height,
         ),
-
         hazards_present=bool(hazards),
-
         overall_safety_summary=(
             generated.overall_safety_summary
         ),
-
         hazards=hazards,
-
         uncertainties=generated.uncertainties,
-
         scene_summary=generated.scene_summary,
-
         current_activity=(
             generated.current_activity
         ),
-
+        action_confidence=(
+            generated.action_confidence
+        ),
+        scene_observations=(
+            generated.scene_observations
+        ),
+        model_used=result.model_used,
         detections=detections,
-
         processing_times=ProcessingTimes(
-            yolo_ms=round(
-                result.yolo_ms,
-                2,
-            ),
-
-            gemini_ms=round(
-                result.gemini_ms,
-                2,
-            ),
-
-            total_ms=round(
-                result.total_ms,
-                2,
-            ),
+            yolo_ms=round(result.yolo_ms, 2),
+            gemini_ms=round(result.gemini_ms, 2),
+            total_ms=round(result.total_ms, 2),
         ),
     )
