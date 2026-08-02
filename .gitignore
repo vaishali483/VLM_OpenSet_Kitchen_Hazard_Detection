@@ -1,4 +1,5 @@
 epic-kitchens-download-scripts/
+pipeline/11_remove_local_paths.py
 
 # ==========================================================
 # Python
@@ -48,6 +49,7 @@ dataset/annotated_frames/
 dataset/detections/
 dataset/scene_json/
 dataset/keyframes/
+dataset/old_scene_understanding/
 data/sessions/
 
 # Keep demo dataset if desired
@@ -71,6 +73,7 @@ reports/
 *.onnx
 *.engine
 *.torchscript
+models/
 
 # ==========================================================
 # Temporary Files
