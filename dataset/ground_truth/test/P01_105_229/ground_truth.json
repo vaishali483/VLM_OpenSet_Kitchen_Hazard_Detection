@@ -1,0 +1,22 @@
+{
+    "clip_id": "P01_105_229",
+    "participant": "P01",
+    "keyframes": [
+        "frame_0000.jpg",
+        "frame_0001.jpg"
+    ],
+    "clip_contains_hazard": null,
+    "ground_truth_hazards": [
+        {
+            "ground_truth_id": "P01_105_229_GT001",
+            "description": "The person is holding a sharp knife.",
+            "severity": "medium",
+            "evidence_frames": [
+                "frame_0000.jpg",
+                "frame_0001.jpg"
+            ],
+            "is_novel_relative_to_rule_baseline": false,
+            "notes": "Visible spatial hazard; rule-based detector may capture knife unsafety"
+        }
+    ]
+}

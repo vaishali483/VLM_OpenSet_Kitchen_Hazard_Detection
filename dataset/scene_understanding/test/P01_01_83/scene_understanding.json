@@ -1,0 +1,52 @@
+{
+    "summary": "A person is slicing a red onion on a green cutting board on a wooden kitchen counter.",
+    "current_activity": "slicing onion",
+    "activity_confidence": 0.95,
+    "objects_in_use": [
+        "knife",
+        "onion",
+        "cutting board"
+    ],
+    "important_objects": [
+        "knife",
+        "onion",
+        "cutting board",
+        "spatula",
+        "pan",
+        "carrot",
+        "grater",
+        "spice jars"
+    ],
+    "environment": {
+        "stove_visible": true,
+        "sink_visible": true,
+        "counter_visible": true,
+        "other_context": [
+            "spice tray on the left",
+            "grater on the right",
+            "pan on the stove with chopped vegetables"
+        ]
+    },
+    "observations": [
+        "The person is holding a knife in their right hand and stabilizing a red onion with their left hand.",
+        "A green cutting board is positioned in the center of the wooden countertop.",
+        "A black spatula is resting on the counter to the left of the cutting board.",
+        "A pan with chopped green vegetables is on the stove on the left.",
+        "A tray containing various spice jars is in the upper-left corner.",
+        "A carrot and a metal grater are visible on the upper-right side of the counter."
+    ],
+    "uncertainties": [
+        "The exact type of green vegetables in the pan is not clearly identifiable."
+    ],
+    "clip_id": "P01_01_83",
+    "participant": "test",
+    "metadata": {
+        "model": "gemini-3.5-flash",
+        "temperature": 0.2,
+        "timestamp": "2026-08-02 14:22:57",
+        "subset": "test",
+        "keyframes_used": 11,
+        "human_epic_annotation_removed": true,
+        "task": "scene_understanding_only"
+    }
+}

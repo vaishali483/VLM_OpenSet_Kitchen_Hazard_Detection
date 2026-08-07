@@ -1,0 +1,60 @@
+{
+    "hazards_present": true,
+    "overall_safety_summary": "The kitchen environment is generally tidy, but handling a hot pot of liquid with one hand and the presence of an outward-facing pot handle pose moderate risks of spills and burns, which are further exacerbated by strong sun glare.",
+    "hazards": [
+        {
+            "description": "The user is holding a pot filled with hot liquid by its handle with only one hand while stirring.",
+            "explanation": "This requires significant wrist strength and stability, posing a high risk of spilling hot liquid and causing burns if the grip slips.",
+            "severity": "medium", 
+            "confidence": 0.85,
+            "evidence_frames": [
+                "frame_0002.jpg",
+                "frame_0003.jpg"
+            ],
+            "older_adult_relevance": "Older adults may have reduced grip strength or hand tremors, making it difficult to safely balance a heavy pot of hot liquid with one hand.",
+            "recommended_action": "Place the pot securely on a heat-resistant mat on the countertop before stirring or serving.",
+            "hazard_id": "P03_06_24_H001"
+        },
+        {
+            "description": "The handle of the small pot on the countertop is pointing outwards towards the edge of the workspace.",
+            "explanation": "An outward-facing handle can easily be bumped or snagged by clothing, causing the pot to tip over.",
+            "severity": "low",
+            "confidence": 0.8,
+            "evidence_frames": [
+                "frame_0002.jpg",
+                "frame_0003.jpg"
+            ],
+            "older_adult_relevance": "Older adults with mobility or balance issues are more prone to accidental bumps, which could knock the pot over.",
+            "recommended_action": "Turn the pot handle inward so it does not protrude over the edge of the workspace.",
+            "hazard_id": "P03_06_24_H002"
+        },
+        {
+            "description": "Extremely bright sunlight is reflecting directly off the countertop and the pot, creating intense glare.",
+            "explanation": "This intense glare can cause temporary visual impairment, making it difficult to see hot surfaces, liquids, or tools clearly.",
+            "severity": "low",
+            "confidence": 0.9,
+            "evidence_frames": [
+                "frame_0002.jpg",
+                "frame_0003.jpg"
+            ],
+            "older_adult_relevance": "Age-related vision changes make older adults more sensitive to glare and slower to adapt to sudden changes in light levels.",
+            "recommended_action": "Use blinds or curtains to diffuse direct sunlight and reduce glare on kitchen work surfaces.",
+            "hazard_id": "P03_06_24_H003"
+        }
+    ],
+    "uncertainties": [
+        "Whether the handle of the pot being held is heat-resistant or hot to the touch.",
+        "The contents and temperature of the small pot sitting on the chopping mat."
+    ],
+    "clip_id": "P03_06_24",
+    "participant": "P03",
+    "metadata": {
+        "model": "gemini-3.5-flash",
+        "temperature": 0.2,
+        "timestamp": "2026-08-02 17:24:02",
+        "subset": "test",
+        "task": "open_set_hazard_analysis",
+        "keyframes_used": 4,
+        "predefined_hazard_categories_used": false
+    }
+}

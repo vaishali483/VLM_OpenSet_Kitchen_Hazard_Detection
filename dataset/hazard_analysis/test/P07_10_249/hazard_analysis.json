@@ -1,0 +1,34 @@
+{
+    "hazards_present": true,
+    "overall_safety_summary": "The kitchen scene is mostly clear, but the saucepan handle is pointing outwards, presenting a risk of accidental bumping and spills.",
+    "hazards": [
+        {
+            "description": "The handle of the saucepan on the stove is pointing outwards towards the front-right edge.",
+            "explanation": "An outward-facing handle can easily be bumped, leading to the pot tipping over and spilling hot contents.",
+            "severity": "medium",
+            "confidence": 0.95,
+            "evidence_frames": [
+                "frame_0000.jpg",
+                "frame_0001.jpg"
+            ],
+            "older_adult_relevance": "Older adults with mobility or balance challenges are at a higher risk of accidentally knocking into protruding handles, which can cause severe burns or scalds.",
+            "recommended_action": "Turn the saucepan handle inward so it is positioned safely over the stovetop and cannot be easily bumped.",
+            "hazard_id": "P07_10_249_H001"
+        }
+    ],
+    "uncertainties": [
+        "Whether the stove burner is active and heating the saucepan.",
+        "Whether the lid knob is hot to the touch when handled with bare hands."
+    ],
+    "clip_id": "P07_10_249",
+    "participant": "P07",
+    "metadata": {
+        "model": "gemini-3.5-flash",
+        "temperature": 0.2,
+        "timestamp": "2026-08-02 17:46:27",
+        "subset": "test",
+        "task": "open_set_hazard_analysis",
+        "keyframes_used": 2,
+        "predefined_hazard_categories_used": false
+    }
+}

@@ -1,0 +1,34 @@
+{
+  "summary": "A first-person view of a kitchen where a person is reaching into a lower cabinet to retrieve a pan.",
+  "current_activity": "Retrieving a pan from a lower cabinet",
+  "activity_confidence": 0.9,
+  "objects_in_use": [
+    "pan",
+    "lower cabinet"
+  ],
+  "important_objects": [
+    "pan",
+    "lower cabinet",
+    "countertop",
+    "sink drainer"
+  ],
+  "environment": {
+    "stove_visible": false,
+    "sink_visible": true,
+    "counter_visible": true,
+    "other_context": [
+      "wooden floor",
+      "lower cabinets",
+      "person wearing sandals"
+    ]
+  },
+  "observations": [
+    "The person is standing on a wooden floor wearing black sandals.",
+    "A hand reaches into an open lower cabinet shelf.",
+    "The hand touches a black pan stored inside the cabinet.",
+    "A countertop with a sink drainer and some packaged items is visible on the left."
+  ],
+  "uncertainties": [
+    "The exact type of pan being retrieved is partially obscured by the cabinet structure."
+  ]
+}

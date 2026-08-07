@@ -1,0 +1,34 @@
+{
+  "hazards_present": true,
+  "overall_safety_summary": "The user is bending down to retrieve a pan from a low cabinet while wearing open-toed sandals, which presents mild risks of physical strain, balance loss, and foot injury from dropped objects.",
+  "hazards": [
+    {
+      "description": "Retrieving cookware from a very low cabinet shelf near floor level.",
+      "explanation": "Bending down deeply to lift objects can cause back strain or a loss of balance.",
+      "severity": "medium",
+      "confidence": 0.9,
+      "evidence_frames": [
+        "frame_0001.jpg",
+        "frame_0002.jpg"
+      ],
+      "older_adult_relevance": "Older adults are more susceptible to balance loss, dizziness upon bending, and musculoskeletal strain.",
+      "recommended_action": "Store heavy or frequently used cookware on waist-level shelves or in pull-out drawers to minimize deep bending."
+    },
+    {
+      "description": "Wearing open-toed sandals while handling heavy cookware in the kitchen.",
+      "explanation": "Open-toed footwear provides no protection if a heavy pan is accidentally dropped.",
+      "severity": "low",
+      "confidence": 0.9,
+      "evidence_frames": [
+        "frame_0000.jpg",
+        "frame_0001.jpg",
+        "frame_0002.jpg"
+      ],
+      "older_adult_relevance": "Older adults have more fragile skin and a higher risk of severe injury or complications from impact wounds on the feet.",
+      "recommended_action": "Wear closed-toe, supportive shoes with non-slip soles when working in the kitchen."
+    }
+  ],
+  "uncertainties": [
+    "The weight and exact material of the pan being retrieved are not fully clear from the visual angle."
+  ]
+}

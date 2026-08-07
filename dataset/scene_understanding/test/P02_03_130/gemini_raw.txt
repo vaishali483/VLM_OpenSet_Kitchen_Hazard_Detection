@@ -1,0 +1,36 @@
+{
+  "summary": "A person is chopping a white onion on a blue cutting board on a kitchen counter.",
+  "current_activity": "chopping onion",
+  "activity_confidence": 0.95,
+  "objects_in_use": [
+    "knife",
+    "onion",
+    "cutting board"
+  ],
+  "important_objects": [
+    "knife",
+    "onion",
+    "cutting board",
+    "sandwich maker",
+    "power strip"
+  ],
+  "environment": {
+    "stove_visible": false,
+    "sink_visible": false,
+    "counter_visible": true,
+    "other_context": [
+      "sandwich maker on the counter",
+      "power strip with multiple plugs",
+      "utensil holder"
+    ]
+  },
+  "observations": [
+    "The person is holding a knife in their right hand and stabilizing the onion with their left hand.",
+    "An onion is being sliced and chopped into smaller pieces on a blue cutting board.",
+    "An open sandwich maker is located on the left side of the counter.",
+    "A white power strip with several plugs is visible on the counter."
+  ],
+  "uncertainties": [
+    "The exact type of knife is partially obscured by the hand."
+  ]
+}

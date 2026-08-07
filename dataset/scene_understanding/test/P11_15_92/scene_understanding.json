@@ -1,0 +1,50 @@
+{
+    "summary": "A person wearing blue oven mitts is transferring a metal pot containing food into an open oven.",
+    "current_activity": "placing a pot into the oven",
+    "activity_confidence": 0.95,
+    "objects_in_use": [
+        "pot",
+        "oven mitts",
+        "oven"
+    ],
+    "important_objects": [
+        "pot",
+        "oven mitts",
+        "oven",
+        "stove",
+        "kettle",
+        "cutting board",
+        "chopped vegetables"
+    ],
+    "environment": {
+        "stove_visible": true,
+        "sink_visible": false,
+        "counter_visible": true,
+        "other_context": [
+            "open oven",
+            "kettle on counter",
+            "chopped vegetables on cutting board"
+        ]
+    },
+    "observations": [
+        "A person wearing light blue oven mitts holds a metal pot.",
+        "The pot contains a piece of food, possibly salmon, in liquid.",
+        "The oven door is open, and the pot is being lowered into it.",
+        "A kettle and a cutting board with chopped green vegetables are on the counter next to the stove."
+    ],
+    "uncertainties": [
+        "The exact type of food in the pot is difficult to identify with certainty.",
+        "The state of the oven (whether it is on or preheated) is not visible."
+    ],
+    "clip_id": "P11_15_92",
+    "participant": "test",
+    "metadata": {
+        "model": "gemini-3.5-flash",
+        "temperature": 0.2,
+        "timestamp": "2026-08-02 14:59:29",
+        "subset": "test",
+        "keyframes_used": 6,
+        "human_epic_annotation_removed": true,
+        "task": "scene_understanding_only"
+    }
+}

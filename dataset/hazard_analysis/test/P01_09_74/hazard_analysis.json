@@ -1,0 +1,34 @@
+{
+    "hazards_present": true,
+    "overall_safety_summary": "The kitchen environment is mostly safe, but holding a small bottle cap directly over the mixing bowl while pouring oil presents a minor risk of food contamination.",
+    "hazards": [
+        {
+            "description": "The user is holding a small bottle cap directly over the mixing bowl while pouring oil.",
+            "explanation": "The cap could easily slip from the user's hand into the flour mixture, creating a choking or contamination hazard if undetected.",
+            "severity": "low",
+            "confidence": 0.8,
+            "evidence_frames": [
+                "frame_0000.jpg",
+                "frame_0001.jpg",
+                "frame_0002.jpg"
+            ],
+            "older_adult_relevance": "Older adults experiencing hand tremors or reduced grip strength have a higher risk of dropping small objects during food preparation.",
+            "recommended_action": "Set the bottle cap down on the counter before pouring ingredients.",
+            "hazard_id": "P01_09_74_H001"
+        }
+    ],
+    "uncertainties": [
+        "Whether the nearby stovetop burners are hot or recently used."
+    ],
+    "clip_id": "P01_09_74",
+    "participant": "P01",
+    "metadata": {
+        "model": "gemini-3.5-flash",
+        "temperature": 0.2,
+        "timestamp": "2026-08-02 17:13:05",
+        "subset": "test",
+        "task": "open_set_hazard_analysis",
+        "keyframes_used": 3,
+        "predefined_hazard_categories_used": false
+    }
+}

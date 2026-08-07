@@ -1,0 +1,46 @@
+{
+    "summary": "A person is cooking spaghetti with tomatoes in a frying pan on a gas stove and adjusting one of the stove knobs.",
+    "current_activity": "adjusting stove knob while cooking",
+    "activity_confidence": 0.95,
+    "objects_in_use": [
+        "stove knob",
+        "frying pan"
+    ],
+    "important_objects": [
+        "frying pan",
+        "spaghetti",
+        "stove",
+        "pot with lid",
+        "spice jars",
+        "food packaging"
+    ],
+    "environment": {
+        "stove_visible": true,
+        "sink_visible": false,
+        "counter_visible": true,
+        "other_context": [
+            "kitchen counter next to the stove",
+            "various food containers and jars on the counter"
+        ]
+    },
+    "observations": [
+        "A frying pan containing spaghetti and tomatoes is on the stove burner.",
+        "A hand is touching and adjusting one of the stove control knobs.",
+        "A covered pot and another pan are also on the stovetop.",
+        "The countertop next to the stove holds several jars, containers, and packaged food items."
+    ],
+    "uncertainties": [
+        "The exact setting of the stove knob being adjusted is not clearly visible."
+    ],
+    "clip_id": "P02_129_458",
+    "participant": "test",
+    "metadata": {
+        "model": "gemini-3.5-flash",
+        "temperature": 0.2,
+        "timestamp": "2026-08-02 14:38:04",
+        "subset": "test",
+        "keyframes_used": 2,
+        "human_epic_annotation_removed": true,
+        "task": "scene_understanding_only"
+    }
+}

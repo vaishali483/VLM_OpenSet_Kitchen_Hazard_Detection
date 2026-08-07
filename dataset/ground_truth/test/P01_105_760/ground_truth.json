@@ -1,0 +1,22 @@
+{
+    "clip_id": "P01_105_760",
+    "participant": "P01",
+    "keyframes": [
+        "frame_0000.jpg",
+        "frame_0002.jpg"
+    ],
+    "clip_contains_hazard": null,
+    "ground_truth_hazards": [
+        {
+            "ground_truth_id": "P01_105_760_GT001",
+            "description": "The saucepan handle appears to protrude into the stove controls.",
+            "severity": "low",
+            "evidence_frames": [
+                "frame_0000.jpg",
+                "frame_0002.jpg"
+            ],
+            "is_novel_relative_to_rule_baseline": true,
+            "notes": "Visible spatial hazard; rule-based detector may not capture handle orientation."
+        }
+    ]
+}

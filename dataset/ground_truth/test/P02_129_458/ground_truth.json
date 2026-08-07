@@ -1,0 +1,22 @@
+{
+    "clip_id": "P02_129_458",
+    "participant": "P02",
+    "keyframes": [
+        "frame_0000.jpg",
+        "frame_0001.jpg"
+    ],
+    "clip_contains_hazard": null,
+    "ground_truth_hazards": [
+        {
+            "ground_truth_id": "P02_129_458_GT001",
+            "description": "The handle of the frying pan is turned outwards to the left, protruding over the edge of the stove.",
+            "severity": "low",
+            "evidence_frames": [
+                "frame_0000.jpg",
+                "frame_0001.jpg"
+            ],
+            "is_novel_relative_to_rule_baseline": true,
+            "notes": "Visible spatial hazard"
+        }
+    ]
+}

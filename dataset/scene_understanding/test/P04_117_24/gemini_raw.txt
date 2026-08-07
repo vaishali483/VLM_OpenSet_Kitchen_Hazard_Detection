@@ -1,0 +1,40 @@
+{
+  "summary": "A person is slicing a loaf of bread on a wooden cutting board on a kitchen counter next to a pot of scrambled eggs and a container of butter.",
+  "current_activity": "slicing bread",
+  "activity_confidence": 0.95,
+  "objects_in_use": [
+    "knife",
+    "bread",
+    "cutting board"
+  ],
+  "important_objects": [
+    "knife",
+    "bread",
+    "cutting board",
+    "pot of scrambled eggs",
+    "butter container",
+    "multi-cooker",
+    "toaster"
+  ],
+  "environment": {
+    "stove_visible": true,
+    "sink_visible": false,
+    "counter_visible": true,
+    "other_context": [
+      "induction cooktop surface",
+      "toaster",
+      "multi-cooker",
+      "green kitchen towel"
+    ]
+  },
+  "observations": [
+    "The person is holding a loaf of bread with their left hand and slicing it with a knife in their right hand.",
+    "A pot containing scrambled eggs and a spatula sits on the counter above the cutting board.",
+    "An open container of yellow spread or butter is positioned to the right of the cutting board.",
+    "A toaster and a multi-cooker are visible on the countertop."
+  ],
+  "uncertainties": [
+    "Whether the black surface is an active induction cooktop or just a countertop.",
+    "The exact brand or type of the white and blue tub on the left."
+  ]
+}

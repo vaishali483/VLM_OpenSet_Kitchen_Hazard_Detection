@@ -1,0 +1,14 @@
+{
+    "clip_id": "P11_15_92",
+    "participant": "P11",
+    "keyframes": [
+        "frame_0000.jpg",
+        "frame_0001.jpg",
+        "frame_0002.jpg",
+        "frame_0003.jpg",
+        "frame_0004.jpg",
+        "frame_0005.jpg"
+    ],
+    "clip_contains_hazard": null,
+    "ground_truth_hazards": []
+}

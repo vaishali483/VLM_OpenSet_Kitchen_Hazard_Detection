@@ -1,0 +1,50 @@
+{
+    "summary": "A first-person perspective of a person slicing small red tomatoes on a wooden cutting board placed on a kitchen counter.",
+    "current_activity": "slicing tomatoes",
+    "activity_confidence": 0.95,
+    "objects_in_use": [
+        "knife",
+        "cutting board",
+        "tomato"
+    ],
+    "important_objects": [
+        "knife",
+        "cutting board",
+        "tomato",
+        "pot",
+        "stove"
+    ],
+    "environment": {
+        "stove_visible": true,
+        "sink_visible": false,
+        "counter_visible": true,
+        "other_context": [
+            "chopped ingredients on the cutting board",
+            "packaged salad greens",
+            "condiment bottles",
+            "glass jars"
+        ]
+    },
+    "observations": [
+        "The person is holding a knife in their right hand and stabilizing a tomato with their left hand.",
+        "A wooden cutting board is positioned centrally on the counter.",
+        "A metal pot with a lid is sitting on the stove top to the left.",
+        "There are chopped white ingredients, possibly garlic or onion, on the right side of the cutting board.",
+        "The person is wearing a watch on their left wrist."
+    ],
+    "uncertainties": [
+        "The exact identity of the chopped white ingredient on the cutting board is not fully clear.",
+        "The contents of the pot on the stove are not visible."
+    ],
+    "clip_id": "P07_10_217",
+    "participant": "test",
+    "metadata": {
+        "model": "gemini-3.5-flash",
+        "temperature": 0.2,
+        "timestamp": "2026-08-02 14:51:43",
+        "subset": "test",
+        "keyframes_used": 4,
+        "human_epic_annotation_removed": true,
+        "task": "scene_understanding_only"
+    }
+}

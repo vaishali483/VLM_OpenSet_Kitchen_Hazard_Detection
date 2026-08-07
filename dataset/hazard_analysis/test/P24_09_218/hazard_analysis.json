@@ -1,0 +1,54 @@
+{
+    "hazards_present": true,
+    "overall_safety_summary": "The scene shows a person peeling a carrot with a knife using an unsafe technique (peeling towards their hand) while food cooks nearby on the stove, with a metal fork resting close to the burner.",
+    "hazards": [
+        {
+            "description": "The person is peeling a carrot with a knife, drawing the blade directly towards their thumb and hand.",
+            "explanation": "This peeling technique increases the risk of accidental cuts or lacerations if the knife slips.",
+            "severity": "medium",
+            "confidence": 0.95,
+            "evidence_frames": [
+                "frame_0000.jpg",
+                "frame_0001.jpg",
+                "frame_0003.jpg",
+                "frame_0005.jpg",
+                "frame_0006.jpg",
+                "frame_0008.jpg",
+                "frame_0009.jpg"
+            ],
+            "older_adult_relevance": "Older adults may have reduced hand stability, thinner skin, or slower healing times, making knife cuts particularly hazardous.",
+            "recommended_action": "Use a dedicated vegetable peeler or peel in a direction away from the body and hands.",
+            "hazard_id": "P24_09_218_H001"
+        },
+        {
+            "description": "A metal fork is resting on the stove surface directly next to the pan where food is cooking.",
+            "explanation": "The metal fork can absorb heat from the nearby burner, presenting a potential burn hazard when handled.",
+            "severity": "low",
+            "confidence": 0.85,
+            "evidence_frames": [
+                "frame_0000.jpg",
+                "frame_0001.jpg",
+                "frame_0002.jpg",
+                "frame_0003.jpg"
+            ],
+            "older_adult_relevance": "Older adults may have reduced thermal sensitivity, leading to delayed reactions and more severe contact burns.",
+            "recommended_action": "Place the fork on a spoon rest or countertop away from the heat source.",
+            "hazard_id": "P24_09_218_H002"
+        }
+    ],
+    "uncertainties": [
+        "The exact heat level of the stove burner under the pan is not visible.",
+        "Whether the peeling tool is a standard paring knife or a specialized knife."
+    ],
+    "clip_id": "P24_09_218",
+    "participant": "P24",
+    "metadata": {
+        "model": "gemini-3.5-flash",
+        "temperature": 0.2,
+        "timestamp": "2026-08-02 17:55:27",
+        "subset": "test",
+        "task": "open_set_hazard_analysis",
+        "keyframes_used": 10,
+        "predefined_hazard_categories_used": false
+    }
+}

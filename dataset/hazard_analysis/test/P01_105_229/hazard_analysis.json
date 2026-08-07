@@ -1,0 +1,33 @@
+{
+    "hazards_present": true,
+    "overall_safety_summary": "The user is attempting to cut open a small food package with a large kitchen knife while holding the package in their hand, which poses a high risk of a slip and subsequent cut injury.",
+    "hazards": [
+        {
+            "description": "Cutting a hand-held food package with a large kitchen knife.",
+            "explanation": "Holding a flexible package in one hand while cutting it with a sharp knife in the other significantly increases the risk of the knife slipping and causing a severe laceration.",
+            "severity": "high",
+            "confidence": 0.95,
+            "evidence_frames": [
+                "frame_0000.jpg",
+                "frame_0001.jpg"
+            ],
+            "older_adult_relevance": "Older adults may experience reduced hand strength, tremors, or thinner skin, which increases the likelihood of a slip and the severity of a resulting cut.",
+            "recommended_action": "Place the package flat on the cutting board and use the knife or kitchen shears to open it safely.",
+            "hazard_id": "P01_105_229_H001"
+        }
+    ],
+    "uncertainties": [
+        "The exact material and toughness of the food package being cut are not fully clear."
+    ],
+    "clip_id": "P01_105_229",
+    "participant": "P01",
+    "metadata": {
+        "model": "gemini-3.5-flash",
+        "temperature": 0.2,
+        "timestamp": "2026-08-02 17:15:13",
+        "subset": "test",
+        "task": "open_set_hazard_analysis",
+        "keyframes_used": 2,
+        "predefined_hazard_categories_used": false
+    }
+}

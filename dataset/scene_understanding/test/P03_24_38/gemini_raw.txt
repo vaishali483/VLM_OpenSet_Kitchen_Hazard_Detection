@@ -1,0 +1,35 @@
+{
+  "summary": "A person is pouring cooking oil from a plastic bottle into a saucepan containing chopped potatoes on an electric stove.",
+  "current_activity": "pouring oil into a pan",
+  "activity_confidence": 0.95,
+  "objects_in_use": [
+    "cooking oil bottle",
+    "saucepan"
+  ],
+  "important_objects": [
+    "saucepan with potatoes",
+    "saucepan with boiling vegetables",
+    "cooking oil bottle",
+    "stove"
+  ],
+  "environment": {
+    "stove_visible": true,
+    "sink_visible": false,
+    "counter_visible": true,
+    "other_context": [
+      "Electric stove top",
+      "Knife block on the counter",
+      "Tiled wall background"
+    ]
+  },
+  "observations": [
+    "A person is pouring yellow liquid from a plastic bottle into a saucepan containing chopped potatoes.",
+    "Another pot on the stove contains orange vegetables cooking in water.",
+    "The person holds the saucepan handle with one hand while pouring with the other.",
+    "In the final frame, the person is holding the green cap of the bottle."
+  ],
+  "uncertainties": [
+    "The exact type of cooking oil being used.",
+    "The exact ingredients cooking in the second pot."
+  ]
+}

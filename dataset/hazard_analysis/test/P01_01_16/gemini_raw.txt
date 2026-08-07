@@ -1,0 +1,21 @@
+{
+  "hazards_present": true,
+  "overall_safety_summary": "The kitchen countertop is mostly clear, but an open cabinet door or drawer below the counter creates a physical obstruction and tripping hazard in the workspace.",
+  "hazards": [
+    {
+      "description": "A cabinet door or drawer below the counter is left open and protrudes into the standing area.",
+      "explanation": "This creates a physical obstacle in a narrow workspace, increasing the risk of painful bumps, bruises, or trips.",
+      "severity": "medium",
+      "confidence": 0.9,
+      "evidence_frames": [
+        "frame_0001.jpg",
+        "frame_0002.jpg"
+      ],
+      "older_adult_relevance": "Older adults with compromised balance or reduced peripheral vision are highly susceptible to tripping over low-lying obstacles.",
+      "recommended_action": "Close all cabinet doors and drawers fully when they are not actively being accessed."
+    }
+  ],
+  "uncertainties": [
+    "The exact contents of the small package next to the blue-lidded container."
+  ]
+}

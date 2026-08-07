@@ -1,175 +1,355 @@
 {
-    "name": "kitchen_rules",
-    "version": "1.0",
-    "description": "A manually defined closed-set kitchen hazard ruleset using YOLO object detections and bounding-box relationships.",
-    "frozen_before_final_evaluation": false,
-    "rules": [
-        {
-            "rule_id": "R001",
-            "name": "Person close to knife",
-            "type": "object_proximity",
-            "object_group_1": [
-                "person"
-            ],
-            "object_group_2": [
-                "knife"
-            ],
-            "min_confidence": 0.25,
-            "max_gap_ratio": 0.08,
-            "severity": "medium",
-            "description": "A person is very close to a detected knife.",
-            "explanation": "Close interaction with a knife may create a cutting risk.",
-            "older_adult_relevance": "Reduced grip stability, vision or reaction time may increase the likelihood of injury.",
-            "recommended_action": "Use a stable cutting surface and keep fingers away from the knife blade."
-        },
-        {
-            "rule_id": "R002",
-            "name": "Person close to scissors",
-            "type": "object_proximity",
-            "object_group_1": [
-                "person"
-            ],
-            "object_group_2": [
-                "scissors"
-            ],
-            "min_confidence": 0.25,
-            "max_gap_ratio": 0.08,
-            "severity": "medium",
-            "description": "A person is very close to detected scissors.",
-            "explanation": "Close interaction with scissors may create a cutting or puncture risk.",
-            "older_adult_relevance": "Reduced dexterity or slower hand control may increase the risk of injury.",
-            "recommended_action": "Keep scissors closed when they are not being used and handle them carefully."
-        },
-        {
-            "rule_id": "R003",
-            "name": "Knife near visible boundary",
-            "type": "near_image_edge",
-            "object_classes": [
-                "knife"
-            ],
-            "min_confidence": 0.25,
-            "edge_margin_ratio": 0.15,
-            "severity": "medium",
-            "description": "A detected knife is positioned near the visible image boundary.",
-            "explanation": "The knife may be close to the edge of the working surface and could fall or be knocked off.",
-            "older_adult_relevance": "A knife near the edge may be difficult to notice and avoid, particularly with reduced peripheral vision.",
-            "recommended_action": "Move the knife to a stable position away from the counter edge."
-        },
-        {
-            "rule_id": "R004",
-            "name": "Scissors near visible boundary",
-            "type": "near_image_edge",
-            "object_classes": [
-                "scissors"
-            ],
-            "min_confidence": 0.25,
-            "edge_margin_ratio": 0.15,
-            "severity": "medium",
-            "description": "Detected scissors are positioned near the visible image boundary.",
-            "explanation": "The scissors may be close to the edge of the working surface and could fall or be knocked off.",
-            "older_adult_relevance": "A sharp object near an edge may be harder to notice and may create a puncture or cutting risk.",
-            "recommended_action": "Place the scissors in a stable location away from the counter edge."
-        },
-        {
-            "rule_id": "R005",
-            "name": "Cup near visible boundary",
-            "type": "near_image_edge",
-            "object_classes": [
-                "cup"
-            ],
-            "min_confidence": 0.25,
-            "edge_margin_ratio": 0.12,
-            "severity": "low",
-            "description": "A detected cup is positioned near the visible image boundary.",
-            "explanation": "The cup may be close to the edge of the work surface and could be knocked over.",
-            "older_adult_relevance": "A spilled drink may create a slipping risk or may be difficult to clean quickly.",
-            "recommended_action": "Move the cup farther from the edge of the work surface."
-        },
-        {
-            "rule_id": "R006",
-            "name": "Bottle near visible boundary",
-            "type": "near_image_edge",
-            "object_classes": [
-                "bottle"
-            ],
-            "min_confidence": 0.25,
-            "edge_margin_ratio": 0.12,
-            "severity": "low",
-            "description": "A detected bottle is positioned near the visible image boundary.",
-            "explanation": "The bottle may be close to the counter edge and could fall, spill or break.",
-            "older_adult_relevance": "A fallen bottle or spilled liquid may create an obstruction or slipping hazard.",
-            "recommended_action": "Place the bottle in a stable area away from the counter edge."
-        },
-        {
-            "rule_id": "R007",
-            "name": "Bowl near visible boundary",
-            "type": "near_image_edge",
-            "object_classes": [
-                "bowl"
-            ],
-            "min_confidence": 0.25,
-            "edge_margin_ratio": 0.12,
-            "severity": "low",
-            "description": "A detected bowl is positioned near the visible image boundary.",
-            "explanation": "The bowl may be close to the edge of the work surface and could be knocked over.",
-            "older_adult_relevance": "Spilled food or a fallen bowl may create clutter, slipping risk or a need for sudden movement.",
-            "recommended_action": "Move the bowl toward the centre of the working surface."
-        },
-        {
-            "rule_id": "R008",
-            "name": "Person close to oven",
-            "type": "object_proximity",
-            "object_group_1": [
-                "person"
-            ],
-            "object_group_2": [
-                "oven"
-            ],
-            "min_confidence": 0.25,
-            "max_gap_ratio": 0.05,
-            "severity": "low",
-            "description": "A person is very close to a detected oven.",
-            "explanation": "Close interaction with an oven may create a burn risk if the appliance or nearby cookware is hot.",
-            "older_adult_relevance": "Reduced heat sensitivity, balance or reaction speed may increase burn risk.",
-            "recommended_action": "Maintain a stable posture and use appropriate protection when interacting with the oven."
-        },
-        {
-            "rule_id": "R009",
-            "name": "Person close to microwave",
-            "type": "object_proximity",
-            "object_group_1": [
-                "person"
-            ],
-            "object_group_2": [
-                "microwave"
-            ],
-            "min_confidence": 0.25,
-            "max_gap_ratio": 0.05,
-            "severity": "low",
-            "description": "A person is very close to a detected microwave.",
-            "explanation": "Removing heated containers from a microwave may create a burn or spill risk.",
-            "older_adult_relevance": "Reduced grip strength may make hot containers more difficult to handle safely.",
-            "recommended_action": "Use heat-resistant protection and hold heated containers securely."
-        },
-        {
-            "rule_id": "R010",
-            "name": "Sharp object close to cup or bottle",
-            "type": "object_proximity",
-            "object_group_1": [
-                "knife",
-                "scissors"
-            ],
-            "object_group_2": [
-                "cup",
-                "bottle"
-            ],
-            "min_confidence": 0.25,
-            "max_gap_ratio": 0.05,
-            "severity": "low",
-            "description": "A sharp object is positioned very close to a cup or bottle.",
-            "explanation": "Reaching for the container may result in accidental contact with the nearby sharp object.",
-            "older_adult_relevance": "Reduced visual awareness or hand coordination may increase the likelihood of accidental contact.",
-            "recommended_action": "Separate sharp tools from cups, bottles and frequently reached objects."
-        }
-    ]
+  "name": "kitchen_rules",
+  "version": "1.1",
+  "description": "A manually defined closed-set kitchen hazard ruleset using YOLO object detections and bounding-box relationships.",
+  "frozen_before_final_evaluation": false,
+  "rules": [
+    {
+      "rule_id": "R001",
+      "name": "Person close to knife",
+      "type": "object_proximity",
+      "object_group_1": [
+        "person"
+      ],
+      "object_group_2": [
+        "knife"
+      ],
+      "min_confidence": 0.25,
+      "max_gap_ratio": 0.08,
+      "severity": "medium",
+      "description": "A person is very close to a detected knife.",
+      "explanation": "Close interaction with a knife may create a cutting risk.",
+      "older_adult_relevance": "Reduced grip stability, vision or reaction time may increase the likelihood of injury.",
+      "recommended_action": "Use a stable cutting surface and keep fingers away from the knife blade."
+    },
+    {
+      "rule_id": "R002",
+      "name": "Person close to scissors",
+      "type": "object_proximity",
+      "object_group_1": [
+        "person"
+      ],
+      "object_group_2": [
+        "scissors"
+      ],
+      "min_confidence": 0.25,
+      "max_gap_ratio": 0.08,
+      "severity": "medium",
+      "description": "A person is very close to detected scissors.",
+      "explanation": "Close interaction with scissors may create a cutting or puncture risk.",
+      "older_adult_relevance": "Reduced dexterity or slower hand control may increase the risk of injury.",
+      "recommended_action": "Keep scissors closed when they are not being used and handle them carefully."
+    },
+    {
+      "rule_id": "R003",
+      "name": "Knife near visible boundary",
+      "type": "near_image_edge",
+      "object_classes": [
+        "knife"
+      ],
+      "min_confidence": 0.25,
+      "edge_margin_ratio": 0.15,
+      "severity": "medium",
+      "description": "A detected knife is positioned near the visible image boundary.",
+      "explanation": "The knife may be close to the edge of the working surface and could fall or be knocked off.",
+      "older_adult_relevance": "A knife near the edge may be difficult to notice and avoid, particularly with reduced peripheral vision.",
+      "recommended_action": "Move the knife to a stable position away from the counter edge."
+    },
+    {
+      "rule_id": "R004",
+      "name": "Scissors near visible boundary",
+      "type": "near_image_edge",
+      "object_classes": [
+        "scissors"
+      ],
+      "min_confidence": 0.25,
+      "edge_margin_ratio": 0.15,
+      "severity": "medium",
+      "description": "Detected scissors are positioned near the visible image boundary.",
+      "explanation": "The scissors may be close to the edge of the working surface and could fall or be knocked off.",
+      "older_adult_relevance": "A sharp object near an edge may be harder to notice and may create a puncture or cutting risk.",
+      "recommended_action": "Place the scissors in a stable location away from the counter edge."
+    },
+    {
+      "rule_id": "R005",
+      "name": "Cup near visible boundary",
+      "type": "near_image_edge",
+      "object_classes": [
+        "cup"
+      ],
+      "min_confidence": 0.25,
+      "edge_margin_ratio": 0.12,
+      "severity": "low",
+      "description": "A detected cup is positioned near the visible image boundary.",
+      "explanation": "The cup may be close to the edge of the work surface and could be knocked over.",
+      "older_adult_relevance": "A spilled drink may create a slipping risk or may be difficult to clean quickly.",
+      "recommended_action": "Move the cup farther from the edge of the work surface."
+    },
+    {
+      "rule_id": "R006",
+      "name": "Bottle near visible boundary",
+      "type": "near_image_edge",
+      "object_classes": [
+        "bottle"
+      ],
+      "min_confidence": 0.25,
+      "edge_margin_ratio": 0.12,
+      "severity": "low",
+      "description": "A detected bottle is positioned near the visible image boundary.",
+      "explanation": "The bottle may be close to the counter edge and could fall, spill or break.",
+      "older_adult_relevance": "A fallen bottle or spilled liquid may create an obstruction or slipping hazard.",
+      "recommended_action": "Place the bottle in a stable area away from the counter edge."
+    },
+    {
+      "rule_id": "R007",
+      "name": "Bowl near visible boundary",
+      "type": "near_image_edge",
+      "object_classes": [
+        "bowl"
+      ],
+      "min_confidence": 0.25,
+      "edge_margin_ratio": 0.12,
+      "severity": "low",
+      "description": "A detected bowl is positioned near the visible image boundary.",
+      "explanation": "The bowl may be close to the edge of the work surface and could be knocked over.",
+      "older_adult_relevance": "Spilled food or a fallen bowl may create clutter, slipping risk or a need for sudden movement.",
+      "recommended_action": "Move the bowl toward the centre of the working surface."
+    },
+    {
+      "rule_id": "R008",
+      "name": "Person close to oven",
+      "type": "object_proximity",
+      "object_group_1": [
+        "person"
+      ],
+      "object_group_2": [
+        "oven"
+      ],
+      "min_confidence": 0.25,
+      "max_gap_ratio": 0.05,
+      "severity": "low",
+      "description": "A person is very close to a detected oven.",
+      "explanation": "Close interaction with an oven may create a burn risk if the appliance or nearby cookware is hot.",
+      "older_adult_relevance": "Reduced heat sensitivity, balance or reaction speed may increase burn risk.",
+      "recommended_action": "Maintain a stable posture and use appropriate protection when interacting with the oven."
+    },
+    {
+      "rule_id": "R009",
+      "name": "Person close to microwave",
+      "type": "object_proximity",
+      "object_group_1": [
+        "person"
+      ],
+      "object_group_2": [
+        "microwave"
+      ],
+      "min_confidence": 0.25,
+      "max_gap_ratio": 0.05,
+      "severity": "low",
+      "description": "A person is very close to a detected microwave.",
+      "explanation": "Removing heated containers from a microwave may create a burn or spill risk.",
+      "older_adult_relevance": "Reduced grip strength may make hot containers more difficult to handle safely.",
+      "recommended_action": "Use heat-resistant protection and hold heated containers securely."
+    },
+    {
+      "rule_id": "R010",
+      "name": "Sharp object close to cup or bottle",
+      "type": "object_proximity",
+      "object_group_1": [
+        "knife",
+        "scissors"
+      ],
+      "object_group_2": [
+        "cup",
+        "bottle"
+      ],
+      "min_confidence": 0.25,
+      "max_gap_ratio": 0.05,
+      "severity": "low",
+      "description": "A sharp object is positioned very close to a cup or bottle.",
+      "explanation": "Reaching for the container may result in accidental contact with the nearby sharp object.",
+      "older_adult_relevance": "Reduced visual awareness or hand coordination may increase the likelihood of accidental contact.",
+      "recommended_action": "Separate sharp tools from cups, bottles and frequently reached objects."
+    },
+    {
+      "rule_id": "R011",
+      "name": "Person close to toaster",
+      "type": "object_proximity",
+      "object_group_1": [
+        "person"
+      ],
+      "object_group_2": [
+        "toaster"
+      ],
+      "min_confidence": 0.25,
+      "max_gap_ratio": 0.05,
+      "severity": "medium",
+      "description": "A person is very close to a detected toaster.",
+      "explanation": "Close interaction with an operating or recently used toaster may create a contact-burn risk.",
+      "older_adult_relevance": "Reduced heat sensitivity, balance or reaction speed may make accidental contact more harmful.",
+      "recommended_action": "Avoid touching hot toaster surfaces and allow the appliance to cool before moving or cleaning it."
+    },
+    {
+      "rule_id": "R012",
+      "name": "Knife close to sink",
+      "type": "object_proximity",
+      "object_group_1": [
+        "knife"
+      ],
+      "object_group_2": [
+        "sink"
+      ],
+      "min_confidence": 0.25,
+      "max_gap_ratio": 0.06,
+      "severity": "medium",
+      "description": "A detected knife is positioned very close to a sink.",
+      "explanation": "A knife left in or near a sink may be obscured by dishes or water and may cause an accidental cut during washing.",
+      "older_adult_relevance": "Reduced vision or touch sensitivity may make a partially hidden blade harder to notice.",
+      "recommended_action": "Wash the knife separately and place it in a clearly visible, stable location."
+    },
+    {
+      "rule_id": "R013",
+      "name": "Scissors close to sink",
+      "type": "object_proximity",
+      "object_group_1": [
+        "scissors"
+      ],
+      "object_group_2": [
+        "sink"
+      ],
+      "min_confidence": 0.25,
+      "max_gap_ratio": 0.06,
+      "severity": "medium",
+      "description": "Detected scissors are positioned very close to a sink.",
+      "explanation": "Scissors left among wet dishes may be difficult to see and may create a cutting or puncture risk.",
+      "older_adult_relevance": "Reduced visual contrast sensitivity or hand control may increase the likelihood of accidental contact.",
+      "recommended_action": "Remove the scissors from the sink area and store them closed in a visible location."
+    },
+    {
+      "rule_id": "R014",
+      "name": "Sharp object close to bowl",
+      "type": "object_proximity",
+      "object_group_1": [
+        "knife",
+        "scissors"
+      ],
+      "object_group_2": [
+        "bowl"
+      ],
+      "min_confidence": 0.25,
+      "max_gap_ratio": 0.05,
+      "severity": "low",
+      "description": "A sharp object is positioned very close to a detected bowl.",
+      "explanation": "Reaching for or moving the bowl may cause accidental contact with the nearby sharp object.",
+      "older_adult_relevance": "Reduced hand coordination or visual awareness may increase the chance of touching the sharp object.",
+      "recommended_action": "Move knives and scissors away from bowls and other frequently handled containers."
+    },
+    {
+      "rule_id": "R015",
+      "name": "Bottle close to hot appliance",
+      "type": "object_proximity",
+      "object_group_1": [
+        "bottle"
+      ],
+      "object_group_2": [
+        "oven",
+        "toaster"
+      ],
+      "min_confidence": 0.25,
+      "max_gap_ratio": 0.08,
+      "severity": "medium",
+      "description": "A detected bottle is positioned close to an oven or toaster.",
+      "explanation": "A bottle placed near a hot appliance may become hot, melt, leak or contain a flammable cooking liquid.",
+      "older_adult_relevance": "A heated or leaking bottle may be harder to handle quickly and may increase burn, fire or slipping risk.",
+      "recommended_action": "Move the bottle away from hot appliances and place it on a cool, stable surface."
+    },
+    {
+      "rule_id": "R016",
+      "name": "Cup or bowl close to oven",
+      "type": "object_proximity",
+      "object_group_1": [
+        "cup",
+        "bowl"
+      ],
+      "object_group_2": [
+        "oven"
+      ],
+      "min_confidence": 0.25,
+      "max_gap_ratio": 0.06,
+      "severity": "medium",
+      "description": "A detected cup or bowl is positioned very close to an oven.",
+      "explanation": "The container may hold hot contents, become heated or be knocked over while the oven is being used.",
+      "older_adult_relevance": "Reduced grip strength or reaction speed may increase the likelihood and severity of a hot spill.",
+      "recommended_action": "Place cups and bowls on a stable surface away from the oven opening and hot cookware."
+    },
+    {
+      "rule_id": "R017",
+      "name": "Cup or bowl close to microwave",
+      "type": "object_proximity",
+      "object_group_1": [
+        "cup",
+        "bowl"
+      ],
+      "object_group_2": [
+        "microwave"
+      ],
+      "min_confidence": 0.25,
+      "max_gap_ratio": 0.05,
+      "severity": "low",
+      "description": "A detected cup or bowl is positioned very close to a microwave.",
+      "explanation": "The container may have been heated and could cause a burn or spill when moved.",
+      "older_adult_relevance": "Reduced grip strength or heat sensitivity may make a hot container more difficult to handle safely.",
+      "recommended_action": "Check the container temperature and use heat-resistant protection before lifting it."
+    },
+    {
+      "rule_id": "R018",
+      "name": "Fork near visible boundary",
+      "type": "near_image_edge",
+      "object_classes": [
+        "fork"
+      ],
+      "min_confidence": 0.25,
+      "edge_margin_ratio": 0.12,
+      "severity": "low",
+      "description": "A detected fork is positioned near the visible image boundary.",
+      "explanation": "The fork may be close to the edge of the working surface and could fall or cause a puncture injury.",
+      "older_adult_relevance": "A small utensil near an edge may be difficult to notice, particularly with reduced peripheral vision.",
+      "recommended_action": "Move the fork farther from the edge and place it flat on a stable surface."
+    },
+    {
+      "rule_id": "R019",
+      "name": "Toaster near visible boundary",
+      "type": "near_image_edge",
+      "object_classes": [
+        "toaster"
+      ],
+      "min_confidence": 0.25,
+      "edge_margin_ratio": 0.12,
+      "severity": "medium",
+      "description": "A detected toaster is positioned near the visible image boundary.",
+      "explanation": "The toaster may be close to the edge of the work surface and could be pulled, knocked or fall while hot or connected to power.",
+      "older_adult_relevance": "A falling hot appliance or trailing power cable may create burn, impact and tripping risks.",
+      "recommended_action": "Place the toaster on a stable surface away from the counter edge and keep its cable secured."
+    },
+    {
+      "rule_id": "R020",
+      "name": "Metal utensil close to microwave",
+      "type": "object_proximity",
+      "object_group_1": [
+        "fork",
+        "knife",
+        "spoon"
+      ],
+      "object_group_2": [
+        "microwave"
+      ],
+      "min_confidence": 0.25,
+      "max_gap_ratio": 0.02,
+      "severity": "high",
+      "description": "A detected metal utensil is positioned immediately next to or overlapping a microwave detection.",
+      "explanation": "The utensil may have been placed inside or directly beside the microwave, creating a possible arcing or fire risk if the appliance is operated.",
+      "older_adult_relevance": "A sudden spark, smoke or fire may require a rapid response that can be more difficult with reduced mobility or reaction time.",
+      "recommended_action": "Do not operate the microwave until all metal utensils have been removed from inside it."
+    }
+  ]
 }

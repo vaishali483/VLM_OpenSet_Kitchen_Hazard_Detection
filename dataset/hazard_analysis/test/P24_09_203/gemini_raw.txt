@@ -1,0 +1,22 @@
+{
+  "hazards_present": true,
+  "overall_safety_summary": "The scene presents a high risk of injury due to the user peeling a vegetable with a small, bare blade lacking a handle, which could easily slip and cause a severe cut.",
+  "hazards": [
+    {
+      "description": "The user is peeling a carrot using a small, bare metal blade without a protective handle.",
+      "explanation": "Lacking a proper handle significantly reduces grip and control, making a slip and subsequent deep laceration highly likely.",
+      "severity": "high",
+      "confidence": 0.95,
+      "evidence_frames": [
+        "frame_0002.jpg",
+        "frame_0003.jpg",
+        "frame_0004.jpg"
+      ],
+      "older_adult_relevance": "Older adults with reduced hand strength, arthritis, or tremors are at an even higher risk of losing control of a handle-less blade.",
+      "recommended_action": "Replace the bare blade with a proper, ergonomically designed vegetable peeler that has a secure, non-slip handle."
+    }
+  ],
+  "uncertainties": [
+    "The exact type of blade being used, such as a utility blade or a broken peeler component."
+  ]
+}

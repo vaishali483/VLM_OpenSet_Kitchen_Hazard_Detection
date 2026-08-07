@@ -1,0 +1,48 @@
+{
+    "summary": "A person is cooking a rice dish in a frying pan on an electric stove, stirring the food with a spatula and adjusting the stove's control knobs.",
+    "current_activity": "stirring food and adjusting stove controls",
+    "activity_confidence": 0.95,
+    "objects_in_use": [
+        "frying pan",
+        "spatula",
+        "stove knob"
+    ],
+    "important_objects": [
+        "frying pan",
+        "spatula",
+        "stove",
+        "spice jars",
+        "plate",
+        "spoon"
+    ],
+    "environment": {
+        "stove_visible": true,
+        "sink_visible": false,
+        "counter_visible": true,
+        "other_context": [
+            "wooden countertop on the left",
+            "tray with spice jars on the right",
+            "blue plate with a spoon on the left side of the stove"
+        ]
+    },
+    "observations": [
+        "The person is stirring a rice-based dish in a frying pan using a black spatula.",
+        "The person's left hand is seen adjusting the stove knobs in multiple frames.",
+        "A blue plate with a spoon is resting on the wooden counter to the left of the stove.",
+        "A collection of spice bottles is organized on a tray to the right of the stove."
+    ],
+    "uncertainties": [
+        "The exact ingredients of the food being cooked in the pan."
+    ],
+    "clip_id": "P01_01_297",
+    "participant": "test",
+    "metadata": {
+        "model": "gemini-3.5-flash",
+        "temperature": 0.2,
+        "timestamp": "2026-08-02 14:17:52",
+        "subset": "test",
+        "keyframes_used": 4,
+        "human_epic_annotation_removed": true,
+        "task": "scene_understanding_only"
+    }
+}

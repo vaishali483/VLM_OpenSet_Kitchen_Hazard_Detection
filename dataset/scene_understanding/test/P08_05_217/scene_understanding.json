@@ -1,0 +1,48 @@
+{
+    "summary": "A top-down view of a kitchen counter where a person is slicing a carrot on a wooden cutting board.",
+    "current_activity": "cutting carrot",
+    "activity_confidence": 0.95,
+    "objects_in_use": [
+        "knife",
+        "carrot"
+    ],
+    "important_objects": [
+        "knife",
+        "carrot",
+        "bowl",
+        "fork",
+        "cup",
+        "oven"
+    ],
+    "environment": {
+        "stove_visible": true,
+        "sink_visible": true,
+        "counter_visible": true,
+        "other_context": [
+            "A glass bowl containing chopped green vegetables is on the counter.",
+            "A food processor container and blade assembly are placed near the cutting board.",
+            "Carrot peels are visible inside the sink basin.",
+            "A moka pot and a small plate with food are on the stove."
+        ]
+    },
+    "observations": [
+        "The person is holding a knife in their right hand to slice a carrot held by their left hand.",
+        "A green peeler and a metal fork are resting on the dark countertop.",
+        "The carrot is being cut into smaller chunks on a rectangular wooden cutting board.",
+        "Two small garlic cloves are visible next to the cutting board."
+    ],
+    "uncertainties": [
+        "The exact food item on the small plate on the stove is not fully clear, though it resembles a baked sweet potato or bread."
+    ],
+    "clip_id": "P08_05_217",
+    "participant": "test",
+    "metadata": {
+        "model": "gemini-3.5-flash",
+        "temperature": 0.2,
+        "timestamp": "2026-08-02 14:57:37",
+        "subset": "test",
+        "keyframes_used": 6,
+        "human_epic_annotation_removed": true,
+        "task": "scene_understanding_only"
+    }
+}

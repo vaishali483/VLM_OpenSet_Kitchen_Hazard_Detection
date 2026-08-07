@@ -1,0 +1,33 @@
+{
+  "hazards_present": true,
+  "overall_safety_summary": "The scene is generally organized, but safety risks are present due to an open waste bin at floor level creating a tripping hazard and sharp knives stored loose in the cutlery drawer.",
+  "hazards": [
+    {
+      "description": "A waste bin or lower drawer is left open at floor level to the left of the user.",
+      "explanation": "This creates a tripping or collision hazard in a confined kitchen workspace.",
+      "severity": "medium",
+      "confidence": 0.9,
+      "evidence_frames": [
+        "frame_0000.jpg",
+        "frame_0001.jpg"
+      ],
+      "older_adult_relevance": "Older adults have a higher risk of falls and serious injuries from tripping over low-lying, unexpected obstacles.",
+      "recommended_action": "Close the lower bin or drawer fully to keep the floor area clear of obstructions."
+    },
+    {
+      "description": "Sharp kitchen knives are stored loose and unsheathed inside the cutlery drawer compartments.",
+      "explanation": "Reaching into a drawer with exposed blades increases the risk of accidental cuts and puncture wounds.",
+      "severity": "medium",
+      "confidence": 0.85,
+      "evidence_frames": [
+        "frame_0000.jpg",
+        "frame_0001.jpg"
+      ],
+      "older_adult_relevance": "Age-related thinning of the skin and reduced manual dexterity make older adults more vulnerable to severe cuts from loose blades.",
+      "recommended_action": "Use protective blade sheaths or a dedicated knife block instead of storing sharp knives loose in a drawer."
+    }
+  ],
+  "uncertainties": [
+    "The exact contents and state of the lower open bin or drawer on the left."
+  ]
+}

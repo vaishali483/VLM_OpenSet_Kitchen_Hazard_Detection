@@ -1,0 +1,47 @@
+{
+    "summary": "A person is seen from a first-person perspective interacting with an open cutlery drawer next to a stove, handling a kitchen knife.",
+    "current_activity": "storing a knife in a cutlery drawer",
+    "activity_confidence": 0.9,
+    "objects_in_use": [
+        "knife",
+        "cutlery drawer"
+    ],
+    "important_objects": [
+        "knife",
+        "cutlery drawer",
+        "stove",
+        "countertop",
+        "paper towel roll"
+    ],
+    "environment": {
+        "stove_visible": true,
+        "sink_visible": false,
+        "counter_visible": true,
+        "other_context": [
+            "wooden countertop",
+            "wooden floor",
+            "cutlery tray inside the drawer",
+            "towel hanging on the stove handle"
+        ]
+    },
+    "observations": [
+        "The person's right hand holds a knife with a light-colored handle in the first frame and places it into the drawer in the second frame.",
+        "The person is wearing a watch on their left wrist.",
+        "The cutlery drawer is fully open, revealing organized forks, spoons, and knives.",
+        "A red cup and a roll of paper towels are visible on the wooden countertop."
+    ],
+    "uncertainties": [
+        "Whether the knife is being stored or retrieved, though storing appears more likely in the second frame."
+    ],
+    "clip_id": "P01_01_20",
+    "participant": "test",
+    "metadata": {
+        "model": "gemini-3.5-flash",
+        "temperature": 0.2,
+        "timestamp": "2026-08-02 14:15:58",
+        "subset": "test",
+        "keyframes_used": 2,
+        "human_epic_annotation_removed": true,
+        "task": "scene_understanding_only"
+    }
+}

@@ -1,0 +1,70 @@
+{
+    "hazards_present": true,
+    "overall_safety_summary": "The kitchen setup is mostly organized, but safety risks are present due to food preparation occurring directly on the active stovetop surface and a pan handle protruding towards the edge.",
+    "hazards": [
+        {
+            "description": "Preparing and stirring food in a bowl placed directly on the active stovetop surface.",
+            "explanation": "Mixing ingredients on the stovetop brings the user's hands and arms dangerously close to active burners and hot pans, increasing the risk of accidental burns.",
+            "severity": "medium",
+            "confidence": 0.95,
+            "evidence_frames": [
+                "frame_0000.jpg",
+                "frame_0001.jpg",
+                "frame_0002.jpg",
+                "frame_0004.jpg",
+                "frame_0005.jpg",
+                "frame_0007.jpg",
+                "frame_0008.jpg",
+                "frame_0009.jpg",
+                "frame_0010.jpg",
+                "frame_0011.jpg",
+                "frame_0012.jpg",
+                "frame_0013.jpg",
+                "frame_0014.jpg",
+                "frame_0015.jpg"
+            ],
+            "older_adult_relevance": "Older adults with reduced dexterity, slower reflexes, or tremors are at a higher risk of sustaining burns when working in close proximity to hot surfaces.",
+            "recommended_action": "Move the mixing bowl to the clear countertop space on the left to prepare food safely away from the heat source.",
+            "hazard_id": "P04_02_243_H001"
+        },
+        {
+            "description": "The handle of the frying pan on the right is protruding outwards towards the edge of the stove.",
+            "explanation": "A protruding pan handle can easily be bumped or snagged by clothing, potentially tipping the hot pan and causing severe burns or spills.",
+            "severity": "medium",
+            "confidence": 0.85,
+            "evidence_frames": [
+                "frame_0000.jpg",
+                "frame_0001.jpg",
+                "frame_0002.jpg",
+                "frame_0004.jpg",
+                "frame_0005.jpg",
+                "frame_0007.jpg",
+                "frame_0008.jpg",
+                "frame_0009.jpg",
+                "frame_0010.jpg",
+                "frame_0011.jpg",
+                "frame_0012.jpg",
+                "frame_0013.jpg",
+                "frame_0014.jpg",
+                "frame_0015.jpg"
+            ],
+            "older_adult_relevance": "Older adults with mobility or balance impairments are more likely to accidentally bump into protruding objects, leading to dangerous spills.",
+            "recommended_action": "Turn the frying pan handle inward so it does not project over the edge of the stove.",
+            "hazard_id": "P04_02_243_H002"
+        }
+    ],
+    "uncertainties": [
+        "Whether the stovetop area directly beneath the mixing bowl is hot or turned off."
+    ],
+    "clip_id": "P04_02_243",
+    "participant": "P04",
+    "metadata": {
+        "model": "gemini-3.5-flash",
+        "temperature": 0.2,
+        "timestamp": "2026-08-02 17:28:34",
+        "subset": "test",
+        "task": "open_set_hazard_analysis",
+        "keyframes_used": 14,
+        "predefined_hazard_categories_used": false
+    }
+}

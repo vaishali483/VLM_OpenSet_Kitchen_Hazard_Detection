@@ -1,0 +1,33 @@
+{
+    "hazards_present": true,
+    "overall_safety_summary": "The kitchen floor has a crumpled cloth directly in front of the oven, presenting a significant tripping hazard while operating appliances.",
+    "hazards": [
+        {
+            "description": "A crumpled dark cloth or garment is lying on the floor directly in the user's stepping area in front of the oven.",
+            "explanation": "This loose item on the tiled floor can easily cause the user to trip or slip while they are actively cooking and operating appliances.",
+            "severity": "high",
+            "confidence": 0.95,
+            "evidence_frames": [
+                "frame_0001.jpg",
+                "frame_0002.jpg"
+            ],
+            "older_adult_relevance": "Older adults have a higher risk of falls, which can lead to severe injuries like fractures, especially when standing near hot surfaces.",
+            "recommended_action": "Remove the cloth from the floor and place it in a safe storage area to keep the walkway clear.",
+            "hazard_id": "P04_110_20_H001"
+        }
+    ],
+    "uncertainties": [
+        "Whether the oven or stovetop burners are currently hot."
+    ],
+    "clip_id": "P04_110_20",
+    "participant": "P04",
+    "metadata": {
+        "model": "gemini-3.5-flash",
+        "temperature": 0.2,
+        "timestamp": "2026-08-02 17:33:03",
+        "subset": "test",
+        "task": "open_set_hazard_analysis",
+        "keyframes_used": 3,
+        "predefined_hazard_categories_used": false
+    }
+}

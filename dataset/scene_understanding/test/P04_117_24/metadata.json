@@ -1,0 +1,9 @@
+{
+    "model": "gemini-3.5-flash",
+    "temperature": 0.2,
+    "timestamp": "2026-08-02 14:46:26",
+    "subset": "test",
+    "clip_id": "P04_117_24",
+    "keyframes_used": 5,
+    "human_epic_annotation_removed": true
+}

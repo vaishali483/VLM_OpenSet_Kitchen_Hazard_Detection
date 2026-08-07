@@ -1,0 +1,40 @@
+{
+  "summary": "A top-down view of a person pouring oil from a bottle into a glass bowl containing flour on a wooden kitchen counter.",
+  "current_activity": "pouring oil into flour",
+  "activity_confidence": 0.95,
+  "objects_in_use": [
+    "oil bottle",
+    "glass bowl",
+    "bottle cap"
+  ],
+  "important_objects": [
+    "oil bottle",
+    "glass bowl",
+    "flour",
+    "wooden spatula",
+    "spice jars",
+    "cutting board",
+    "stove"
+  ],
+  "environment": {
+    "stove_visible": true,
+    "sink_visible": false,
+    "counter_visible": true,
+    "other_context": [
+      "wooden countertop",
+      "red tray with spice jars",
+      "green cutting board",
+      "potato",
+      "bag of flour"
+    ]
+  },
+  "observations": [
+    "The person is pouring a yellow liquid, presumably cooking oil, from a bottle into a well in the center of the flour.",
+    "The person's left hand is holding the gold-colored cap of the oil bottle.",
+    "A black stovetop is visible on the left side of the frame.",
+    "A red tray filled with spice jars sits on the counter next to the stove."
+  ],
+  "uncertainties": [
+    "The specific type of oil and flour being used."
+  ]
+}

@@ -1,0 +1,43 @@
+{
+    "clip_id": "P04_117_24",
+    "participant": "P04",
+    "keyframes": [
+        "frame_0000.jpg",
+        "frame_0001.jpg",
+        "frame_0002.jpg",
+        "frame_0003.jpg",
+        "frame_0004.jpg"
+    ],
+    "clip_contains_hazard": null,
+    "ground_truth_hazards": [
+        {
+            "ground_truth_id": "P04_117_24_GT001",
+            "description": "A wooden cutting board and other kitchen tools are placed directly on the stovetop surface near active burners while slicing bread.",
+            "severity": "medium",
+            "evidence_frames": [
+                "frame_0000.jpg",
+                "frame_0001.jpg",
+                "frame_0002.jpg",
+                "frame_0003.jpg",
+                "frame_0004.jpg"
+            ],
+            "is_novel_relative_to_rule_baseline": true,
+            "notes": "Visible spatial hazard"
+        },
+        
+        {
+            "ground_truth_id": "P04_117_24_GT002",
+            "description": "The workspace is very cluttered near the stove.",
+            "severity": "low",
+            "evidence_frames": [
+                "frame_0000.jpg",
+                "frame_0001.jpg",
+                "frame_0002.jpg",
+                "frame_0003.jpg",
+                "frame_0004.jpg"
+            ],
+            "is_novel_relative_to_rule_baseline": true,
+            "notes": "Visible spatial hazard"
+        }
+    ]
+}

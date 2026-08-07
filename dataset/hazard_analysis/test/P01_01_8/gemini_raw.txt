@@ -1,0 +1,6 @@
+{
+  "hazards_present": false,
+  "overall_safety_summary": "The scene shows a person safely opening a refrigerator door with no visible hazards or unsafe conditions detected.",
+  "hazards": [],
+  "uncertainties": []
+}

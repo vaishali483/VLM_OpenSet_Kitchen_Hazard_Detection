@@ -1,0 +1,26 @@
+{
+    "clip_id": "P01_05_139",
+    "participant": "P01",
+    "keyframes": [
+        "frame_0000.jpg",
+        "frame_0001.jpg",
+        "frame_0004.jpg",
+        "frame_0005.jpg",
+        "frame_0006.jpg"
+    ],
+    "clip_contains_hazard": null,
+    "ground_truth_hazards": [
+        {
+            "ground_truth_id": "P01_05_139_GT001",
+            "description": "The person is handling the knife in an unsafe manner by positioning the fingers close to the blade while slicing bread.",
+            "severity": "high",
+            "evidence_frames": [
+                "frame_0000.jpg",
+                "frame_0001.jpg",
+                "frame_0004.jpg"
+            ],
+            "is_novel_relative_to_rule_baseline": true,
+            "notes": "Visible spatial hazard; rule-based detector may capture knife unsafety"
+        }
+    ]
+}

@@ -1,0 +1,50 @@
+{
+    "summary": "A person is seen interacting with the oven in a kitchen. On the stovetop above, there is a frying pan with broccoli, and to the left, a cutting board with chopped tofu.",
+    "current_activity": "operating the oven",
+    "activity_confidence": 0.9,
+    "objects_in_use": [
+        "oven door handle",
+        "oven"
+    ],
+    "important_objects": [
+        "oven",
+        "frying pan",
+        "cutting board",
+        "knife",
+        "tofu",
+        "broccoli",
+        "rolling pin",
+        "spatula"
+    ],
+    "environment": {
+        "stove_visible": true,
+        "sink_visible": false,
+        "counter_visible": true,
+        "other_context": [
+            "oven is positioned below the stovetop",
+            "kitchen counter has granite-like pattern",
+            "tiled floor is visible"
+        ]
+    },
+    "observations": [
+        "The person's hand is on the oven door handle.",
+        "A pan of broccoli with a blue spatula sits on the stove.",
+        "A wooden cutting board holds cubed tofu and a chef's knife.",
+        "A rolling pin and condiment bottles are on the counter.",
+        "An oven mitt is draped over the oven handle."
+    ],
+    "uncertainties": [
+        "Whether the oven is being opened, closed, or turned on/off."
+    ],
+    "clip_id": "P04_110_20",
+    "participant": "test",
+    "metadata": {
+        "model": "gemini-3.5-flash",
+        "temperature": 0.2,
+        "timestamp": "2026-08-02 14:44:45",
+        "subset": "test",
+        "keyframes_used": 3,
+        "human_epic_annotation_removed": true,
+        "task": "scene_understanding_only"
+    }
+}

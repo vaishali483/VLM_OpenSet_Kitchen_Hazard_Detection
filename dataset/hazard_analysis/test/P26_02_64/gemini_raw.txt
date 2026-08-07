@@ -1,0 +1,34 @@
+{
+  "hazards_present": true,
+  "overall_safety_summary": "The scene presents safety concerns regarding slicing food directly on slippery plastic packaging without a cutting board, and the proximity of flammable plastic packaging to an active gas stove burner.",
+  "hazards": [
+    {
+      "description": "Slicing a baguette directly on its plastic packaging without a cutting board.",
+      "explanation": "Cutting on a slippery plastic surface without a stable board increases the risk of the knife slipping and causing injury.",
+      "severity": "medium",
+      "confidence": 0.9,
+      "evidence_frames": [
+        "frame_0001.jpg",
+        "frame_0002.jpg",
+        "frame_0003.jpg"
+      ],
+      "older_adult_relevance": "Older adults with reduced hand strength or tremors are at a higher risk of knife slips on unstable surfaces.",
+      "recommended_action": "Place the baguette on a secure, non-slip cutting board before slicing."
+    },
+    {
+      "description": "Flammable plastic packaging is positioned very close to an active gas stove burner.",
+      "explanation": "The heat or open flame from the burner could melt the plastic packaging or cause it to catch fire.",
+      "severity": "high",
+      "confidence": 0.95,
+      "evidence_frames": [
+        "frame_0001.jpg",
+        "frame_0002.jpg"
+      ],
+      "older_adult_relevance": "Slower reaction times or decreased visual acuity in older adults can delay response to a fire or melting plastic.",
+      "recommended_action": "Keep all plastic wrappers and flammable items well away from the stove area."
+    }
+  ],
+  "uncertainties": [
+    "The exact temperature of the active burner and the pot next to the cutting area."
+  ]
+}

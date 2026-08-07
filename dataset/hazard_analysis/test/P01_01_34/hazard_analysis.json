@@ -1,0 +1,45 @@
+{
+    "hazards_present": true,
+    "overall_safety_summary": "The scene presents two notable safety concerns: a frying pan handle protruding outwards over the edge of the stove and a lower cabinet door left wide open into the walking area.",
+    "hazards": [
+        {
+            "description": "The frying pan handle is pointing outwards over the edge of the stove.",
+            "explanation": "An outward-facing handle can be easily bumped or snagged, potentially knocking the pan off the stove and causing spills or injuries.",
+            "severity": "medium",
+            "confidence": 0.95,
+            "evidence_frames": [
+                "frame_0001.jpg"
+            ],
+            "older_adult_relevance": "Older adults with mobility or balance challenges are more likely to accidentally bump into protruding handles, increasing the risk of spills or burns.",
+            "recommended_action": "Turn the pan handle inward so it does not protrude over the edge of the stove.",
+            "hazard_id": "P01_01_34_H001"
+        },
+        {
+            "description": "A lower cabinet door is left wide open into the walking path.",
+            "explanation": "An open cabinet door at shin level presents a tripping or collision hazard, especially when moving around the kitchen.",
+            "severity": "medium",
+            "confidence": 0.95,
+            "evidence_frames": [
+                "frame_0000.jpg",
+                "frame_0001.jpg"
+            ],
+            "older_adult_relevance": "Older adults are highly vulnerable to falls, and low-lying obstacles like open cabinet doors can easily cause trips, loss of balance, or painful impact injuries.",
+            "recommended_action": "Close the cabinet door immediately after use to keep the walkway clear.",
+            "hazard_id": "P01_01_34_H002"
+        }
+    ],
+    "uncertainties": [
+        "Whether the stove burner is currently turned on or hot."
+    ],
+    "clip_id": "P01_01_34",
+    "participant": "P01",
+    "metadata": {
+        "model": "gemini-3.5-flash",
+        "temperature": 0.2,
+        "timestamp": "2026-08-02 16:57:38",
+        "subset": "test",
+        "task": "open_set_hazard_analysis",
+        "keyframes_used": 2,
+        "predefined_hazard_categories_used": false
+    }
+}

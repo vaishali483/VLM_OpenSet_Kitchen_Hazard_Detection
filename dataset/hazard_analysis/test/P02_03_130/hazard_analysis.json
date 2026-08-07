@@ -1,0 +1,47 @@
+{
+    "hazards_present": true,
+    "overall_safety_summary": "The scene presents safety concerns regarding electrical hazards due to a power strip on the counter near wet food preparation, and physical hazards from improper knife grip technique.",
+    "hazards": [
+        {
+            "description": "A power strip with multiple plugs is located directly on the countertop next to the cutting board.",
+            "explanation": "Spills or moisture from food preparation could seep into the electrical sockets, posing a risk of electrical shock or short circuit.",
+            "severity": "high",
+            "confidence": 0.9,
+            "evidence_frames": [
+                "frame_0000.jpg",
+                "frame_0001.jpg"
+            ],
+            "older_adult_relevance": "Older adults may have slower physical responses to electrical emergencies or be more susceptible to severe injury from electrical shocks.",
+            "recommended_action": "Relocate the power strip away from the food preparation area to a dry, elevated location.",
+            "hazard_id": "P02_03_130_H001"
+        },
+        {
+            "description": "The user is chopping onions while holding the vegetable with flat, extended fingers close to the knife blade.",
+            "explanation": "This finger placement increases the risk of accidental cuts or lacerations if the knife slips.",
+            "severity": "medium",
+            "confidence": 0.85,
+            "evidence_frames": [
+                "frame_0003.jpg",
+                "frame_0004.jpg",
+                "frame_0005.jpg"
+            ],
+            "older_adult_relevance": "Age-related changes in skin thickness and slower healing times make lacerations more problematic for older adults.",
+            "recommended_action": "Adopt a claw grip by curling the fingertips inward to guide the knife safely.",
+            "hazard_id": "P02_03_130_H002"
+        }
+    ],
+    "uncertainties": [
+        "Whether the sandwich maker is currently hot or turned on."
+    ],
+    "clip_id": "P02_03_130",
+    "participant": "P02",
+    "metadata": {
+        "model": "gemini-3.5-flash",
+        "temperature": 0.2,
+        "timestamp": "2026-08-02 17:19:41",
+        "subset": "test",
+        "task": "open_set_hazard_analysis",
+        "keyframes_used": 21,
+        "predefined_hazard_categories_used": false
+    }
+}

@@ -1,0 +1,36 @@
+{
+  "summary": "A person is slicing a baguette on a kitchen countertop next to a gas stove.",
+  "current_activity": "slicing bread",
+  "activity_confidence": 0.95,
+  "objects_in_use": [
+    "knife",
+    "baguette"
+  ],
+  "important_objects": [
+    "baguette",
+    "knife",
+    "stove",
+    "bottle",
+    "foil packaging"
+  ],
+  "environment": {
+    "stove_visible": true,
+    "sink_visible": false,
+    "counter_visible": true,
+    "other_context": [
+      "gas stove with four burners",
+      "marble-patterned countertop",
+      "overhead cabinet edge visible"
+    ]
+  },
+  "observations": [
+    "The person is holding a long baguette with one hand and using a knife with the other to cut it.",
+    "A gas stove is situated to the left of the cutting area.",
+    "A dark glass bottle and some crumpled foil are on the countertop to the right.",
+    "The baguette is resting on its plastic packaging."
+  ],
+  "uncertainties": [
+    "The exact type of knife being used is partially obscured by the hand.",
+    "The contents of the dark glass bottle are not clearly identifiable."
+  ]
+}

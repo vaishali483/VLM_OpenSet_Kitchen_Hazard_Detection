@@ -1,0 +1,39 @@
+{
+  "summary": "A person is cooking in a kitchen, stirring ingredients in frying pans on a stovetop.",
+  "current_activity": "stirring food in a frying pan",
+  "activity_confidence": 0.95,
+  "objects_in_use": [
+    "spatula",
+    "frying pan",
+    "bottle"
+  ],
+  "important_objects": [
+    "frying pan",
+    "spatula",
+    "knife",
+    "cutting board",
+    "rice cooker",
+    "bottle",
+    "can"
+  ],
+  "environment": {
+    "stove_visible": true,
+    "sink_visible": false,
+    "counter_visible": true,
+    "other_context": [
+      "rice cooker on the counter",
+      "tiled wall background",
+      "bottles and ingredients on the counter"
+    ]
+  },
+  "observations": [
+    "A person is using a spatula to stir onions in a frying pan.",
+    "There are two frying pans on the stovetop, one containing sliced onions and the other containing a seasoned mixture.",
+    "A wooden cutting board on the left holds chopped ingredients, a knife, a can, and a measuring spoon.",
+    "A rice cooker and several bottles are positioned on the counter behind the cutting board."
+  ],
+  "uncertainties": [
+    "The exact contents of the right frying pan are not fully clear.",
+    "The contents of the white bottle are unidentified."
+  ]
+}

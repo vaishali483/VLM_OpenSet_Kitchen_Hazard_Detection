@@ -1,0 +1,36 @@
+{
+    "hazards_present": true,
+    "overall_safety_summary": "The scene is generally organized, but slicing bread on a wooden cutting board placed directly on a smooth glass induction cooktop poses a slipping hazard that could lead to knife injuries.",
+    "hazards": [
+        {
+            "description": "The wooden cutting board is placed directly on the smooth glass surface of the induction cooktop while slicing bread.",
+            "explanation": "The lack of traction between the wood and glass can cause the cutting board to slip when force is applied to slice the bread, potentially causing the knife to slip.",
+            "severity": "medium",
+            "confidence": 0.9,
+            "evidence_frames": [
+                "frame_0000.jpg",
+                "frame_0001.jpg",
+                "frame_0002.jpg",
+                "frame_0003.jpg",
+                "frame_0004.jpg"
+            ],
+            "older_adult_relevance": "Older adults may have reduced hand strength or slower reflexes, making it harder to control a sudden slip of the cutting board while holding a sharp knife.",
+            "recommended_action": "Move the cutting board to a stable countertop or place a damp cloth or non-slip mat underneath it to prevent sliding.",
+            "hazard_id": "P04_117_24_H001"
+        }
+    ],
+    "uncertainties": [
+        "Whether the specific induction cooktop zones under the cutting board or butter container are hot."
+    ],
+    "clip_id": "P04_117_24",
+    "participant": "P04",
+    "metadata": {
+        "model": "gemini-3.5-flash",
+        "temperature": 0.2,
+        "timestamp": "2026-08-02 17:35:16",
+        "subset": "test",
+        "task": "open_set_hazard_analysis",
+        "keyframes_used": 5,
+        "predefined_hazard_categories_used": false
+    }
+}

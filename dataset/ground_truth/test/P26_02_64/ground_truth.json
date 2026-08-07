@@ -1,0 +1,40 @@
+{
+    "clip_id": "P26_02_64",
+    "participant": "P26",
+    "keyframes": [
+        "frame_0000.jpg",
+        "frame_0001.jpg",
+        "frame_0002.jpg",
+        "frame_0003.jpg",
+        "frame_0004.jpg",
+        "frame_0005.jpg"
+    ],
+    "clip_contains_hazard": null,
+    "ground_truth_hazards": [
+        {
+            "ground_truth_id": "P26_02_64_GT001",
+            "description": "Slicing a baguette directly on its plastic packaging without a cutting board.",
+            "severity": "medium",
+            "evidence_frames": [
+                "frame_0001.jpg",
+                "frame_0002.jpg",
+                "frame_0003.jpg"
+            ],
+            "is_novel_relative_to_rule_baseline": true,
+            "notes": "Visible spatial hazard"
+        },
+        
+        {
+            "ground_truth_id": "P26_02_64_GT002",
+            "description": "Flammable plastic packaging is positioned very close to an active gas stove burner.",
+            "severity": "high",
+            "evidence_frames": [
+                "frame_0001.jpg",
+                "frame_0002.jpg",
+                "frame_0003.jpg"
+            ],
+            "is_novel_relative_to_rule_baseline": true,
+            "notes": "Visible spatial hazard"
+        }
+    ]
+}

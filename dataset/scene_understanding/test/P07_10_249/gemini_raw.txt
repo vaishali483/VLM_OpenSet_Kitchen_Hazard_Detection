@@ -1,0 +1,35 @@
+{
+  "summary": "A person is standing at a white electric stove, interacting with the lid of a small saucepan containing food.",
+  "current_activity": "cooking",
+  "activity_confidence": 0.9,
+  "objects_in_use": [
+    "saucepan",
+    "saucepan lid"
+  ],
+  "important_objects": [
+    "saucepan",
+    "stove",
+    "frying pan",
+    "saucepan lid"
+  ],
+  "environment": {
+    "stove_visible": true,
+    "sink_visible": false,
+    "counter_visible": true,
+    "other_context": [
+      "floor",
+      "countertop next to stove"
+    ]
+  },
+  "observations": [
+    "A person's hand is shown touching and then releasing the lid of a silver saucepan on a white electric stove.",
+    "The saucepan contains chopped food, which appears to be potatoes or vegetables.",
+    "A black frying pan is resting on an adjacent burner.",
+    "A package of red items, possibly tomatoes, is visible on the counter next to the stove.",
+    "The person's leg and blue shoe are visible on the floor."
+  ],
+  "uncertainties": [
+    "The exact food item cooking inside the saucepan is not fully clear.",
+    "The contents of the package on the counter are partially obscured."
+  ]
+}

@@ -1,0 +1,33 @@
+{
+    "hazards_present": true,
+    "overall_safety_summary": "The scene is generally organized, but a pot handle is positioned directly over the stove controls, creating a burn or collision risk when adjusting the burners.",
+    "hazards": [
+        {
+            "description": "The handle of the metal pot on the rear burner is pointing directly over the stove's control knobs.",
+            "explanation": "Reaching to adjust the controls requires the user to place their hand and arm directly beneath or near the pot handle, risking burns if the pot or handle is hot.",
+            "severity": "medium",
+            "confidence": 0.95,
+            "evidence_frames": [
+                "frame_0000.jpg",
+                "frame_0002.jpg"
+            ],
+            "older_adult_relevance": "Older adults with reduced dexterity or slower reflexes are at a higher risk of accidental contact burns or knocking the pot when reaching near hot surfaces.",
+            "recommended_action": "Rotate the pot handle so it points towards the back or side, away from the control knobs.",
+            "hazard_id": "P01_105_760_H001"
+        }
+    ],
+    "uncertainties": [
+        "Whether the stove burners are currently active/hot."
+    ],
+    "clip_id": "P01_105_760",
+    "participant": "P01",
+    "metadata": {
+        "model": "gemini-3.5-flash",
+        "temperature": 0.2,
+        "timestamp": "2026-08-02 17:17:21",
+        "subset": "test",
+        "task": "open_set_hazard_analysis",
+        "keyframes_used": 2,
+        "predefined_hazard_categories_used": false
+    }
+}

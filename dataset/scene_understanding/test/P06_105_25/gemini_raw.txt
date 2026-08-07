@@ -1,0 +1,35 @@
+{
+  "summary": "A person is in a kitchen adjusting the control knobs on a stove/oven where a pot of food is cooking.",
+  "current_activity": "adjusting stove controls",
+  "activity_confidence": 0.95,
+  "objects_in_use": [
+    "stove knob"
+  ],
+  "important_objects": [
+    "pot",
+    "stove",
+    "oven",
+    "knife",
+    "cutting board",
+    "oven glove"
+  ],
+  "environment": {
+    "stove_visible": true,
+    "sink_visible": false,
+    "counter_visible": true,
+    "other_context": [
+      "tiled floor",
+      "kitchen cabinets",
+      "microwave"
+    ]
+  },
+  "observations": [
+    "A person's hand is seen reaching for and turning the control knobs of the stove/oven.",
+    "A pot containing a thick reddish-brown stew with a wooden spoon inside is on the stovetop.",
+    "A cutting board with a knife, a fork, and oven gloves are visible on the adjacent countertop.",
+    "The camera angle is a first-person point-of-view looking down at the counter and stove."
+  ],
+  "uncertainties": [
+    "The exact temperature or setting selected on the stove knobs is not clearly visible."
+  ]
+}

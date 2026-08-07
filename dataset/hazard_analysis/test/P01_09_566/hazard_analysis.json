@@ -1,0 +1,17 @@
+{
+    "hazards_present": false,
+    "overall_safety_summary": "The user is safely preparing a pizza on a wooden countertop. All utensils and ingredients are placed stably, and no immediate safety hazards are observed.",
+    "hazards": [],
+    "uncertainties": [],
+    "clip_id": "P01_09_566",
+    "participant": "P01",
+    "metadata": {
+        "model": "gemini-3.5-flash",
+        "temperature": 0.2,
+        "timestamp": "2026-08-02 17:10:45",
+        "subset": "test",
+        "task": "open_set_hazard_analysis",
+        "keyframes_used": 7,
+        "predefined_hazard_categories_used": false
+    }
+}

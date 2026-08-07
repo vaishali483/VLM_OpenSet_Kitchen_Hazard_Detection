@@ -1,0 +1,42 @@
+{
+  "summary": "A person is preparing ingredients on a wooden kitchen counter, using a knife to handle chopped red onions on a green cutting board next to a stove and sink.",
+  "current_activity": "preparing ingredients",
+  "activity_confidence": 0.95,
+  "objects_in_use": [
+    "knife",
+    "cutting board",
+    "red onion"
+  ],
+  "important_objects": [
+    "knife",
+    "cutting board",
+    "pan",
+    "spatula",
+    "sink",
+    "stove",
+    "spice jars",
+    "carrot",
+    "grater"
+  ],
+  "environment": {
+    "stove_visible": true,
+    "sink_visible": true,
+    "counter_visible": true,
+    "other_context": [
+      "wooden countertop",
+      "spice tray with multiple jars",
+      "pan with chopped vegetables on the stove"
+    ]
+  },
+  "observations": [
+    "Chopped red onions are on a green cutting board.",
+    "A pan containing chopped green vegetables is on the stove to the left.",
+    "A black spatula lies on the counter next to the cutting board.",
+    "A carrot and a metal grater are on the right side of the counter.",
+    "The third frame shows significant motion blur as the camera moves rapidly."
+  ],
+  "uncertainties": [
+    "The exact contents of the pan on the stove are partially obscured but appear to be chopped zucchini or leeks.",
+    "The third frame is highly blurred due to rapid camera movement, making specific objects difficult to identify clearly."
+  ]
+}

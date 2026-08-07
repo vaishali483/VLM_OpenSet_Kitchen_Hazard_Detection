@@ -1,0 +1,22 @@
+{
+  "hazards_present": true,
+  "overall_safety_summary": "The scene is generally organized, but the person is slicing food using an unsafe hand grip that exposes their fingers to the knife blade.",
+  "hazards": [
+    {
+      "description": "The person is holding the food item with a flat hand grip rather than a safe claw grip while slicing.",
+      "explanation": "This positioning leaves the fingers and fingertips directly exposed to the path of the sharp knife, increasing the risk of a cut if the knife slips.",
+      "severity": "medium",
+      "confidence": 0.9,
+      "evidence_frames": [
+        "frame_0000.jpg",
+        "frame_0001.jpg",
+        "frame_0004.jpg"
+      ],
+      "older_adult_relevance": "Older adults may have reduced hand stability, slower reflexes, or thinner skin, making them more susceptible to severe knife injuries.",
+      "recommended_action": "Adopt a 'claw grip' by curling the fingers inward to protect the fingertips while holding food during slicing."
+    }
+  ],
+  "uncertainties": [
+    "Whether the cutting board has non-slip feet or a silicone backing to prevent it from sliding on the wooden countertop."
+  ]
+}

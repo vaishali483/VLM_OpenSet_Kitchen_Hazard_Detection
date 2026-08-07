@@ -1,0 +1,50 @@
+{
+    "summary": "A person is peeling a carrot with a knife over a metal sink drainboard next to a stove where an omelet is cooking in a pan.",
+    "current_activity": "peeling a carrot",
+    "activity_confidence": 0.95,
+    "objects_in_use": [
+        "carrot",
+        "knife"
+    ],
+    "important_objects": [
+        "carrot",
+        "knife",
+        "pan",
+        "wooden spoon",
+        "fork",
+        "cutting board",
+        "colander"
+    ],
+    "environment": {
+        "stove_visible": true,
+        "sink_visible": true,
+        "counter_visible": true,
+        "other_context": [
+            "food cooking in a pan on the stove",
+            "chopped vegetables in a colander",
+            "cutting board on the counter"
+        ]
+    },
+    "observations": [
+        "The person is holding a carrot in their left hand and peeling it with a knife in their right hand.",
+        "A pan containing cooked eggs or an omelet is on the stove burner.",
+        "A wooden spoon is resting in the pan.",
+        "A fork is lying on the stove next to the pan.",
+        "Carrot peels are accumulating on the metal surface.",
+        "A white cutting board and a colander with green salad are on the counter."
+    ],
+    "uncertainties": [
+        "Whether the peeling tool is a small knife or a specialized peeler."
+    ],
+    "clip_id": "P24_09_218",
+    "participant": "test",
+    "metadata": {
+        "model": "gemini-3.5-flash",
+        "temperature": 0.2,
+        "timestamp": "2026-08-02 15:03:27",
+        "subset": "test",
+        "keyframes_used": 10,
+        "human_epic_annotation_removed": true,
+        "task": "scene_understanding_only"
+    }
+}

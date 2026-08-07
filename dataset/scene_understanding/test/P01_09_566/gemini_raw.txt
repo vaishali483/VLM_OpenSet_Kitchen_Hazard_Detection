@@ -1,0 +1,40 @@
+{
+  "summary": "A first-person perspective of a person preparing a flatbread or pizza on a wooden countertop, pouring oil from a small bottle onto the cheese and potato toppings.",
+  "current_activity": "pouring oil onto pizza dough",
+  "activity_confidence": 0.95,
+  "objects_in_use": [
+    "bottle",
+    "bottle cap",
+    "pizza dough"
+  ],
+  "important_objects": [
+    "bottle",
+    "pizza dough",
+    "rolling pin",
+    "baking tray",
+    "stove"
+  ],
+  "environment": {
+    "stove_visible": true,
+    "sink_visible": false,
+    "counter_visible": true,
+    "other_context": [
+      "wooden countertop",
+      "baking paper",
+      "rolling pin",
+      "baking tray",
+      "flour bags"
+    ]
+  },
+  "observations": [
+    "The person is wearing a red shirt and a watch on their left wrist.",
+    "The left hand holds a small gold-colored cap.",
+    "The right hand holds a small glass bottle containing yellow liquid (oil) and is pouring it over the pizza.",
+    "The pizza base is topped with sliced potatoes and shredded cheese.",
+    "A rolling pin and a baking sheet are visible on the right side of the counter.",
+    "A black stovetop is visible on the left side."
+  ],
+  "uncertainties": [
+    "The exact type of cheese and toppings on the dough cannot be fully confirmed, though they appear to be cheese and potatoes."
+  ]
+}

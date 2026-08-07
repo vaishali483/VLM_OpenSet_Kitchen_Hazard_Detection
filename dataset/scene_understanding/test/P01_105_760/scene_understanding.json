@@ -1,0 +1,48 @@
+{
+    "summary": "A person is cooking noodles and vegetables in a wok on a gas stove, reaching towards the stove controls.",
+    "current_activity": "adjusting stove controls",
+    "activity_confidence": 0.9,
+    "objects_in_use": [
+        "stove controls"
+    ],
+    "important_objects": [
+        "wok",
+        "pot",
+        "stove",
+        "spatula",
+        "plate",
+        "timer",
+        "cooling rack"
+    ],
+    "environment": {
+        "stove_visible": true,
+        "sink_visible": false,
+        "counter_visible": true,
+        "other_context": [
+            "tiled wall",
+            "wooden countertop",
+            "cooling rack on counter"
+        ]
+    },
+    "observations": [
+        "A wok containing noodles and vegetables is on the stove.",
+        "A small metal pot is on another burner of the stove.",
+        "A person's hand is interacting with or near the stove control knobs.",
+        "A plate with a fork is visible on the left counter space.",
+        "A metal cooling rack is placed on the right side of the stove."
+    ],
+    "uncertainties": [
+        "Whether the stove burner is currently lit or turned off."
+    ],
+    "clip_id": "P01_105_760",
+    "participant": "test",
+    "metadata": {
+        "model": "gemini-3.5-flash",
+        "temperature": 0.2,
+        "timestamp": "2026-08-02 14:34:45",
+        "subset": "test",
+        "keyframes_used": 2,
+        "human_epic_annotation_removed": true,
+        "task": "scene_understanding_only"
+    }
+}

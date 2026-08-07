@@ -1,0 +1,99 @@
+{
+    "clip_id": "P01_05_75",
+    "participant": "P01",
+    "system": "rule_based_baseline",
+    "ruleset": {
+        "name": "kitchen_rules",
+        "version": "1.1",
+        "frozen_before_final_evaluation": false
+    },
+    "predefined_hazard_categories_used": true,
+    "hazards_present": true,
+    "overall_safety_summary": "One or more predefined rules were triggered.",
+    "hazards": [
+        {
+            "hazard_id": "P01_05_75_B001",
+            "triggered_rule_id": "R001",
+            "rule_name": "Person close to knife",
+            "description": "A person is very close to a detected knife.",
+            "explanation": "Close interaction with a knife may create a cutting risk.",
+            "severity": "medium",
+            "confidence": 0.9017,
+            "evidence_frames": [
+                "frame_0000.jpg",
+                "frame_0001.jpg",
+                "frame_0002.jpg",
+                "frame_0004.jpg",
+                "frame_0005.jpg",
+                "frame_0006.jpg",
+                "frame_0008.jpg",
+                "frame_0009.jpg",
+                "frame_0011.jpg",
+                "frame_0012.jpg",
+                "frame_0013.jpg",
+                "frame_0014.jpg",
+                "frame_0016.jpg"
+            ],
+            "older_adult_relevance": "Reduced grip stability, vision or reaction time may increase the likelihood of injury.",
+            "recommended_action": "Use a stable cutting surface and keep fingers away from the knife blade."
+        },
+        {
+            "hazard_id": "P01_05_75_B002",
+            "triggered_rule_id": "R003",
+            "rule_name": "Knife near visible boundary",
+            "description": "A detected knife is positioned near the visible image boundary.",
+            "explanation": "The knife may be close to the edge of the working surface and could fall or be knocked off.",
+            "severity": "medium",
+            "confidence": 0.9112,
+            "evidence_frames": [
+                "frame_0000.jpg",
+                "frame_0004.jpg",
+                "frame_0005.jpg",
+                "frame_0006.jpg",
+                "frame_0008.jpg",
+                "frame_0009.jpg",
+                "frame_0011.jpg",
+                "frame_0012.jpg",
+                "frame_0013.jpg"
+            ],
+            "older_adult_relevance": "A knife near the edge may be difficult to notice and avoid, particularly with reduced peripheral vision.",
+            "recommended_action": "Move the knife to a stable position away from the counter edge."
+        },
+        {
+            "hazard_id": "P01_05_75_B003",
+            "triggered_rule_id": "R005",
+            "rule_name": "Cup near visible boundary",
+            "description": "A detected cup is positioned near the visible image boundary.",
+            "explanation": "The cup may be close to the edge of the work surface and could be knocked over.",
+            "severity": "low",
+            "confidence": 0.6152,
+            "evidence_frames": [
+                "frame_0013.jpg"
+            ],
+            "older_adult_relevance": "A spilled drink may create a slipping risk or may be difficult to clean quickly.",
+            "recommended_action": "Move the cup farther from the edge of the work surface."
+        },
+        {
+            "hazard_id": "P01_05_75_B004",
+            "triggered_rule_id": "R006",
+            "rule_name": "Bottle near visible boundary",
+            "description": "A detected bottle is positioned near the visible image boundary.",
+            "explanation": "The bottle may be close to the counter edge and could fall, spill or break.",
+            "severity": "low",
+            "confidence": 0.3653,
+            "evidence_frames": [
+                "frame_0000.jpg",
+                "frame_0002.jpg",
+                "frame_0003.jpg",
+                "frame_0008.jpg",
+                "frame_0014.jpg"
+            ],
+            "older_adult_relevance": "A fallen bottle or spilled liquid may create an obstruction or slipping hazard.",
+            "recommended_action": "Place the bottle in a stable area away from the counter edge."
+        }
+    ],
+    "uncertainties": [
+        "The baseline is limited to predefined rules and YOLO detections.",
+        "It cannot reason about hazards outside its fixed rule set."
+    ]
+}

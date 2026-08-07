@@ -1,0 +1,24 @@
+{
+    "clip_id": "P05_09_3",
+    "participant": "P05",
+    "keyframes": [
+        "frame_0000.jpg",
+        "frame_0001.jpg",
+        "frame_0002.jpg"
+    ],
+    "clip_contains_hazard": null,
+    "ground_truth_hazards": [
+        {
+            "ground_truth_id": "P05_09_3_GT001",
+            "description": "Wearing open-toed sandals while handling heavy cookware in the kitchen.",
+            "severity": "low",
+            "evidence_frames": [
+                "frame_0000.jpg",
+                "frame_0001.jpg",
+                "frame_0002.jpg"
+            ],
+            "is_novel_relative_to_rule_baseline": true,
+            "notes": "Visible spatial hazard"
+        }
+    ]
+}

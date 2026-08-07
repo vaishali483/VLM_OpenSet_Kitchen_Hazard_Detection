@@ -1,0 +1,22 @@
+{
+  "hazards_present": true,
+  "overall_safety_summary": "The scene is generally managed well, but there is a safety concern regarding a pot handle protruding outwards from the stove, which poses a risk of accidental bumps and hot spills.",
+  "hazards": [
+    {
+      "description": "The handle of the pot containing boiling vegetables is pointing outwards to the right side of the stove.",
+      "explanation": "A protruding handle can easily be bumped or snagged, risking knocking the pot over and causing severe burns from the hot liquid.",
+      "severity": "medium",
+      "confidence": 0.9,
+      "evidence_frames": [
+        "frame_0000.jpg",
+        "frame_0001.jpg",
+        "frame_0002.jpg"
+      ],
+      "older_adult_relevance": "Older adults with mobility or balance challenges are at a higher risk of accidentally knocking into protruding handles.",
+      "recommended_action": "Turn the pot handle inward so it is positioned safely over the stovetop and not sticking out."
+    }
+  ],
+  "uncertainties": [
+    "Whether the burner under the saucepan with potatoes is turned on or hot."
+  ]
+}

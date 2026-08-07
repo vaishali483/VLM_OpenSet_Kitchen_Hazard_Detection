@@ -1,0 +1,49 @@
+{
+    "summary": "A person is pouring oil from a bottle into a frying pan containing chopped vegetables on a stove.",
+    "current_activity": "pouring oil into a frying pan",
+    "activity_confidence": 0.95,
+    "objects_in_use": [
+        "oil bottle",
+        "frying pan",
+        "spatula"
+    ],
+    "important_objects": [
+        "oil bottle",
+        "frying pan",
+        "spatula",
+        "saucepan",
+        "stove",
+        "spice tray"
+    ],
+    "environment": {
+        "stove_visible": true,
+        "sink_visible": false,
+        "counter_visible": true,
+        "other_context": [
+            "wooden countertop",
+            "spice jars on a red tray",
+            "person wearing a watch"
+        ]
+    },
+    "observations": [
+        "The person is holding an oil bottle in their left hand and pouring oil into the pan.",
+        "The person is holding a black slotted spatula in their right hand.",
+        "The frying pan contains chopped orange and green vegetables.",
+        "A small empty saucepan is sitting on the left burner of the stove.",
+        "A tray with multiple spice jars is located on the countertop to the right of the stove."
+    ],
+    "uncertainties": [
+        "The exact type of oil being poured is not fully clear, though it appears to be olive oil."
+    ],
+    "clip_id": "P01_01_151",
+    "participant": "test",
+    "metadata": {
+        "model": "gemini-3.5-flash",
+        "temperature": 0.2,
+        "timestamp": "2026-08-02 14:12:44",
+        "subset": "test",
+        "keyframes_used": 7,
+        "human_epic_annotation_removed": true,
+        "task": "scene_understanding_only"
+    }
+}

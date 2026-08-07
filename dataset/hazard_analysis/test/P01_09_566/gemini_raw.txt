@@ -1,0 +1,6 @@
+{
+  "hazards_present": false,
+  "overall_safety_summary": "The user is safely preparing a pizza on a wooden countertop. All utensils and ingredients are placed stably, and no immediate safety hazards are observed.",
+  "hazards": [],
+  "uncertainties": []
+}

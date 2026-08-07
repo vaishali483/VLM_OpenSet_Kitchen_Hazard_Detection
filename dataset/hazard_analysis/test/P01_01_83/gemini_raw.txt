@@ -1,0 +1,26 @@
+{
+  "hazards_present": true,
+  "overall_safety_summary": "The scene is generally organized, but the user is employing an unsafe hand position while slicing a small onion, presenting a risk of injury.",
+  "hazards": [
+    {
+      "description": "The user is slicing a small onion while stabilizing it with flat, extended fingers rather than a tucked claw grip.",
+      "explanation": "This finger placement leaves the fingertips and knuckles highly exposed to the knife blade, increasing the risk of a painful cut if the knife slips.",
+      "severity": "medium",
+      "confidence": 0.95,
+      "evidence_frames": [
+        "frame_0002.jpg",
+        "frame_0004.jpg",
+        "frame_0005.jpg",
+        "frame_0006.jpg",
+        "frame_0007.jpg",
+        "frame_0008.jpg",
+        "frame_0009.jpg"
+      ],
+      "older_adult_relevance": "Older adults may experience reduced tactile sensitivity or hand tremors, making precise knife control more difficult and increasing the likelihood of injury from improper hand positioning.",
+      "recommended_action": "Adopt a claw grip by curling the fingertips inward and resting the knuckles against the side of the blade to guide the cuts safely."
+    }
+  ],
+  "uncertainties": [
+    "Whether the stove burner under the pan on the left is currently turned on or hot."
+  ]
+}

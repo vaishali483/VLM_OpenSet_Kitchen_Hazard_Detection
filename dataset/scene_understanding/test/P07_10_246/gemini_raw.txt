@@ -1,0 +1,37 @@
+{
+  "summary": "A person is preparing food on a wooden cutting board on a kitchen counter, with chopped tomatoes and garlic/onion visible.",
+  "current_activity": "chopping tomatoes",
+  "activity_confidence": 0.95,
+  "objects_in_use": [
+    "knife",
+    "cutting board"
+  ],
+  "important_objects": [
+    "knife",
+    "cutting board",
+    "spoon",
+    "plastic bag of greens",
+    "chopped tomatoes"
+  ],
+  "environment": {
+    "stove_visible": true,
+    "sink_visible": false,
+    "counter_visible": true,
+    "other_context": [
+      "wooden cutting board",
+      "kitchen counter",
+      "packaged greens"
+    ]
+  },
+  "observations": [
+    "The person is holding a knife in their right hand.",
+    "Chopped red tomatoes and chopped white/yellow ingredients are on a wooden cutting board.",
+    "A metal spoon is lying near the top left of the cutting board.",
+    "A plastic bag containing greens is on the right side of the counter.",
+    "The person is wearing a black wristband on their left wrist."
+  ],
+  "uncertainties": [
+    "The exact identity of the white/yellow chopped ingredient.",
+    "Whether the stove on the left is currently in use."
+  ]
+}

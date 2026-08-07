@@ -1,0 +1,35 @@
+{
+    "hazards_present": true,
+    "overall_safety_summary": "The kitchen workspace is clear, but the user is employing an unsafe peeling technique by drawing a sharp knife directly towards their thumb.",
+    "hazards": [
+        {
+            "description": "The user is peeling a potato by drawing the knife blade directly towards their thumb and holding hand.",
+            "explanation": "If the knife slips while peeling, the blade can easily slice into the thumb or hand holding the potato, causing a laceration.",
+            "severity": "medium",
+            "confidence": 0.9,
+            "evidence_frames": [
+                "frame_0000.jpg",
+                "frame_0004.jpg",
+                "frame_0005.jpg",
+                "frame_0014.jpg"
+            ],
+            "older_adult_relevance": "Older adults often have thinner, more fragile skin and may experience reduced grip strength or hand tremors, increasing the risk of slips and severe, slow-healing cuts.",
+            "recommended_action": "Use a vegetable peeler instead of a knife, or ensure all peeling motions are directed away from the body and hands.",
+            "hazard_id": "P01_05_75_H001"
+        }
+    ],
+    "uncertainties": [
+        "Whether the item being peeled is a potato or a yellow fruit like a pear."
+    ],
+    "clip_id": "P01_05_75",
+    "participant": "P01",
+    "metadata": {
+        "model": "gemini-3.5-flash",
+        "temperature": 0.2,
+        "timestamp": "2026-08-02 17:08:34",
+        "subset": "test",
+        "task": "open_set_hazard_analysis",
+        "keyframes_used": 14,
+        "predefined_hazard_categories_used": false
+    }
+}

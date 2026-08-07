@@ -1,0 +1,49 @@
+{
+    "hazards_present": true,
+    "overall_safety_summary": "The scene shows a person slicing tomatoes with a pot handle protruding dangerously toward the workspace and using an unsafe finger grip near the knife blade.",
+    "hazards": [
+        {
+            "description": "The handle of the pot on the stove is turned outward toward the active prep area.",
+            "explanation": "This creates a risk of accidentally bumping the handle, which could knock the pot over and cause spills or burns.",
+            "severity": "medium",
+            "confidence": 0.95,
+            "evidence_frames": [
+                "frame_0000.jpg",
+                "frame_0001.jpg",
+                "frame_0002.jpg", 
+                "frame_0003.jpg"
+            ],
+            "older_adult_relevance": "Older adults with reduced peripheral vision or mobility may be more likely to bump into protruding objects.",
+            "recommended_action": "Turn the pot handle inward so it points away from the edge and the workspace.",
+            "hazard_id": "P07_10_217_H001"
+        },
+        {
+            "description": "The user is holding the tomato with flat, extended fingers rather than a protective claw grip while slicing.",
+            "explanation": "This positions the fingertips directly in the path of the blade, increasing the risk of a cut if the knife slips on the round tomato.",
+            "severity": "medium",
+            "confidence": 0.85,
+            "evidence_frames": [
+                "frame_0001.jpg",
+                "frame_0002.jpg"
+            ],
+            "older_adult_relevance": "Slower reflexes and thinner skin in older adults can turn minor kitchen cuts into more serious injuries.",
+            "recommended_action": "Curl the fingertips inward into a claw grip to keep them safe from the knife blade.",
+            "hazard_id": "P07_10_217_H002"
+        }
+    ],
+    "uncertainties": [
+        "Whether the pot on the stove is currently hot or contains liquid.",
+        "Whether the cutting board has a non-slip backing to prevent sliding."
+    ],
+    "clip_id": "P07_10_217",
+    "participant": "P07",
+    "metadata": {
+        "model": "gemini-3.5-flash",
+        "temperature": 0.2,
+        "timestamp": "2026-08-02 17:41:57",
+        "subset": "test",
+        "task": "open_set_hazard_analysis",
+        "keyframes_used": 4,
+        "predefined_hazard_categories_used": false
+    }
+}

@@ -1,0 +1,75 @@
+{
+    "clip_id": "P07_10_217",
+    "participant": "P07",
+    "system": "rule_based_baseline",
+    "ruleset": {
+        "name": "kitchen_rules",
+        "version": "1.1",
+        "frozen_before_final_evaluation": false
+    },
+    "predefined_hazard_categories_used": true,
+    "hazards_present": true,
+    "overall_safety_summary": "One or more predefined rules were triggered.",
+    "hazards": [
+        {
+            "hazard_id": "P07_10_217_B001",
+            "triggered_rule_id": "R001",
+            "rule_name": "Person close to knife",
+            "description": "A person is very close to a detected knife.",
+            "explanation": "Close interaction with a knife may create a cutting risk.",
+            "severity": "medium",
+            "confidence": 0.3305,
+            "evidence_frames": [
+                "frame_0000.jpg"
+            ],
+            "older_adult_relevance": "Reduced grip stability, vision or reaction time may increase the likelihood of injury.",
+            "recommended_action": "Use a stable cutting surface and keep fingers away from the knife blade."
+        },
+        {
+            "hazard_id": "P07_10_217_B002",
+            "triggered_rule_id": "R002",
+            "rule_name": "Person close to scissors",
+            "description": "A person is very close to detected scissors.",
+            "explanation": "Close interaction with scissors may create a cutting or puncture risk.",
+            "severity": "medium",
+            "confidence": 0.4568,
+            "evidence_frames": [
+                "frame_0001.jpg"
+            ],
+            "older_adult_relevance": "Reduced dexterity or slower hand control may increase the risk of injury.",
+            "recommended_action": "Keep scissors closed when they are not being used and handle them carefully."
+        },
+        {
+            "hazard_id": "P07_10_217_B003",
+            "triggered_rule_id": "R005",
+            "rule_name": "Cup near visible boundary",
+            "description": "A detected cup is positioned near the visible image boundary.",
+            "explanation": "The cup may be close to the edge of the work surface and could be knocked over.",
+            "severity": "low",
+            "confidence": 0.2779,
+            "evidence_frames": [
+                "frame_0002.jpg"
+            ],
+            "older_adult_relevance": "A spilled drink may create a slipping risk or may be difficult to clean quickly.",
+            "recommended_action": "Move the cup farther from the edge of the work surface."
+        },
+        {
+            "hazard_id": "P07_10_217_B004",
+            "triggered_rule_id": "R008",
+            "rule_name": "Person close to oven",
+            "description": "A person is very close to a detected oven.",
+            "explanation": "Close interaction with an oven may create a burn risk if the appliance or nearby cookware is hot.",
+            "severity": "low",
+            "confidence": 0.3314,
+            "evidence_frames": [
+                "frame_0000.jpg"
+            ],
+            "older_adult_relevance": "Reduced heat sensitivity, balance or reaction speed may increase burn risk.",
+            "recommended_action": "Maintain a stable posture and use appropriate protection when interacting with the oven."
+        }
+    ],
+    "uncertainties": [
+        "The baseline is limited to predefined rules and YOLO detections.",
+        "It cannot reason about hazards outside its fixed rule set."
+    ]
+}

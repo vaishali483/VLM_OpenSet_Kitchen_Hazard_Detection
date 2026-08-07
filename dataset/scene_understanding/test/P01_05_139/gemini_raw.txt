@@ -1,0 +1,34 @@
+{
+  "summary": "A person is slicing a loaf of bread or cake on a white cutting board placed on a wooden countertop.",
+  "current_activity": "slicing bread",
+  "activity_confidence": 0.95,
+  "objects_in_use": [
+    "knife",
+    "cutting board",
+    "cake"
+  ],
+  "important_objects": [
+    "knife",
+    "cutting board",
+    "cake",
+    "watch"
+  ],
+  "environment": {
+    "stove_visible": false,
+    "sink_visible": false,
+    "counter_visible": true,
+    "other_context": [
+      "wooden countertop",
+      "packaging bag on the left side of the counter"
+    ]
+  },
+  "observations": [
+    "The person is holding the food item with their left hand while slicing with their right hand.",
+    "A long knife is being used to make vertical cuts through the food item.",
+    "The food item is positioned on a white rectangular cutting board.",
+    "The person is wearing a watch on their left wrist."
+  ],
+  "uncertainties": [
+    "Whether the food item being sliced is bread or a type of cake."
+  ]
+}

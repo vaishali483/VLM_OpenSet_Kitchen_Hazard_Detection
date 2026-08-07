@@ -1,0 +1,38 @@
+{
+  "summary": "A person is preparing food in a kitchen, stirring ingredients in a bowl on the countertop next to a stove with two pans cooking an omelet and patties.",
+  "current_activity": "stirring ingredients in a bowl",
+  "activity_confidence": 0.95,
+  "objects_in_use": [
+    "bowl",
+    "spoon"
+  ],
+  "important_objects": [
+    "bowl",
+    "frying pan",
+    "cutting board",
+    "knife",
+    "rice cooker",
+    "sushi rolling mat",
+    "spatula"
+  ],
+  "environment": {
+    "stove_visible": true,
+    "sink_visible": false,
+    "counter_visible": true,
+    "other_context": [
+      "A rice cooker is on the counter",
+      "A sushi rolling mat is next to the stove",
+      "A cutting board with chopped vegetables is on the counter"
+    ]
+  },
+  "observations": [
+    "The person is stirring ingredients in a white bowl.",
+    "An omelet is cooking in one pan on the stove.",
+    "Patties are frying in another pan on the stove.",
+    "Chopped carrots and onions are on a cutting board next to a knife."
+  ],
+  "uncertainties": [
+    "The exact type of patties being fried",
+    "The exact ingredients in the bowl"
+  ]
+}

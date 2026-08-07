@@ -1,0 +1,32 @@
+{
+    "hazards_present": true,
+    "overall_safety_summary": "The kitchen workspace is well-organized, but the user exhibits highly unsafe knife handling by placing their open hand in direct contact with the knife blade.",
+    "hazards": [
+        {
+            "description": "The user is holding a sharp knife with the blade resting directly against or extremely close to their open left hand.",
+            "explanation": "This improper knife handling technique poses an immediate risk of accidental cuts or lacerations.",
+            "severity": "high",
+            "confidence": 0.95,
+            "evidence_frames": [
+                "frame_0000.jpg"
+            ],
+            "older_adult_relevance": "Older adults often have thinner, more fragile skin and slower wound healing, making accidental cuts particularly hazardous.",
+            "recommended_action": "Avoid placing any part of the hand in direct contact with the knife blade and use a spatula or scraper to move chopped ingredients.",
+            "hazard_id": "P01_01_85_H001"
+        }
+    ],
+    "uncertainties": [
+        "The rapid camera movement in frame_0002.jpg makes it unclear if the user experienced a sudden slip, trip, or simply turned quickly."
+    ],
+    "clip_id": "P01_01_85",
+    "participant": "P01",
+    "metadata": {
+        "model": "gemini-3.5-flash",
+        "temperature": 0.2,
+        "timestamp": "2026-08-02 17:04:07",
+        "subset": "test",
+        "task": "open_set_hazard_analysis",
+        "keyframes_used": 3,
+        "predefined_hazard_categories_used": false
+    }
+}

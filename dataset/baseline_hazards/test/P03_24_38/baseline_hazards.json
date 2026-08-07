@@ -1,0 +1,118 @@
+{
+    "clip_id": "P03_24_38",
+    "participant": "P03",
+    "system": "rule_based_baseline",
+    "ruleset": {
+        "name": "kitchen_rules",
+        "version": "1.1",
+        "frozen_before_final_evaluation": false
+    },
+    "predefined_hazard_categories_used": true,
+    "hazards_present": true,
+    "overall_safety_summary": "One or more predefined rules were triggered.",
+    "hazards": [
+        {
+            "hazard_id": "P03_24_38_B001",
+            "triggered_rule_id": "R001",
+            "rule_name": "Person close to knife",
+            "description": "A person is very close to a detected knife.",
+            "explanation": "Close interaction with a knife may create a cutting risk.",
+            "severity": "medium",
+            "confidence": 0.4074,
+            "evidence_frames": [
+                "frame_0002.jpg"
+            ],
+            "older_adult_relevance": "Reduced grip stability, vision or reaction time may increase the likelihood of injury.",
+            "recommended_action": "Use a stable cutting surface and keep fingers away from the knife blade."
+        },
+        {
+            "hazard_id": "P03_24_38_B002",
+            "triggered_rule_id": "R003",
+            "rule_name": "Knife near visible boundary",
+            "description": "A detected knife is positioned near the visible image boundary.",
+            "explanation": "The knife may be close to the edge of the working surface and could fall or be knocked off.",
+            "severity": "medium",
+            "confidence": 0.4074,
+            "evidence_frames": [
+                "frame_0001.jpg",
+                "frame_0002.jpg"
+            ],
+            "older_adult_relevance": "A knife near the edge may be difficult to notice and avoid, particularly with reduced peripheral vision.",
+            "recommended_action": "Move the knife to a stable position away from the counter edge."
+        },
+        {
+            "hazard_id": "P03_24_38_B003",
+            "triggered_rule_id": "R006",
+            "rule_name": "Bottle near visible boundary",
+            "description": "A detected bottle is positioned near the visible image boundary.",
+            "explanation": "The bottle may be close to the counter edge and could fall, spill or break.",
+            "severity": "low",
+            "confidence": 0.2705,
+            "evidence_frames": [
+                "frame_0001.jpg"
+            ],
+            "older_adult_relevance": "A fallen bottle or spilled liquid may create an obstruction or slipping hazard.",
+            "recommended_action": "Place the bottle in a stable area away from the counter edge."
+        },
+        {
+            "hazard_id": "P03_24_38_B004",
+            "triggered_rule_id": "R008",
+            "rule_name": "Person close to oven",
+            "description": "A person is very close to a detected oven.",
+            "explanation": "Close interaction with an oven may create a burn risk if the appliance or nearby cookware is hot.",
+            "severity": "low",
+            "confidence": 0.3045,
+            "evidence_frames": [
+                "frame_0001.jpg"
+            ],
+            "older_adult_relevance": "Reduced heat sensitivity, balance or reaction speed may increase burn risk.",
+            "recommended_action": "Maintain a stable posture and use appropriate protection when interacting with the oven."
+        },
+        {
+            "hazard_id": "P03_24_38_B005",
+            "triggered_rule_id": "R014",
+            "rule_name": "Sharp object close to bowl",
+            "description": "A sharp object is positioned very close to a detected bowl.",
+            "explanation": "Reaching for or moving the bowl may cause accidental contact with the nearby sharp object.",
+            "severity": "low",
+            "confidence": 0.4074,
+            "evidence_frames": [
+                "frame_0002.jpg"
+            ],
+            "older_adult_relevance": "Reduced hand coordination or visual awareness may increase the chance of touching the sharp object.",
+            "recommended_action": "Move knives and scissors away from bowls and other frequently handled containers."
+        },
+        {
+            "hazard_id": "P03_24_38_B006",
+            "triggered_rule_id": "R015",
+            "rule_name": "Bottle close to hot appliance",
+            "description": "A detected bottle is positioned close to an oven or toaster.",
+            "explanation": "A bottle placed near a hot appliance may become hot, melt, leak or contain a flammable cooking liquid.",
+            "severity": "medium",
+            "confidence": 0.2705,
+            "evidence_frames": [
+                "frame_0001.jpg"
+            ],
+            "older_adult_relevance": "A heated or leaking bottle may be harder to handle quickly and may increase burn, fire or slipping risk.",
+            "recommended_action": "Move the bottle away from hot appliances and place it on a cool, stable surface."
+        },
+        {
+            "hazard_id": "P03_24_38_B007",
+            "triggered_rule_id": "R016",
+            "rule_name": "Cup or bowl close to oven",
+            "description": "A detected cup or bowl is positioned very close to an oven.",
+            "explanation": "The container may hold hot contents, become heated or be knocked over while the oven is being used.",
+            "severity": "medium",
+            "confidence": 0.3045,
+            "evidence_frames": [
+                "frame_0001.jpg"
+            ],
+            "older_adult_relevance": "Reduced grip strength or reaction speed may increase the likelihood and severity of a hot spill.",
+            "recommended_action": "Place cups and bowls on a stable surface away from the oven opening and hot cookware."
+        }
+    ],
+    "uncertainties": [
+        "The baseline is limited to predefined rules and YOLO detections.",
+        "It cannot reason about hazards outside its fixed rule set."
+    ]
+}

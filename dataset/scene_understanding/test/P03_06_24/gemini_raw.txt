@@ -1,0 +1,37 @@
+{
+  "summary": "A person is preparing a meal in a kitchen, holding and stirring a pot of yellow-green liquid next to plates of white rice on the counter.",
+  "current_activity": "Stirring or preparing food in a pot",
+  "activity_confidence": 0.95,
+  "objects_in_use": [
+    "pot",
+    "spoon"
+  ],
+  "important_objects": [
+    "pot",
+    "spoon",
+    "plates",
+    "kettle",
+    "stove"
+  ],
+  "environment": {
+    "stove_visible": true,
+    "sink_visible": false,
+    "counter_visible": true,
+    "other_context": [
+      "Electric stove hob",
+      "Chopping mats used on the counter",
+      "Kettle on the counter"
+    ]
+  },
+  "observations": [
+    "A person is holding a pot containing a yellow-green liquid.",
+    "A black spoon is being used to stir the contents of the pot.",
+    "Plates containing white rice are placed on the countertop.",
+    "An electric stove is visible in the background of the earlier frames.",
+    "A kettle and a small pot are also on the counter."
+  ],
+  "uncertainties": [
+    "The exact type of food in the pot (e.g., curry, soup, or sauce).",
+    "Whether the food is being served onto the plates or just stirred."
+  ]
+}

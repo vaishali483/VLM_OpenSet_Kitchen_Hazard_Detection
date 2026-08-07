@@ -1,0 +1,37 @@
+{
+  "summary": "A person is standing in a kitchen, holding the handle of a black frying pan on the stove with their left hand while opening a lower cabinet door with their right hand.",
+  "current_activity": "adjusting a frying pan on the stove and opening a cabinet",
+  "activity_confidence": 0.9,
+  "objects_in_use": [
+    "frying pan",
+    "cabinet door"
+  ],
+  "important_objects": [
+    "frying pan",
+    "stove",
+    "cabinet door",
+    "spice jars",
+    "cutting board",
+    "celery"
+  ],
+  "environment": {
+    "stove_visible": true,
+    "sink_visible": false,
+    "counter_visible": true,
+    "other_context": [
+      "wooden floor",
+      "spice tray on counter",
+      "green cutting board"
+    ]
+  },
+  "observations": [
+    "The person is wearing a watch on their left wrist.",
+    "A black frying pan is positioned on the stove hob.",
+    "A lower white cabinet door is being opened.",
+    "A red tray containing several spice jars is on the wooden countertop.",
+    "A green cutting board and packaged celery are visible on the counter."
+  ],
+  "uncertainties": [
+    "The exact contents inside the lower cabinet are partially obscured."
+  ]
+}

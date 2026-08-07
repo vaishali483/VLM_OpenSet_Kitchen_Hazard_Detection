@@ -1,0 +1,40 @@
+{
+  "summary": "An overhead view of a kitchen counter where a person is peeling a carrot next to a stove with a frying pan and a sink containing chopped vegetables.",
+  "current_activity": "peeling a carrot",
+  "activity_confidence": 0.95,
+  "objects_in_use": [
+    "carrot",
+    "peeler"
+  ],
+  "important_objects": [
+    "carrot",
+    "peeler",
+    "frying pan",
+    "wooden spoon",
+    "plate",
+    "colander",
+    "cutting board",
+    "stove"
+  ],
+  "environment": {
+    "stove_visible": true,
+    "sink_visible": true,
+    "counter_visible": true,
+    "other_context": [
+      "dish soap bottle",
+      "mug",
+      "clear plastic container"
+    ]
+  },
+  "observations": [
+    "A person is holding a carrot and using a small peeling tool to scrape it.",
+    "A frying pan on the left burner of the stove contains chopped yellow food being stirred with a wooden spoon.",
+    "A plate in the center contains a yellow liquid mixture, likely beaten eggs, with a fork resting inside.",
+    "A white colander sitting in the sink on the right contains chopped green leafy vegetables.",
+    "A white cutting board sits on the counter next to the sink."
+  ],
+  "uncertainties": [
+    "The exact type of peeling tool or small knife being used.",
+    "The specific ingredients cooking in the frying pan."
+  ]
+}

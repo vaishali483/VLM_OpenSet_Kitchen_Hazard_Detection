@@ -1,0 +1,33 @@
+{
+  "hazards_present": true,
+  "overall_safety_summary": "The scene shows a person chopping ingredients with unsafe hand positioning near a knife, and a pot handle protruding over the edge of the stove, presenting risks of cuts and accidental bumps.",
+  "hazards": [
+    {
+      "description": "The user is chopping ingredients with their non-dominant hand flat and fingers extended close to the knife blade.",
+      "explanation": "Extending fingers flat on the cutting board instead of using a claw grip significantly increases the risk of accidental cuts if the knife slips.",
+      "severity": "medium",
+      "confidence": 0.9,
+      "evidence_frames": [
+        "frame_0002.jpg"
+      ],
+      "older_adult_relevance": "Older adults may have reduced skin thickness, slower reflexes, or hand tremors, making them more vulnerable to severe cuts from improper knife-handling.",
+      "recommended_action": "Adopt the 'claw grip' technique by curling the fingertips inward to guide the knife safely."
+    },
+    {
+      "description": "A pan handle is protruding outwards over the edge of the stove on the left side of the counter.",
+      "explanation": "A handle sticking out past the counter edge can easily be bumped, potentially knocking the pan over and causing spills or burns.",
+      "severity": "medium",
+      "confidence": 0.8,
+      "evidence_frames": [
+        "frame_0000.jpg",
+        "frame_0002.jpg",
+        "frame_0003.jpg"
+      ],
+      "older_adult_relevance": "Older adults with mobility aids or reduced peripheral vision are more likely to accidentally bump into protruding handles.",
+      "recommended_action": "Turn the pan handle inward so it does not project over the edge of the stove or counter."
+    }
+  ],
+  "uncertainties": [
+    "Whether the stove burner under the pan is currently turned on or hot."
+  ]
+}

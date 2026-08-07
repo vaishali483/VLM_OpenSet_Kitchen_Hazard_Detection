@@ -1,0 +1,37 @@
+{
+  "summary": "A kitchen countertop with a green cutting board, vegetables including a carrot, zucchini, and celery, a tray of spices, and a sink.",
+  "current_activity": "preparing to chop ingredients",
+  "activity_confidence": 0.8,
+  "objects_in_use": [
+    "cutting board"
+  ],
+  "important_objects": [
+    "cutting board",
+    "carrot",
+    "zucchini",
+    "celery",
+    "sink",
+    "spice jars",
+    "bottles"
+  ],
+  "environment": {
+    "stove_visible": true,
+    "sink_visible": true,
+    "counter_visible": true,
+    "other_context": [
+      "wooden countertop",
+      "dish rack near the sink",
+      "stove hob visible on the left"
+    ]
+  },
+  "observations": [
+    "A green cutting board is positioned in the center of a wooden countertop.",
+    "A whole orange carrot and a green zucchini are placed on the counter near the sink.",
+    "A tray filled with multiple spice jars is on the left side of the counter.",
+    "A sink with a sponge and dish soap is visible on the right.",
+    "A person's hands are visible near the cutting board in the first frame, but not in subsequent frames."
+  ],
+  "uncertainties": [
+    "The exact contents of the small package next to the blue-lidded container, which resembles a food box but is labeled as a book in metadata."
+  ]
+}

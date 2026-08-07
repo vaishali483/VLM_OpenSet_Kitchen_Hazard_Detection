@@ -1,0 +1,46 @@
+{
+    "summary": "A person is peeling a yellow potato or fruit with a small knife over a green cutting board next to a kitchen sink.",
+    "current_activity": "peeling a potato",
+    "activity_confidence": 0.9,
+    "objects_in_use": [
+        "small knife",
+        "potato"
+    ],
+    "important_objects": [
+        "small knife",
+        "potato",
+        "cutting board",
+        "chef's knife",
+        "sink"
+    ],
+    "environment": {
+        "stove_visible": false,
+        "sink_visible": true,
+        "counter_visible": true,
+        "other_context": [
+            "wooden countertop",
+            "peelings on the counter",
+            "bottles and containers in the background"
+        ]
+    },
+    "observations": [
+        "The person is holding a small knife in their right hand and a yellow potato or fruit in their left hand.",
+        "A larger chef's knife is resting on the wooden countertop to the left of the green cutting board.",
+        "A stainless steel sink is located to the right of the cutting board.",
+        "Peelings are accumulating on the cutting board and countertop."
+    ],
+    "uncertainties": [
+        "The exact type of yellow vegetable or fruit being peeled (resembles a potato or pear)."
+    ],
+    "clip_id": "P01_05_75",
+    "participant": "test",
+    "metadata": {
+        "model": "gemini-3.5-flash",
+        "temperature": 0.2,
+        "timestamp": "2026-08-02 14:28:07",
+        "subset": "test",
+        "keyframes_used": 14,
+        "human_epic_annotation_removed": true,
+        "task": "scene_understanding_only"
+    }
+}

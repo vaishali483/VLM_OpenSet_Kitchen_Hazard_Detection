@@ -1,0 +1,17 @@
+{
+    "hazards_present": false,
+    "overall_safety_summary": "The scene shows a person safely opening a refrigerator door with no visible hazards or unsafe conditions detected.",
+    "hazards": [],
+    "uncertainties": [],
+    "clip_id": "P01_01_8",
+    "participant": "P01",
+    "metadata": {
+        "model": "gemini-3.5-flash",
+        "temperature": 0.2,
+        "timestamp": "2026-08-02 16:59:43",
+        "subset": "test",
+        "task": "open_set_hazard_analysis",
+        "keyframes_used": 3,
+        "predefined_hazard_categories_used": false
+    }
+}

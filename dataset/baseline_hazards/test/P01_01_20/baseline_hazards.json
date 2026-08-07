@@ -1,0 +1,33 @@
+{
+    "clip_id": "P01_01_20",
+    "participant": "P01",
+    "system": "rule_based_baseline", 
+    "ruleset": {
+        "name": "kitchen_rules", 
+        "version": "1.1",
+        "frozen_before_final_evaluation": false
+    },
+    "predefined_hazard_categories_used": true,
+    "hazards_present": true,
+    "overall_safety_summary": "One or more predefined rules were triggered.",
+    "hazards": [
+        {
+            "hazard_id": "P01_01_20_B001",
+            "triggered_rule_id": "R006",
+            "rule_name": "Bottle near visible boundary",
+            "description": "A detected bottle is positioned near the visible image boundary.",
+            "explanation": "The bottle may be close to the counter edge and could fall, spill or break.",
+            "severity": "low",
+            "confidence": 0.5144,
+            "evidence_frames": [
+                "frame_0000.jpg"
+            ],
+            "older_adult_relevance": "A fallen bottle or spilled liquid may create an obstruction or slipping hazard.",
+            "recommended_action": "Place the bottle in a stable area away from the counter edge."
+        }
+    ],
+    "uncertainties": [
+        "The baseline is limited to predefined rules and YOLO detections.",
+        "It cannot reason about hazards outside its fixed rule set."
+    ]
+}

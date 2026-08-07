@@ -1,0 +1,37 @@
+{
+  "summary": "A person is standing at a wooden kitchen counter, holding a small food package in their left hand and a kitchen knife in their right hand, preparing to cut or open the package.",
+  "current_activity": "preparing food",
+  "activity_confidence": 0.95,
+  "objects_in_use": [
+    "knife",
+    "packaged food item"
+  ],
+  "important_objects": [
+    "knife",
+    "cutting board",
+    "packaged food item",
+    "bread bag",
+    "peeler"
+  ],
+  "environment": {
+    "stove_visible": false,
+    "sink_visible": false,
+    "counter_visible": true,
+    "other_context": [
+      "wooden countertop",
+      "red kettle",
+      "green trivet",
+      "trash bin in background"
+    ]
+  },
+  "observations": [
+    "The person is holding a white package with blue text in their left hand.",
+    "The person picks up and holds a knife with a white and black handle in their right hand.",
+    "A wooden cutting board sits on the counter next to a yellow peeler and a bag of bread.",
+    "A white plastic bowl is visible on the counter."
+  ],
+  "uncertainties": [
+    "The exact type of food inside the package is not fully legible.",
+    "YOLO detection confused the food package with a cell phone or toothbrush and the knife with scissors."
+  ]
+}
