@@ -62,7 +62,7 @@ dataset/scene_json/
 # Ignore generated keyframes by default.
 dataset/keyframes/*
 
-# Keep the final test subset keyframes in Git.
+# Keep the final test subset keyframes.
 !dataset/keyframes/test/
 !dataset/keyframes/test/**
 
@@ -71,8 +71,7 @@ dataset/keyframes/*
 # Live Cooking Session Data
 # ==========================================================
 
-# Session images and session JSON files are generated locally
-# during Unity/FastAPI testing and should not be committed.
+# Session images and session JSON files are generated locally during Unity/FastAPI testing and should not be committed.
 data/sessions/
 
 
@@ -80,16 +79,7 @@ data/sessions/
 # Evaluation
 # ==========================================================
 
-# KEEP evaluation files in Git.
-#
-# This includes:
-#   evaluation/matching/P07/
-#   evaluation/matching/test/
-#   evaluation/results/P07/
-#   evaluation/results/test/
-#
-# including matches.json, evaluation_summary.json,
-# per_clip_summary.csv and system_comparison.csv.
+# Keep evaluation files in Git.
 
 !evaluation/
 !evaluation/matching/
@@ -101,10 +91,6 @@ data/sessions/
 # ==========================================================
 # Kitchen Hazard Rules
 # ==========================================================
-
-# KEEP rule definitions in Git, including:
-#   rules/kitchen_rules.json
-#   rules/kitchen_rules_evaluation.json
 
 !rules/
 !rules/*.json
@@ -123,10 +109,6 @@ pipeline/11_remove_local_paths.py
 # ==========================================================
 
 # Ignore ONLY a top-level folder called "results".
-#
-# The leading slash is important.
-# Using "results/" without the slash could also match
-# evaluation/results/, which we want to keep.
 /results/
 
 
