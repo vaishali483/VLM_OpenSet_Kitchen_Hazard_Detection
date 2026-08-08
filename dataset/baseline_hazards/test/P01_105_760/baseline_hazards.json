@@ -3,46 +3,17 @@
     "participant": "P01",
     "system": "rule_based_baseline",
     "ruleset": {
-        "name": "kitchen_rules",
-        "version": "1.1",
-        "frozen_before_final_evaluation": false
+        "name": "kitchen_rules_evaluation",
+        "version": "3.0",
+        "filename": "kitchen_rules_evaluation.json",
+        "frozen_before_final_evaluation": true
     },
     "predefined_hazard_categories_used": true,
-    "hazards_present": true,
-    "overall_safety_summary": "One or more predefined rules were triggered.",
-    "hazards": [
-        {
-            "hazard_id": "P01_105_760_B001",
-            "triggered_rule_id": "R008",
-            "rule_name": "Person close to oven",
-            "description": "A person is very close to a detected oven.",
-            "explanation": "Close interaction with an oven may create a burn risk if the appliance or nearby cookware is hot.",
-            "severity": "low",
-            "confidence": 0.7675,
-            "evidence_frames": [
-                "frame_0000.jpg",
-                "frame_0002.jpg"
-            ],
-            "older_adult_relevance": "Reduced heat sensitivity, balance or reaction speed may increase burn risk.",
-            "recommended_action": "Maintain a stable posture and use appropriate protection when interacting with the oven."
-        },
-        {
-            "hazard_id": "P01_105_760_B002",
-            "triggered_rule_id": "R018",
-            "rule_name": "Fork near visible boundary",
-            "description": "A detected fork is positioned near the visible image boundary.",
-            "explanation": "The fork may be close to the edge of the working surface and could fall or cause a puncture injury.",
-            "severity": "low",
-            "confidence": 0.6832,
-            "evidence_frames": [
-                "frame_0002.jpg"
-            ],
-            "older_adult_relevance": "A small utensil near an edge may be difficult to notice, particularly with reduced peripheral vision.",
-            "recommended_action": "Move the fork farther from the edge and place it flat on a stable surface."
-        }
-    ],
+    "hazards_present": false,
+    "overall_safety_summary": "No predefined rule was triggered.",
+    "hazards": [],
     "uncertainties": [
-        "The baseline is limited to predefined rules and YOLO detections.",
-        "It cannot reason about hazards outside its fixed rule set."
+        "The baseline is limited to the fixed frozen ruleset and the available YOLO detections.",
+        "It cannot reason about heat, appliance state, hidden conditions or hazards outside its predefined rules."
     ]
 }

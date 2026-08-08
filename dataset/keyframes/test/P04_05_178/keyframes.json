@@ -1,0 +1,59 @@
+{
+    "clip_id": "P04_05_178",
+    "participant": "P04",
+    "total_frames": 4,
+    "selected_frames": 3,
+    "frames": [
+        {
+            "frame": "frame_0000.jpg",
+            "timestamp": 0.0,
+            "reason": [
+                "first_frame"
+            ],
+            "change_score": 0,
+            "detected_classes": [
+                "bottle",
+                "bowl",
+                "cup",
+                "knife",
+                "person"
+            ],
+            "num_objects": 7
+        },
+        {
+            "frame": "frame_0002.jpg",
+            "timestamp": 2.0,
+            "reason": [
+                "object_change"
+            ],
+            "change_score": 2,
+            "detected_classes": [
+                "bottle",
+                "bowl",
+                "cup",
+                "fork",
+                "knife",
+                "person",
+                "spoon"
+            ],
+            "num_objects": 10
+        },
+        {
+            "frame": "frame_0003.jpg",
+            "timestamp": 2.69,
+            "reason": [
+                "last_frame",
+                "object_change"
+            ],
+            "change_score": 2,
+            "detected_classes": [
+                "bottle",
+                "bowl",
+                "fork",
+                "person",
+                "spoon"
+            ],
+            "num_objects": 7
+        }
+    ]
+}

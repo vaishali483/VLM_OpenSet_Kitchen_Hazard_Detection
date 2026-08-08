@@ -1,0 +1,144 @@
+{
+    "clip_id": "P06_105_25",
+    "participant": "P06",
+    "total_frames": 9,
+    "selected_frames": 9,
+    "frames": [
+        {
+            "frame": "frame_0000.jpg",
+            "timestamp": 0.0,
+            "reason": [
+                "first_frame"
+            ],
+            "change_score": 0,
+            "detected_classes": [
+                "bottle",
+                "oven",
+                "person"
+            ],
+            "num_objects": 4
+        },
+        {
+            "frame": "frame_0001.jpg",
+            "timestamp": 1.0,
+            "reason": [
+                "object_change"
+            ],
+            "change_score": 4,
+            "detected_classes": [
+                "bowl",
+                "knife",
+                "oven",
+                "person",
+                "spoon"
+            ],
+            "num_objects": 5
+        },
+        {
+            "frame": "frame_0002.jpg",
+            "timestamp": 2.0,
+            "reason": [
+                "object_change"
+            ],
+            "change_score": 2,
+            "detected_classes": [
+                "oven",
+                "person",
+                "spoon"
+            ],
+            "num_objects": 3
+        },
+        {
+            "frame": "frame_0003.jpg",
+            "timestamp": 3.0,
+            "reason": [
+                "object_change"
+            ],
+            "change_score": 1,
+            "detected_classes": [
+                "bowl",
+                "oven",
+                "person",
+                "spoon"
+            ],
+            "num_objects": 4
+        },
+        {
+            "frame": "frame_0004.jpg",
+            "timestamp": 4.0,
+            "reason": [
+                "object_change"
+            ],
+            "change_score": 1,
+            "detected_classes": [
+                "bowl",
+                "person",
+                "spoon"
+            ],
+            "num_objects": 3
+        },
+        {
+            "frame": "frame_0005.jpg",
+            "timestamp": 5.0,
+            "reason": [
+                "object_change"
+            ],
+            "change_score": 1,
+            "detected_classes": [
+                "bowl",
+                "oven",
+                "person",
+                "spoon"
+            ],
+            "num_objects": 4
+        },
+        {
+            "frame": "frame_0006.jpg",
+            "timestamp": 6.0,
+            "reason": [
+                "object_change"
+            ],
+            "change_score": 1,
+            "detected_classes": [
+                "bowl",
+                "knife",
+                "oven",
+                "person",
+                "spoon"
+            ],
+            "num_objects": 5
+        },
+        {
+            "frame": "frame_0007.jpg",
+            "timestamp": 7.0,
+            "reason": [
+                "object_change"
+            ],
+            "change_score": 2,
+            "detected_classes": [
+                "bottle",
+                "bowl",
+                "knife",
+                "oven",
+                "spoon"
+            ],
+            "num_objects": 5
+        },
+        {
+            "frame": "frame_0008.jpg",
+            "timestamp": 7.7,
+            "reason": [
+                "last_frame",
+                "object_change"
+            ],
+            "change_score": 5,
+            "detected_classes": [
+                "bottle",
+                "microwave",
+                "oven",
+                "person"
+            ],
+            "num_objects": 6
+        }
+    ]
+}

@@ -1,0 +1,220 @@
+{
+    "clip_id": "P04_02_243",
+    "participant": "P04",
+    "total_frames": 16,
+    "selected_frames": 14,
+    "frames": [
+        {
+            "frame": "frame_0000.jpg",
+            "timestamp": 0.0,
+            "reason": [
+                "first_frame"
+            ],
+            "change_score": 0,
+            "detected_classes": [
+                "bottle",
+                "bowl",
+                "carrot",
+                "knife",
+                "person"
+            ],
+            "num_objects": 9
+        },
+        {
+            "frame": "frame_0001.jpg",
+            "timestamp": 1.0,
+            "reason": [
+                "object_change"
+            ],
+            "change_score": 3,
+            "detected_classes": [
+                "bowl",
+                "carrot",
+                "person",
+                "spoon"
+            ],
+            "num_objects": 7
+        },
+        {
+            "frame": "frame_0002.jpg",
+            "timestamp": 2.0,
+            "reason": [
+                "object_change"
+            ],
+            "change_score": 2,
+            "detected_classes": [
+                "bowl",
+                "knife",
+                "person",
+                "spoon"
+            ],
+            "num_objects": 7
+        },
+        {
+            "frame": "frame_0004.jpg",
+            "timestamp": 4.0,
+            "reason": [
+                "object_change"
+            ],
+            "change_score": 1,
+            "detected_classes": [
+                "bowl",
+                "knife",
+                "person"
+            ],
+            "num_objects": 6
+        },
+        {
+            "frame": "frame_0005.jpg",
+            "timestamp": 5.0,
+            "reason": [
+                "object_change"
+            ],
+            "change_score": 1,
+            "detected_classes": [
+                "bowl",
+                "knife",
+                "person",
+                "spoon"
+            ],
+            "num_objects": 7
+        },
+        {
+            "frame": "frame_0007.jpg",
+            "timestamp": 7.01,
+            "reason": [
+                "object_change"
+            ],
+            "change_score": 2,
+            "detected_classes": [
+                "banana",
+                "bowl",
+                "knife",
+                "person"
+            ],
+            "num_objects": 7
+        },
+        {
+            "frame": "frame_0008.jpg",
+            "timestamp": 8.01,
+            "reason": [
+                "object_change"
+            ],
+            "change_score": 1,
+            "detected_classes": [
+                "bowl",
+                "knife",
+                "person"
+            ],
+            "num_objects": 6
+        },
+        {
+            "frame": "frame_0009.jpg",
+            "timestamp": 9.01,
+            "reason": [
+                "object_change"
+            ],
+            "change_score": 3,
+            "detected_classes": [
+                "bowl",
+                "cup",
+                "fork",
+                "knife",
+                "person",
+                "spoon"
+            ],
+            "num_objects": 10
+        },
+        {
+            "frame": "frame_0010.jpg",
+            "timestamp": 10.01,
+            "reason": [
+                "object_change"
+            ],
+            "change_score": 2,
+            "detected_classes": [
+                "bowl",
+                "knife",
+                "person",
+                "spoon"
+            ],
+            "num_objects": 8
+        },
+        {
+            "frame": "frame_0011.jpg",
+            "timestamp": 11.01,
+            "reason": [
+                "object_change"
+            ],
+            "change_score": 2,
+            "detected_classes": [
+                "banana",
+                "bowl",
+                "cup",
+                "knife",
+                "person",
+                "spoon"
+            ],
+            "num_objects": 8
+        },
+        {
+            "frame": "frame_0012.jpg",
+            "timestamp": 12.01,
+            "reason": [
+                "object_change"
+            ],
+            "change_score": 3,
+            "detected_classes": [
+                "banana",
+                "bowl",
+                "person"
+            ],
+            "num_objects": 5
+        },
+        {
+            "frame": "frame_0013.jpg",
+            "timestamp": 13.01,
+            "reason": [
+                "object_change"
+            ],
+            "change_score": 2,
+            "detected_classes": [
+                "bowl",
+                "knife",
+                "person"
+            ],
+            "num_objects": 6
+        },
+        {
+            "frame": "frame_0014.jpg",
+            "timestamp": 14.01,
+            "reason": [
+                "object_change"
+            ],
+            "change_score": 2,
+            "detected_classes": [
+                "banana",
+                "bowl",
+                "person"
+            ],
+            "num_objects": 6
+        },
+        {
+            "frame": "frame_0015.jpg",
+            "timestamp": 14.5,
+            "reason": [
+                "last_frame",
+                "object_change"
+            ],
+            "change_score": 4,
+            "detected_classes": [
+                "bowl",
+                "cup",
+                "knife",
+                "person",
+                "spoon"
+            ],
+            "num_objects": 8
+        }
+    ]
+}

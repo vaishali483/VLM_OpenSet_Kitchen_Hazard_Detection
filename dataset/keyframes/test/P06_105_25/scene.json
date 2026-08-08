@@ -1,0 +1,648 @@
+{
+    "clip_id": "P06_105_25",
+    "participant": "P06",
+    "video_id": "P06_105",
+    "annotation": {
+        "verb": "turn-off",
+        "noun": "oven",
+        "category": "turn-off oven",
+        "narration": "turn off oven"
+    },
+    "clip": {
+        "start_timestamp": "01:21.3",
+        "stop_timestamp": "01:29.0"
+    },
+    "frame_summary": {
+        "total_frames": 9,
+        "average_objects_per_frame": 4.33
+    },
+    "object_summary": {
+        "person": 10,
+        "oven": 8,
+        "bottle": 4,
+        "spoon": 7,
+        "bowl": 6,
+        "knife": 3,
+        "microwave": 1
+    },
+    "unique_objects": [
+        "bottle",
+        "bowl",
+        "knife",
+        "microwave",
+        "oven",
+        "person",
+        "spoon"
+    ],
+    "first_seen": {
+        "person": 0.0,
+        "oven": 0.0,
+        "bottle": 0.0,
+        "spoon": 1.0,
+        "bowl": 1.0,
+        "knife": 1.0,
+        "microwave": 7.7
+    },
+    "last_seen": {
+        "person": 7.7,
+        "oven": 7.7,
+        "bottle": 7.7,
+        "spoon": 7.0,
+        "bowl": 7.0,
+        "knife": 7.0,
+        "microwave": 7.7
+    },
+    "frames": [
+        {
+            "frame": "frame_0000.jpg",
+            "timestamp": 0.0,
+            "image_size": {
+                "width": 854,
+                "height": 480
+            },
+            "inference_time_ms": 88.0,
+            "objects": [
+                {
+                    "class_id": 0,
+                    "class_name": "person",
+                    "confidence": 0.8493,
+                    "bbox": [
+                        173.81,
+                        232.79,
+                        480.57,
+                        475.62
+                    ]
+                },
+                {
+                    "class_id": 0,
+                    "class_name": "person",
+                    "confidence": 0.6842,
+                    "bbox": [
+                        136.31,
+                        0.4,
+                        445.37,
+                        92.35
+                    ]
+                },
+                {
+                    "class_id": 69,
+                    "class_name": "oven",
+                    "confidence": 0.4625,
+                    "bbox": [
+                        328.69,
+                        4.01,
+                        851.53,
+                        327.6
+                    ]
+                },
+                {
+                    "class_id": 39,
+                    "class_name": "bottle",
+                    "confidence": 0.3339,
+                    "bbox": [
+                        251.82,
+                        170.04,
+                        296.57,
+                        289.81
+                    ]
+                }
+            ],
+            "num_objects": 4,
+            "detected_classes": [
+                "bottle",
+                "oven",
+                "person"
+            ]
+        },
+        {
+            "frame": "frame_0001.jpg",
+            "timestamp": 1.0,
+            "image_size": {
+                "width": 854,
+                "height": 480
+            },
+            "inference_time_ms": 79.99,
+            "objects": [
+                {
+                    "class_id": 0,
+                    "class_name": "person",
+                    "confidence": 0.8965,
+                    "bbox": [
+                        333.89,
+                        218.52,
+                        562.26,
+                        477.27
+                    ]
+                },
+                {
+                    "class_id": 44,
+                    "class_name": "spoon",
+                    "confidence": 0.6785,
+                    "bbox": [
+                        612.54,
+                        69.93,
+                        749.8,
+                        235.03
+                    ]
+                },
+                {
+                    "class_id": 69,
+                    "class_name": "oven",
+                    "confidence": 0.5657,
+                    "bbox": [
+                        27.96,
+                        1.22,
+                        854.0,
+                        469.27
+                    ]
+                },
+                {
+                    "class_id": 45,
+                    "class_name": "bowl",
+                    "confidence": 0.4267,
+                    "bbox": [
+                        494.97,
+                        1.17,
+                        755.74,
+                        192.11
+                    ]
+                },
+                {
+                    "class_id": 43,
+                    "class_name": "knife",
+                    "confidence": 0.2854,
+                    "bbox": [
+                        0.0,
+                        288.85,
+                        74.67,
+                        325.9
+                    ]
+                }
+            ],
+            "num_objects": 5,
+            "detected_classes": [
+                "bowl",
+                "knife",
+                "oven",
+                "person",
+                "spoon"
+            ]
+        },
+        {
+            "frame": "frame_0002.jpg",
+            "timestamp": 2.0,
+            "image_size": {
+                "width": 854,
+                "height": 480
+            },
+            "inference_time_ms": 90.99,
+            "objects": [
+                {
+                    "class_id": 0,
+                    "class_name": "person",
+                    "confidence": 0.8883,
+                    "bbox": [
+                        295.07,
+                        210.46,
+                        594.97,
+                        477.78
+                    ]
+                },
+                {
+                    "class_id": 44,
+                    "class_name": "spoon",
+                    "confidence": 0.7747,
+                    "bbox": [
+                        585.1,
+                        19.58,
+                        726.92,
+                        181.39
+                    ]
+                },
+                {
+                    "class_id": 69,
+                    "class_name": "oven",
+                    "confidence": 0.2927,
+                    "bbox": [
+                        10.16,
+                        2.34,
+                        853.61,
+                        476.85
+                    ]
+                }
+            ],
+            "num_objects": 3,
+            "detected_classes": [
+                "oven",
+                "person",
+                "spoon"
+            ]
+        },
+        {
+            "frame": "frame_0003.jpg",
+            "timestamp": 3.0,
+            "image_size": {
+                "width": 854,
+                "height": 480
+            },
+            "inference_time_ms": 76.0,
+            "objects": [
+                {
+                    "class_id": 0,
+                    "class_name": "person",
+                    "confidence": 0.9127,
+                    "bbox": [
+                        327.12,
+                        178.57,
+                        697.3,
+                        478.05
+                    ]
+                },
+                {
+                    "class_id": 44,
+                    "class_name": "spoon",
+                    "confidence": 0.7959,
+                    "bbox": [
+                        606.37,
+                        0.33,
+                        758.76,
+                        153.43
+                    ]
+                },
+                {
+                    "class_id": 45,
+                    "class_name": "bowl",
+                    "confidence": 0.4597,
+                    "bbox": [
+                        486.24,
+                        1.01,
+                        734.87,
+                        124.07
+                    ]
+                },
+                {
+                    "class_id": 69,
+                    "class_name": "oven",
+                    "confidence": 0.2777,
+                    "bbox": [
+                        10.3,
+                        3.42,
+                        849.98,
+                        480.0
+                    ]
+                }
+            ],
+            "num_objects": 4,
+            "detected_classes": [
+                "bowl",
+                "oven",
+                "person",
+                "spoon"
+            ]
+        },
+        {
+            "frame": "frame_0004.jpg",
+            "timestamp": 4.0,
+            "image_size": {
+                "width": 854,
+                "height": 480
+            },
+            "inference_time_ms": 69.0,
+            "objects": [
+                {
+                    "class_id": 0,
+                    "class_name": "person",
+                    "confidence": 0.9109,
+                    "bbox": [
+                        347.59,
+                        179.05,
+                        678.33,
+                        477.29
+                    ]
+                },
+                {
+                    "class_id": 45,
+                    "class_name": "bowl",
+                    "confidence": 0.7782,
+                    "bbox": [
+                        538.54,
+                        0.75,
+                        852.53,
+                        149.55
+                    ]
+                },
+                {
+                    "class_id": 44,
+                    "class_name": "spoon",
+                    "confidence": 0.7588,
+                    "bbox": [
+                        673.52,
+                        10.85,
+                        846.96,
+                        189.09
+                    ]
+                }
+            ],
+            "num_objects": 3,
+            "detected_classes": [
+                "bowl",
+                "person",
+                "spoon"
+            ]
+        },
+        {
+            "frame": "frame_0005.jpg",
+            "timestamp": 5.0,
+            "image_size": {
+                "width": 854,
+                "height": 480
+            },
+            "inference_time_ms": 87.0,
+            "objects": [
+                {
+                    "class_id": 44,
+                    "class_name": "spoon",
+                    "confidence": 0.8067,
+                    "bbox": [
+                        676.06,
+                        0.92,
+                        852.78,
+                        181.34
+                    ]
+                },
+                {
+                    "class_id": 45,
+                    "class_name": "bowl",
+                    "confidence": 0.5749,
+                    "bbox": [
+                        524.36,
+                        0.9,
+                        838.48,
+                        140.15
+                    ]
+                },
+                {
+                    "class_id": 0,
+                    "class_name": "person",
+                    "confidence": 0.5527,
+                    "bbox": [
+                        353.4,
+                        167.17,
+                        571.61,
+                        478.56
+                    ]
+                },
+                {
+                    "class_id": 69,
+                    "class_name": "oven",
+                    "confidence": 0.3577,
+                    "bbox": [
+                        344.93,
+                        1.21,
+                        844.63,
+                        143.94
+                    ]
+                }
+            ],
+            "num_objects": 4,
+            "detected_classes": [
+                "bowl",
+                "oven",
+                "person",
+                "spoon"
+            ]
+        },
+        {
+            "frame": "frame_0006.jpg",
+            "timestamp": 6.0,
+            "image_size": {
+                "width": 854,
+                "height": 480
+            },
+            "inference_time_ms": 85.0,
+            "objects": [
+                {
+                    "class_id": 43,
+                    "class_name": "knife",
+                    "confidence": 0.4654,
+                    "bbox": [
+                        66.73,
+                        343.66,
+                        221.6,
+                        412.86
+                    ]
+                },
+                {
+                    "class_id": 45,
+                    "class_name": "bowl",
+                    "confidence": 0.4476,
+                    "bbox": [
+                        227.26,
+                        0.15,
+                        363.35,
+                        146.84
+                    ]
+                },
+                {
+                    "class_id": 0,
+                    "class_name": "person",
+                    "confidence": 0.3898,
+                    "bbox": [
+                        428.36,
+                        434.92,
+                        543.16,
+                        480.0
+                    ]
+                },
+                {
+                    "class_id": 44,
+                    "class_name": "spoon",
+                    "confidence": 0.3683,
+                    "bbox": [
+                        650.71,
+                        167.09,
+                        743.5,
+                        242.03
+                    ]
+                },
+                {
+                    "class_id": 69,
+                    "class_name": "oven",
+                    "confidence": 0.3065,
+                    "bbox": [
+                        8.88,
+                        3.6,
+                        852.67,
+                        472.4
+                    ]
+                }
+            ],
+            "num_objects": 5,
+            "detected_classes": [
+                "bowl",
+                "knife",
+                "oven",
+                "person",
+                "spoon"
+            ]
+        },
+        {
+            "frame": "frame_0007.jpg",
+            "timestamp": 7.0,
+            "image_size": {
+                "width": 854,
+                "height": 480
+            },
+            "inference_time_ms": 67.0,
+            "objects": [
+                {
+                    "class_id": 43,
+                    "class_name": "knife",
+                    "confidence": 0.6783,
+                    "bbox": [
+                        76.63,
+                        371.29,
+                        241.72,
+                        440.2
+                    ]
+                },
+                {
+                    "class_id": 69,
+                    "class_name": "oven",
+                    "confidence": 0.6486,
+                    "bbox": [
+                        213.63,
+                        0.0,
+                        845.74,
+                        469.02
+                    ]
+                },
+                {
+                    "class_id": 39,
+                    "class_name": "bottle",
+                    "confidence": 0.3226,
+                    "bbox": [
+                        594.68,
+                        0.0,
+                        639.67,
+                        39.32
+                    ]
+                },
+                {
+                    "class_id": 44,
+                    "class_name": "spoon",
+                    "confidence": 0.2905,
+                    "bbox": [
+                        616.84,
+                        221.36,
+                        693.63,
+                        271.67
+                    ]
+                },
+                {
+                    "class_id": 45,
+                    "class_name": "bowl",
+                    "confidence": 0.2631,
+                    "bbox": [
+                        268.1,
+                        63.42,
+                        383.43,
+                        189.57
+                    ]
+                }
+            ],
+            "num_objects": 5,
+            "detected_classes": [
+                "bottle",
+                "bowl",
+                "knife",
+                "oven",
+                "spoon"
+            ]
+        },
+        {
+            "frame": "frame_0008.jpg",
+            "timestamp": 7.7,
+            "image_size": {
+                "width": 854,
+                "height": 480
+            },
+            "inference_time_ms": 74.0,
+            "objects": [
+                {
+                    "class_id": 0,
+                    "class_name": "person",
+                    "confidence": 0.8382,
+                    "bbox": [
+                        473.31,
+                        173.99,
+                        735.97,
+                        476.29
+                    ]
+                },
+                {
+                    "class_id": 39,
+                    "class_name": "bottle",
+                    "confidence": 0.7217,
+                    "bbox": [
+                        504.57,
+                        0.68,
+                        571.86,
+                        107.82
+                    ]
+                },
+                {
+                    "class_id": 39,
+                    "class_name": "bottle",
+                    "confidence": 0.6884,
+                    "bbox": [
+                        608.71,
+                        11.91,
+                        700.73,
+                        134.63
+                    ]
+                },
+                {
+                    "class_id": 69,
+                    "class_name": "oven",
+                    "confidence": 0.6541,
+                    "bbox": [
+                        14.54,
+                        5.75,
+                        849.45,
+                        471.34
+                    ]
+                },
+                {
+                    "class_id": 0,
+                    "class_name": "person",
+                    "confidence": 0.5108,
+                    "bbox": [
+                        0.45,
+                        364.05,
+                        115.35,
+                        478.09
+                    ]
+                },
+                {
+                    "class_id": 68,
+                    "class_name": "microwave",
+                    "confidence": 0.341,
+                    "bbox": [
+                        0.4,
+                        57.64,
+                        205.3,
+                        346.02
+                    ]
+                }
+            ],
+            "num_objects": 6,
+            "detected_classes": [
+                "bottle",
+                "microwave",
+                "oven",
+                "person"
+            ]
+        }
+    ]
+}

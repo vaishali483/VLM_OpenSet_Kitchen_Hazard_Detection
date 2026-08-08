@@ -1,0 +1,36 @@
+{
+    "clip_id": "P01_105_760",
+    "participant": "P01",
+    "total_frames": 3,
+    "selected_frames": 2,
+    "frames": [
+        {
+            "frame": "frame_0000.jpg",
+            "timestamp": 0.0,
+            "reason": [
+                "first_frame"
+            ],
+            "change_score": 0,
+            "detected_classes": [
+                "oven",
+                "person"
+            ],
+            "num_objects": 2
+        },
+        {
+            "frame": "frame_0002.jpg",
+            "timestamp": 1.46,
+            "reason": [
+                "last_frame",
+                "object_change"
+            ],
+            "change_score": 1,
+            "detected_classes": [
+                "fork",
+                "oven",
+                "person"
+            ],
+            "num_objects": 3
+        }
+    ]
+}

@@ -1,0 +1,63 @@
+{
+    "clip_id": "P07_10_217",
+    "participant": "P07",
+    "total_frames": 4,
+    "selected_frames": 4,
+    "frames": [
+        {
+            "frame": "frame_0000.jpg",
+            "timestamp": 0.0,
+            "reason": [
+                "first_frame"
+            ],
+            "change_score": 0,
+            "detected_classes": [
+                "apple",
+                "knife",
+                "oven",
+                "person"
+            ],
+            "num_objects": 5
+        },
+        {
+            "frame": "frame_0001.jpg",
+            "timestamp": 1.0,
+            "reason": [
+                "object_change"
+            ],
+            "change_score": 5,
+            "detected_classes": [
+                "clock",
+                "person",
+                "scissors"
+            ],
+            "num_objects": 3
+        },
+        {
+            "frame": "frame_0002.jpg",
+            "timestamp": 2.0,
+            "reason": [
+                "object_change"
+            ],
+            "change_score": 3,
+            "detected_classes": [
+                "cup",
+                "person"
+            ],
+            "num_objects": 2
+        },
+        {
+            "frame": "frame_0003.jpg",
+            "timestamp": 2.29,
+            "reason": [
+                "last_frame",
+                "object_change"
+            ],
+            "change_score": 1,
+            "detected_classes": [
+                "person"
+            ],
+            "num_objects": 1
+        }
+    ]
+}

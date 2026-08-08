@@ -17,7 +17,7 @@
         "frame_0014.jpg",
         "frame_0016.jpg"
     ],
-    "clip_contains_hazard": null,
+    "clip_contains_hazard": true,
     "ground_truth_hazards": [
         {
             "ground_truth_id": "P01_05_75_GT001",
@@ -39,7 +39,7 @@
                 "frame_0014.jpg",
                 "frame_0016.jpg"
             ],
-            "is_novel_relative_to_rule_baseline": false,
+            "is_novel_relative_to_rule_baseline": true,
             "notes": "Visible spatial hazard; rule-based detector may capture knife unsafety"
         }
     ]

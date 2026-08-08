@@ -10,6 +10,6 @@
         "frame_0005.jpg",
         "frame_0007.jpg"
     ],
-    "clip_contains_hazard": null,
+    "clip_contains_hazard": true,
     "ground_truth_hazards": []
 }

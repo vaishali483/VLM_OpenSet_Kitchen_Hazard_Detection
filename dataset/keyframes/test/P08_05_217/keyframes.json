@@ -1,0 +1,113 @@
+{
+    "clip_id": "P08_05_217",
+    "participant": "P08",
+    "total_frames": 6,
+    "selected_frames": 6,
+    "frames": [
+        {
+            "frame": "frame_0000.jpg",
+            "timestamp": 0.0,
+            "reason": [
+                "first_frame"
+            ],
+            "change_score": 0,
+            "detected_classes": [
+                "bowl",
+                "carrot",
+                "fork",
+                "oven",
+                "person",
+                "sandwich"
+            ],
+            "num_objects": 8
+        },
+        {
+            "frame": "frame_0001.jpg",
+            "timestamp": 1.01,
+            "reason": [
+                "object_change"
+            ],
+            "change_score": 2,
+            "detected_classes": [
+                "bowl",
+                "carrot",
+                "fork",
+                "knife",
+                "oven",
+                "person"
+            ],
+            "num_objects": 9
+        },
+        {
+            "frame": "frame_0002.jpg",
+            "timestamp": 2.02,
+            "reason": [
+                "object_change"
+            ],
+            "change_score": 1,
+            "detected_classes": [
+                "bowl",
+                "carrot",
+                "fork",
+                "knife",
+                "oven",
+                "person",
+                "wine glass"
+            ],
+            "num_objects": 8
+        },
+        {
+            "frame": "frame_0003.jpg",
+            "timestamp": 3.02,
+            "reason": [
+                "object_change"
+            ],
+            "change_score": 3,
+            "detected_classes": [
+                "bowl",
+                "carrot",
+                "cup",
+                "fork",
+                "oven",
+                "person"
+            ],
+            "num_objects": 10
+        },
+        {
+            "frame": "frame_0004.jpg",
+            "timestamp": 4.03,
+            "reason": [
+                "object_change"
+            ],
+            "change_score": 2,
+            "detected_classes": [
+                "bowl",
+                "carrot",
+                "fork",
+                "knife",
+                "oven",
+                "person"
+            ],
+            "num_objects": 10
+        },
+        {
+            "frame": "frame_0005.jpg",
+            "timestamp": 5.0,
+            "reason": [
+                "last_frame",
+                "object_change"
+            ],
+            "change_score": 1,
+            "detected_classes": [
+                "bowl",
+                "carrot",
+                "cup",
+                "fork",
+                "knife",
+                "oven",
+                "person"
+            ],
+            "num_objects": 8
+        }
+    ]
+}

@@ -24,7 +24,7 @@
         "frame_0024.jpg",
         "frame_0025.jpg"
     ],
-    "clip_contains_hazard": null,
+    "clip_contains_hazard": true,
     "ground_truth_hazards": [
         {
             "ground_truth_id": "P02_03_130_GT001",

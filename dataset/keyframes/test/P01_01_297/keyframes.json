@@ -1,0 +1,72 @@
+{
+    "clip_id": "P01_01_297",
+    "participant": "P01",
+    "total_frames": 4,
+    "selected_frames": 4,
+    "frames": [
+        {
+            "frame": "frame_0000.jpg",
+            "timestamp": 0.0,
+            "reason": [
+                "first_frame"
+            ],
+            "change_score": 0,
+            "detected_classes": [
+                "book",
+                "bottle",
+                "bowl",
+                "cake",
+                "person",
+                "spoon"
+            ],
+            "num_objects": 8
+        },
+        {
+            "frame": "frame_0001.jpg",
+            "timestamp": 1.0,
+            "reason": [
+                "object_change"
+            ],
+            "change_score": 2,
+            "detected_classes": [
+                "bottle",
+                "bowl",
+                "person",
+                "spoon"
+            ],
+            "num_objects": 6
+        },
+        {
+            "frame": "frame_0002.jpg",
+            "timestamp": 2.0,
+            "reason": [
+                "object_change"
+            ],
+            "change_score": 1,
+            "detected_classes": [
+                "bottle",
+                "bowl",
+                "oven",
+                "person",
+                "spoon"
+            ],
+            "num_objects": 7
+        },
+        {
+            "frame": "frame_0003.jpg",
+            "timestamp": 2.89,
+            "reason": [
+                "last_frame",
+                "object_change"
+            ],
+            "change_score": 3,
+            "detected_classes": [
+                "bottle",
+                "bowl",
+                "cake",
+                "person"
+            ],
+            "num_objects": 6
+        }
+    ]
+}

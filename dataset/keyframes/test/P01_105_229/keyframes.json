@@ -1,0 +1,41 @@
+{
+    "clip_id": "P01_105_229",
+    "participant": "P01",
+    "total_frames": 2,
+    "selected_frames": 2,
+    "frames": [
+        {
+            "frame": "frame_0000.jpg",
+            "timestamp": 0.0,
+            "reason": [
+                "first_frame"
+            ],
+            "change_score": 0,
+            "detected_classes": [
+                "bottle",
+                "cell phone",
+                "cup",
+                "knife",
+                "person",
+                "scissors"
+            ],
+            "num_objects": 6
+        },
+        {
+            "frame": "frame_0001.jpg",
+            "timestamp": 0.6,
+            "reason": [
+                "last_frame",
+                "object_change"
+            ],
+            "change_score": 6,
+            "detected_classes": [
+                "bowl",
+                "cell phone",
+                "person",
+                "toothbrush"
+            ],
+            "num_objects": 5
+        }
+    ]
+}

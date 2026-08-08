@@ -1,0 +1,298 @@
+{
+    "clip_id": "P02_03_130",
+    "participant": "P02",
+    "total_frames": 26,
+    "selected_frames": 21,
+    "frames": [
+        {
+            "frame": "frame_0000.jpg",
+            "timestamp": 0.0,
+            "reason": [
+                "first_frame"
+            ],
+            "change_score": 0,
+            "detected_classes": [
+                "handbag",
+                "person"
+            ],
+            "num_objects": 2
+        },
+        {
+            "frame": "frame_0001.jpg",
+            "timestamp": 1.0,
+            "reason": [
+                "object_change"
+            ],
+            "change_score": 2,
+            "detected_classes": [
+                "bottle",
+                "person"
+            ],
+            "num_objects": 2
+        },
+        {
+            "frame": "frame_0002.jpg",
+            "timestamp": 2.0,
+            "reason": [
+                "object_change"
+            ],
+            "change_score": 2,
+            "detected_classes": [
+                "book",
+                "bottle",
+                "handbag",
+                "person"
+            ],
+            "num_objects": 5
+        },
+        {
+            "frame": "frame_0003.jpg",
+            "timestamp": 3.0,
+            "reason": [
+                "object_change"
+            ],
+            "change_score": 1,
+            "detected_classes": [
+                "book",
+                "bottle",
+                "person"
+            ],
+            "num_objects": 4
+        },
+        {
+            "frame": "frame_0004.jpg",
+            "timestamp": 4.0,
+            "reason": [
+                "object_change"
+            ],
+            "change_score": 1,
+            "detected_classes": [
+                "book",
+                "bottle",
+                "handbag",
+                "person"
+            ],
+            "num_objects": 5
+        },
+        {
+            "frame": "frame_0005.jpg",
+            "timestamp": 5.0,
+            "reason": [
+                "object_change"
+            ],
+            "change_score": 1,
+            "detected_classes": [
+                "book",
+                "bottle",
+                "person"
+            ],
+            "num_objects": 3
+        },
+        {
+            "frame": "frame_0009.jpg",
+            "timestamp": 9.01,
+            "reason": [
+                "object_change"
+            ],
+            "change_score": 1,
+            "detected_classes": [
+                "bottle",
+                "person"
+            ],
+            "num_objects": 2
+        },
+        {
+            "frame": "frame_0010.jpg",
+            "timestamp": 10.01,
+            "reason": [
+                "object_change"
+            ],
+            "change_score": 1,
+            "detected_classes": [
+                "person"
+            ],
+            "num_objects": 1
+        },
+        {
+            "frame": "frame_0011.jpg",
+            "timestamp": 11.01,
+            "reason": [
+                "object_change"
+            ],
+            "change_score": 3,
+            "detected_classes": [
+                "book",
+                "bottle",
+                "handbag",
+                "person"
+            ],
+            "num_objects": 5
+        },
+        {
+            "frame": "frame_0012.jpg",
+            "timestamp": 12.01,
+            "reason": [
+                "object_change"
+            ],
+            "change_score": 1,
+            "detected_classes": [
+                "bottle",
+                "handbag",
+                "person"
+            ],
+            "num_objects": 4
+        },
+        {
+            "frame": "frame_0013.jpg",
+            "timestamp": 13.01,
+            "reason": [
+                "object_change"
+            ],
+            "change_score": 2,
+            "detected_classes": [
+                "book",
+                "bottle",
+                "person"
+            ],
+            "num_objects": 3
+        },
+        {
+            "frame": "frame_0014.jpg",
+            "timestamp": 14.01,
+            "reason": [
+                "object_change"
+            ],
+            "change_score": 1,
+            "detected_classes": [
+                "bottle",
+                "person"
+            ],
+            "num_objects": 2
+        },
+        {
+            "frame": "frame_0015.jpg",
+            "timestamp": 15.02,
+            "reason": [
+                "object_change"
+            ],
+            "change_score": 2,
+            "detected_classes": [
+                "book",
+                "bottle",
+                "handbag",
+                "person"
+            ],
+            "num_objects": 4
+        },
+        {
+            "frame": "frame_0016.jpg",
+            "timestamp": 16.02,
+            "reason": [
+                "object_change"
+            ],
+            "change_score": 1,
+            "detected_classes": [
+                "book",
+                "bottle",
+                "person"
+            ],
+            "num_objects": 4
+        },
+        {
+            "frame": "frame_0019.jpg",
+            "timestamp": 19.02,
+            "reason": [
+                "object_change"
+            ],
+            "change_score": 2,
+            "detected_classes": [
+                "bottle",
+                "handbag",
+                "person"
+            ],
+            "num_objects": 4
+        },
+        {
+            "frame": "frame_0020.jpg",
+            "timestamp": 20.02,
+            "reason": [
+                "object_change"
+            ],
+            "change_score": 1,
+            "detected_classes": [
+                "bottle",
+                "person"
+            ],
+            "num_objects": 3
+        },
+        {
+            "frame": "frame_0021.jpg",
+            "timestamp": 21.02,
+            "reason": [
+                "object_change"
+            ],
+            "change_score": 1,
+            "detected_classes": [
+                "book",
+                "bottle",
+                "person"
+            ],
+            "num_objects": 3
+        },
+        {
+            "frame": "frame_0022.jpg",
+            "timestamp": 22.02,
+            "reason": [
+                "object_change"
+            ],
+            "change_score": 1,
+            "detected_classes": [
+                "book",
+                "bottle",
+                "handbag",
+                "person"
+            ],
+            "num_objects": 5
+        },
+        {
+            "frame": "frame_0023.jpg",
+            "timestamp": 23.02,
+            "reason": [
+                "object_change"
+            ],
+            "change_score": 1,
+            "detected_classes": [
+                "book",
+                "bottle",
+                "person"
+            ],
+            "num_objects": 3
+        },
+        {
+            "frame": "frame_0024.jpg",
+            "timestamp": 24.02,
+            "reason": [
+                "object_change"
+            ],
+            "change_score": 3,
+            "detected_classes": [
+                "handbag",
+                "person"
+            ],
+            "num_objects": 2
+        },
+        {
+            "frame": "frame_0025.jpg",
+            "timestamp": 24.09,
+            "reason": [
+                "last_frame"
+            ],
+            "change_score": 0,
+            "detected_classes": [
+                "handbag",
+                "person"
+            ],
+            "num_objects": 2
+        }
+    ]
+}

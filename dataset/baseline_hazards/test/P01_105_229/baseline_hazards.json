@@ -3,9 +3,10 @@
     "participant": "P01",
     "system": "rule_based_baseline",
     "ruleset": {
-        "name": "kitchen_rules",
-        "version": "1.1",
-        "frozen_before_final_evaluation": false
+        "name": "kitchen_rules_evaluation",
+        "version": "3.0",
+        "filename": "kitchen_rules_evaluation.json",
+        "frozen_before_final_evaluation": true
     },
     "predefined_hazard_categories_used": true,
     "hazards_present": true,
@@ -13,77 +14,35 @@
     "hazards": [
         {
             "hazard_id": "P01_105_229_B001",
-            "triggered_rule_id": "R001",
-            "rule_name": "Person close to knife",
-            "description": "A person is very close to a detected knife.",
+            "triggered_rule_id": "R014",
+            "rule_name": "Person very close to knife",
+            "description": "A detected person is very close to a detected knife.",
             "explanation": "Close interaction with a knife may create a cutting risk.",
             "severity": "medium",
             "confidence": 0.8101,
             "evidence_frames": [
                 "frame_0000.jpg"
             ],
-            "older_adult_relevance": "Reduced grip stability, vision or reaction time may increase the likelihood of injury.",
-            "recommended_action": "Use a stable cutting surface and keep fingers away from the knife blade."
+            "older_adult_relevance": "Reduced dexterity, grip stability or reaction speed may increase injury risk.",
+            "recommended_action": "Keep fingers clear of the blade and use a stable cutting surface."
         },
         {
             "hazard_id": "P01_105_229_B002",
-            "triggered_rule_id": "R002",
-            "rule_name": "Person close to scissors",
-            "description": "A person is very close to detected scissors.",
+            "triggered_rule_id": "R015",
+            "rule_name": "Person very close to scissors",
+            "description": "A detected person is very close to detected scissors.",
             "explanation": "Close interaction with scissors may create a cutting or puncture risk.",
             "severity": "medium",
             "confidence": 0.4673,
             "evidence_frames": [
                 "frame_0000.jpg"
             ],
-            "older_adult_relevance": "Reduced dexterity or slower hand control may increase the risk of injury.",
-            "recommended_action": "Keep scissors closed when they are not being used and handle them carefully."
-        },
-        {
-            "hazard_id": "P01_105_229_B003",
-            "triggered_rule_id": "R005",
-            "rule_name": "Cup near visible boundary",
-            "description": "A detected cup is positioned near the visible image boundary.",
-            "explanation": "The cup may be close to the edge of the work surface and could be knocked over.",
-            "severity": "low",
-            "confidence": 0.6178,
-            "evidence_frames": [
-                "frame_0000.jpg"
-            ],
-            "older_adult_relevance": "A spilled drink may create a slipping risk or may be difficult to clean quickly.",
-            "recommended_action": "Move the cup farther from the edge of the work surface."
-        },
-        {
-            "hazard_id": "P01_105_229_B004",
-            "triggered_rule_id": "R006",
-            "rule_name": "Bottle near visible boundary",
-            "description": "A detected bottle is positioned near the visible image boundary.",
-            "explanation": "The bottle may be close to the counter edge and could fall, spill or break.",
-            "severity": "low",
-            "confidence": 0.2763,
-            "evidence_frames": [
-                "frame_0000.jpg"
-            ],
-            "older_adult_relevance": "A fallen bottle or spilled liquid may create an obstruction or slipping hazard.",
-            "recommended_action": "Place the bottle in a stable area away from the counter edge."
-        },
-        {
-            "hazard_id": "P01_105_229_B005",
-            "triggered_rule_id": "R007",
-            "rule_name": "Bowl near visible boundary",
-            "description": "A detected bowl is positioned near the visible image boundary.",
-            "explanation": "The bowl may be close to the edge of the work surface and could be knocked over.",
-            "severity": "low",
-            "confidence": 0.5126,
-            "evidence_frames": [
-                "frame_0001.jpg"
-            ],
-            "older_adult_relevance": "Spilled food or a fallen bowl may create clutter, slipping risk or a need for sudden movement.",
-            "recommended_action": "Move the bowl toward the centre of the working surface."
+            "older_adult_relevance": "Reduced dexterity or slower hand control may increase injury risk.",
+            "recommended_action": "Handle scissors carefully and keep them closed when not in use."
         }
     ],
     "uncertainties": [
-        "The baseline is limited to predefined rules and YOLO detections.",
-        "It cannot reason about hazards outside its fixed rule set."
+        "The baseline is limited to the fixed frozen ruleset and the available YOLO detections.",
+        "It cannot reason about heat, appliance state, hidden conditions or hazards outside its predefined rules."
     ]
 }

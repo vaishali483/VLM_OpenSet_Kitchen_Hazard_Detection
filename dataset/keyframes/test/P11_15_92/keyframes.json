@@ -1,0 +1,78 @@
+{
+    "clip_id": "P11_15_92",
+    "participant": "P11",
+    "total_frames": 6,
+    "selected_frames": 6,
+    "frames": [
+        {
+            "frame": "frame_0000.jpg",
+            "timestamp": 0.0,
+            "reason": [
+                "first_frame"
+            ],
+            "change_score": 0,
+            "detected_classes": [
+                "bowl"
+            ],
+            "num_objects": 1
+        },
+        {
+            "frame": "frame_0001.jpg",
+            "timestamp": 1.0,
+            "reason": [
+                "object_change"
+            ],
+            "change_score": 3,
+            "detected_classes": [
+                "bowl",
+                "cup",
+                "person",
+                "sink"
+            ],
+            "num_objects": 4
+        },
+        {
+            "frame": "frame_0002.jpg",
+            "timestamp": 2.0,
+            "reason": [
+                "object_change"
+            ],
+            "change_score": 4,
+            "detected_classes": [],
+            "num_objects": 0
+        },
+        {
+            "frame": "frame_0003.jpg",
+            "timestamp": 3.0,
+            "reason": [
+                "object_change"
+            ],
+            "change_score": 2,
+            "detected_classes": [
+                "person",
+                "skateboard"
+            ],
+            "num_objects": 2
+        },
+        {
+            "frame": "frame_0004.jpg",
+            "timestamp": 4.0,
+            "reason": [
+                "object_change"
+            ],
+            "change_score": 2,
+            "detected_classes": [],
+            "num_objects": 0
+        },
+        {
+            "frame": "frame_0005.jpg",
+            "timestamp": 4.89,
+            "reason": [
+                "last_frame"
+            ],
+            "change_score": 0,
+            "detected_classes": [],
+            "num_objects": 0
+        }
+    ]
+}

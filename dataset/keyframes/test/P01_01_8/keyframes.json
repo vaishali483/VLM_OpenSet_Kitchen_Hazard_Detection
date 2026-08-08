@@ -1,0 +1,47 @@
+{
+    "clip_id": "P01_01_8",
+    "participant": "P01",
+    "total_frames": 3,
+    "selected_frames": 3,
+    "frames": [
+        {
+            "frame": "frame_0000.jpg",
+            "timestamp": 0.0,
+            "reason": [
+                "first_frame"
+            ],
+            "change_score": 0,
+            "detected_classes": [
+                "book",
+                "person"
+            ],
+            "num_objects": 3
+        },
+        {
+            "frame": "frame_0001.jpg",
+            "timestamp": 1.0,
+            "reason": [
+                "object_change"
+            ],
+            "change_score": 4,
+            "detected_classes": [
+                "bottle",
+                "refrigerator"
+            ],
+            "num_objects": 3
+        },
+        {
+            "frame": "frame_0002.jpg",
+            "timestamp": 1.08,
+            "reason": [
+                "last_frame"
+            ],
+            "change_score": 0,
+            "detected_classes": [
+                "bottle",
+                "refrigerator"
+            ],
+            "num_objects": 3
+        }
+    ]
+}

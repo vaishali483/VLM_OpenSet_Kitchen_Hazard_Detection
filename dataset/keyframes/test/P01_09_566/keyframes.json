@@ -1,0 +1,110 @@
+{
+    "clip_id": "P01_09_566",
+    "participant": "P01",
+    "total_frames": 8,
+    "selected_frames": 7,
+    "frames": [
+        {
+            "frame": "frame_0000.jpg",
+            "timestamp": 0.0,
+            "reason": [
+                "first_frame"
+            ],
+            "change_score": 0,
+            "detected_classes": [
+                "microwave",
+                "oven",
+                "person"
+            ],
+            "num_objects": 3
+        },
+        {
+            "frame": "frame_0001.jpg",
+            "timestamp": 1.0,
+            "reason": [
+                "object_change"
+            ],
+            "change_score": 1,
+            "detected_classes": [
+                "oven",
+                "person"
+            ],
+            "num_objects": 3
+        },
+        {
+            "frame": "frame_0002.jpg",
+            "timestamp": 2.0,
+            "reason": [
+                "object_change"
+            ],
+            "change_score": 2,
+            "detected_classes": [
+                "bottle",
+                "dining table",
+                "oven",
+                "person"
+            ],
+            "num_objects": 5
+        },
+        {
+            "frame": "frame_0003.jpg",
+            "timestamp": 3.0,
+            "reason": [
+                "object_change"
+            ],
+            "change_score": 2,
+            "detected_classes": [
+                "bottle",
+                "bowl",
+                "oven",
+                "person"
+            ],
+            "num_objects": 6
+        },
+        {
+            "frame": "frame_0004.jpg",
+            "timestamp": 4.0,
+            "reason": [
+                "object_change"
+            ],
+            "change_score": 2,
+            "detected_classes": [
+                "bottle",
+                "microwave",
+                "oven",
+                "person"
+            ],
+            "num_objects": 5
+        },
+        {
+            "frame": "frame_0005.jpg",
+            "timestamp": 5.0,
+            "reason": [
+                "object_change"
+            ],
+            "change_score": 1,
+            "detected_classes": [
+                "bottle",
+                "oven",
+                "person"
+            ],
+            "num_objects": 3
+        },
+        {
+            "frame": "frame_0007.jpg",
+            "timestamp": 6.89,
+            "reason": [
+                "last_frame",
+                "object_change"
+            ],
+            "change_score": 3,
+            "detected_classes": [
+                "bowl",
+                "cup",
+                "oven",
+                "person"
+            ],
+            "num_objects": 5
+        }
+    ]
+}

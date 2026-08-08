@@ -1,0 +1,122 @@
+{
+    "subset": "P07",
+    "num_clips": 11,
+    "num_ground_truth_hazards": 13,
+    "num_safe_clips": 1,
+    "vlm_open_set": {
+        "system": "vlm_open_set",
+        "tp": 11,
+        "fp": 1,
+        "fn": 2,
+        "precision": 0.9167,
+        "recall": 0.8462,
+        "f1_score": 0.88,
+        "clip_level_false_positive_rate": 0.0,
+        "novel_hazard_detection_rate": 0.8462,
+        "detected_novel_hazards": 11,
+        "total_novel_hazards": 13
+    },
+    "rule_based_baseline": {
+        "system": "rule_based_baseline",
+        "tp": 0,
+        "fp": 29,
+        "fn": 13,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1_score": 0.0,
+        "clip_level_false_positive_rate": 1.0,
+        "novel_hazard_detection_rate": 0.0,
+        "detected_novel_hazards": 0,
+        "total_novel_hazards": 13
+    },
+    "per_clip": [
+        {
+            "clip_id": "P07_103_12",
+            "ground_truth_hazards": 0,
+            "vlm_predictions": 0,
+            "baseline_predictions": 1,
+            "vlm_matches": 0,
+            "baseline_matches": 0
+        },
+        {
+            "clip_id": "P07_10_217",
+            "ground_truth_hazards": 2,
+            "vlm_predictions": 2,
+            "baseline_predictions": 4,
+            "vlm_matches": 2,
+            "baseline_matches": 0
+        },
+        {
+            "clip_id": "P07_10_218",
+            "ground_truth_hazards": 2,
+            "vlm_predictions": 1,
+            "baseline_predictions": 2,
+            "vlm_matches": 1,
+            "baseline_matches": 0
+        },
+        {
+            "clip_id": "P07_10_242",
+            "ground_truth_hazards": 1,
+            "vlm_predictions": 1,
+            "baseline_predictions": 0,
+            "vlm_matches": 1,
+            "baseline_matches": 0
+        },
+        {
+            "clip_id": "P07_10_243",
+            "ground_truth_hazards": 1,
+            "vlm_predictions": 2,
+            "baseline_predictions": 2,
+            "vlm_matches": 1,
+            "baseline_matches": 0
+        },
+        {
+            "clip_id": "P07_10_244",
+            "ground_truth_hazards": 1,
+            "vlm_predictions": 1,
+            "baseline_predictions": 0,
+            "vlm_matches": 1,
+            "baseline_matches": 0
+        },
+        {
+            "clip_id": "P07_10_245",
+            "ground_truth_hazards": 1,
+            "vlm_predictions": 1,
+            "baseline_predictions": 0,
+            "vlm_matches": 1,
+            "baseline_matches": 0
+        },
+        {
+            "clip_id": "P07_10_246",
+            "ground_truth_hazards": 1,
+            "vlm_predictions": 1,
+            "baseline_predictions": 6,
+            "vlm_matches": 1,
+            "baseline_matches": 0
+        },
+        {
+            "clip_id": "P07_10_247",
+            "ground_truth_hazards": 2,
+            "vlm_predictions": 1,
+            "baseline_predictions": 5,
+            "vlm_matches": 1,
+            "baseline_matches": 0
+        },
+        {
+            "clip_id": "P07_10_248",
+            "ground_truth_hazards": 1,
+            "vlm_predictions": 1,
+            "baseline_predictions": 7,
+            "vlm_matches": 1,
+            "baseline_matches": 0
+        },
+        {
+            "clip_id": "P07_10_249",
+            "ground_truth_hazards": 1,
+            "vlm_predictions": 1,
+            "baseline_predictions": 2,
+            "vlm_matches": 1,
+            "baseline_matches": 0
+        }
+    ]
+}

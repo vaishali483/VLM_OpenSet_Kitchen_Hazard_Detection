@@ -5,7 +5,7 @@
         "frame_0000.jpg",
         "frame_0001.jpg"
     ],
-    "clip_contains_hazard": null,
+    "clip_contains_hazard": true,
     "ground_truth_hazards": [
         {
             "ground_truth_id": "P01_01_20_GT001",
@@ -16,6 +16,17 @@
                 "frame_0001.jpg"
             ],
             "is_novel_relative_to_rule_baseline": false,
+            "notes": "Visible spatial hazard; rule-based detector may capture knife unsafety"
+        },
+        {
+            "ground_truth_id": "P01_01_20_GT002",
+            "description": "Sharp kitchen knives are stored loose in the drawer.",
+            "severity": "medium",
+            "evidence_frames": [
+                "frame_0000.jpg",
+                "frame_0001.jpg"
+            ],
+            "is_novel_relative_to_rule_baseline": true,
             "notes": "Visible spatial hazard; rule-based detector may capture knife unsafety"
         }
     ]

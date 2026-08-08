@@ -12,7 +12,7 @@
         "frame_0007.jpg",
         "frame_0008.jpg"
     ],
-    "clip_contains_hazard": null,
+    "clip_contains_hazard": true,
     "ground_truth_hazards": [
         {
             "ground_truth_id": "P06_105_25_GT001",

@@ -1,0 +1,78 @@
+{
+    "clip_id": "P01_05_139",
+    "participant": "P01",
+    "total_frames": 7,
+    "selected_frames": 5,
+    "frames": [
+        {
+            "frame": "frame_0000.jpg",
+            "timestamp": 0.0,
+            "reason": [
+                "first_frame"
+            ],
+            "change_score": 0,
+            "detected_classes": [
+                "knife",
+                "person"
+            ],
+            "num_objects": 2
+        },
+        {
+            "frame": "frame_0001.jpg",
+            "timestamp": 1.0,
+            "reason": [
+                "object_change"
+            ],
+            "change_score": 1,
+            "detected_classes": [
+                "person"
+            ],
+            "num_objects": 1
+        },
+        {
+            "frame": "frame_0004.jpg",
+            "timestamp": 4.0,
+            "reason": [
+                "object_change"
+            ],
+            "change_score": 2,
+            "detected_classes": [
+                "dining table",
+                "laptop",
+                "person"
+            ],
+            "num_objects": 3
+        },
+        {
+            "frame": "frame_0005.jpg",
+            "timestamp": 5.0,
+            "reason": [
+                "object_change"
+            ],
+            "change_score": 1,
+            "detected_classes": [
+                "cake",
+                "dining table",
+                "laptop",
+                "person"
+            ],
+            "num_objects": 4
+        },
+        {
+            "frame": "frame_0006.jpg",
+            "timestamp": 5.29,
+            "reason": [
+                "last_frame",
+                "object_change"
+            ],
+            "change_score": 2,
+            "detected_classes": [
+                "cake",
+                "dining table",
+                "knife",
+                "person"
+            ],
+            "num_objects": 5
+        }
+    ]
+}

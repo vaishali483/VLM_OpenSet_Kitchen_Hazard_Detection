@@ -1,0 +1,224 @@
+{
+    "clip_id": "P01_05_75",
+    "participant": "P01",
+    "total_frames": 17,
+    "selected_frames": 14,
+    "frames": [
+        {
+            "frame": "frame_0000.jpg",
+            "timestamp": 0.0,
+            "reason": [
+                "first_frame"
+            ],
+            "change_score": 0,
+            "detected_classes": [
+                "banana",
+                "bottle",
+                "knife",
+                "person",
+                "sink"
+            ],
+            "num_objects": 7
+        },
+        {
+            "frame": "frame_0001.jpg",
+            "timestamp": 1.0,
+            "reason": [
+                "object_change"
+            ],
+            "change_score": 3,
+            "detected_classes": [
+                "apple",
+                "knife",
+                "person",
+                "sink"
+            ],
+            "num_objects": 4
+        },
+        {
+            "frame": "frame_0002.jpg",
+            "timestamp": 2.0,
+            "reason": [
+                "object_change"
+            ],
+            "change_score": 3,
+            "detected_classes": [
+                "banana",
+                "bottle",
+                "knife",
+                "person",
+                "sink"
+            ],
+            "num_objects": 5
+        },
+        {
+            "frame": "frame_0003.jpg",
+            "timestamp": 3.0,
+            "reason": [
+                "object_change"
+            ],
+            "change_score": 2,
+            "detected_classes": [
+                "apple",
+                "bottle",
+                "knife",
+                "person",
+                "sink"
+            ],
+            "num_objects": 5
+        },
+        {
+            "frame": "frame_0004.jpg",
+            "timestamp": 4.0,
+            "reason": [
+                "object_change"
+            ],
+            "change_score": 1,
+            "detected_classes": [
+                "apple",
+                "knife",
+                "person",
+                "sink"
+            ],
+            "num_objects": 5
+        },
+        {
+            "frame": "frame_0005.jpg",
+            "timestamp": 5.0,
+            "reason": [
+                "object_change"
+            ],
+            "change_score": 1,
+            "detected_classes": [
+                "knife",
+                "person",
+                "sink"
+            ],
+            "num_objects": 4
+        },
+        {
+            "frame": "frame_0006.jpg",
+            "timestamp": 6.01,
+            "reason": [
+                "object_change"
+            ],
+            "change_score": 1,
+            "detected_classes": [
+                "banana",
+                "knife",
+                "person",
+                "sink"
+            ],
+            "num_objects": 5
+        },
+        {
+            "frame": "frame_0008.jpg",
+            "timestamp": 8.01,
+            "reason": [
+                "object_change"
+            ],
+            "change_score": 1,
+            "detected_classes": [
+                "banana",
+                "bottle",
+                "knife",
+                "person",
+                "sink"
+            ],
+            "num_objects": 6
+        },
+        {
+            "frame": "frame_0009.jpg",
+            "timestamp": 9.01,
+            "reason": [
+                "object_change"
+            ],
+            "change_score": 1,
+            "detected_classes": [
+                "banana",
+                "knife",
+                "person",
+                "sink"
+            ],
+            "num_objects": 5
+        },
+        {
+            "frame": "frame_0011.jpg",
+            "timestamp": 11.01,
+            "reason": [
+                "object_change"
+            ],
+            "change_score": 1,
+            "detected_classes": [
+                "apple",
+                "banana",
+                "knife",
+                "person",
+                "sink"
+            ],
+            "num_objects": 6
+        },
+        {
+            "frame": "frame_0012.jpg",
+            "timestamp": 12.01,
+            "reason": [
+                "object_change"
+            ],
+            "change_score": 1,
+            "detected_classes": [
+                "banana",
+                "knife",
+                "person",
+                "sink"
+            ],
+            "num_objects": 5
+        },
+        {
+            "frame": "frame_0013.jpg",
+            "timestamp": 13.01,
+            "reason": [
+                "object_change"
+            ],
+            "change_score": 2,
+            "detected_classes": [
+                "cup",
+                "knife",
+                "person",
+                "sink"
+            ],
+            "num_objects": 5
+        },
+        {
+            "frame": "frame_0014.jpg",
+            "timestamp": 14.01,
+            "reason": [
+                "object_change"
+            ],
+            "change_score": 3,
+            "detected_classes": [
+                "banana",
+                "bottle",
+                "knife",
+                "person",
+                "sink"
+            ],
+            "num_objects": 5
+        },
+        {
+            "frame": "frame_0016.jpg",
+            "timestamp": 15.8,
+            "reason": [
+                "last_frame",
+                "object_change"
+            ],
+            "change_score": 1,
+            "detected_classes": [
+                "banana",
+                "knife",
+                "person",
+                "sink"
+            ],
+            "num_objects": 4
+        }
+    ]
+}

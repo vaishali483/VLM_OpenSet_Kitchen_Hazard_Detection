@@ -1,34 +1,19 @@
 {
     "clip_id": "P01_01_8",
-    "participant": "P01", 
+    "participant": "P01",
     "system": "rule_based_baseline",
     "ruleset": {
-        "name": "kitchen_rules",
-        "version": "1.1",
-        "frozen_before_final_evaluation": false
+        "name": "kitchen_rules_evaluation",
+        "version": "3.0",
+        "filename": "kitchen_rules_evaluation.json",
+        "frozen_before_final_evaluation": true
     },
     "predefined_hazard_categories_used": true,
-    "hazards_present": true,
-    "overall_safety_summary": "One or more predefined rules were triggered.",
-    "hazards": [
-        {
-            "hazard_id": "P01_01_8_B001",
-            "triggered_rule_id": "R006",
-            "rule_name": "Bottle near visible boundary",
-            "description": "A detected bottle is positioned near the visible image boundary.",
-            "explanation": "The bottle may be close to the counter edge and could fall, spill or break.",
-            "severity": "low",
-            "confidence": 0.6627,
-            "evidence_frames": [
-                "frame_0001.jpg",
-                "frame_0002.jpg"
-            ],
-            "older_adult_relevance": "A fallen bottle or spilled liquid may create an obstruction or slipping hazard.",
-            "recommended_action": "Place the bottle in a stable area away from the counter edge."
-        }
-    ],
+    "hazards_present": false,
+    "overall_safety_summary": "No predefined rule was triggered.",
+    "hazards": [],
     "uncertainties": [
-        "The baseline is limited to predefined rules and YOLO detections.",
-        "It cannot reason about hazards outside its fixed rule set."
+        "The baseline is limited to the fixed frozen ruleset and the available YOLO detections.",
+        "It cannot reason about heat, appliance state, hidden conditions or hazards outside its predefined rules."
     ]
 }

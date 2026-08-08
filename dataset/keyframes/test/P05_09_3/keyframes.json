@@ -1,0 +1,46 @@
+{
+    "clip_id": "P05_09_3",
+    "participant": "P05",
+    "total_frames": 3,
+    "selected_frames": 3,
+    "frames": [
+        {
+            "frame": "frame_0000.jpg",
+            "timestamp": 0.0,
+            "reason": [
+                "first_frame"
+            ],
+            "change_score": 0,
+            "detected_classes": [
+                "person"
+            ],
+            "num_objects": 1
+        },
+        {
+            "frame": "frame_0001.jpg",
+            "timestamp": 1.0,
+            "reason": [
+                "object_change"
+            ],
+            "change_score": 1,
+            "detected_classes": [
+                "person",
+                "suitcase"
+            ],
+            "num_objects": 5
+        },
+        {
+            "frame": "frame_0002.jpg",
+            "timestamp": 1.23,
+            "reason": [
+                "last_frame"
+            ],
+            "change_score": 0,
+            "detected_classes": [
+                "person",
+                "suitcase"
+            ],
+            "num_objects": 4
+        }
+    ]
+}

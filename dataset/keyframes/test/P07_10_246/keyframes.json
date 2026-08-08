@@ -1,0 +1,52 @@
+{
+    "clip_id": "P07_10_246",
+    "participant": "P07",
+    "total_frames": 4,
+    "selected_frames": 3,
+    "frames": [
+        {
+            "frame": "frame_0000.jpg",
+            "timestamp": 0.0,
+            "reason": [
+                "first_frame"
+            ],
+            "change_score": 0,
+            "detected_classes": [
+                "person"
+            ],
+            "num_objects": 1
+        },
+        {
+            "frame": "frame_0002.jpg",
+            "timestamp": 2.0,
+            "reason": [
+                "object_change"
+            ],
+            "change_score": 4,
+            "detected_classes": [
+                "bottle",
+                "cup",
+                "knife",
+                "person",
+                "spoon"
+            ],
+            "num_objects": 5
+        },
+        {
+            "frame": "frame_0003.jpg",
+            "timestamp": 2.19,
+            "reason": [
+                "last_frame",
+                "object_change"
+            ],
+            "change_score": 3,
+            "detected_classes": [
+                "knife",
+                "person",
+                "scissors",
+                "spoon"
+            ],
+            "num_objects": 6
+        }
+    ]
+}
