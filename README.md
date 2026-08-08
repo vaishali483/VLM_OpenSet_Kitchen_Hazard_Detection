@@ -568,7 +568,7 @@ When the hazardous object can be reliably associated with a YOLO detection, the 
 <tr>
 <td width="50%" align="center">
 
-<img src="docs/images/unity/exact_knife_localisation.jpg" width="300"/>
+<img src="docs/images/unity/exact_knife_localisation.jpeg" width="300"/>
 
 **Exact knife localisation**
 
@@ -577,7 +577,7 @@ A detected knife is associated with the hazard and displayed using the validated
 </td>
 <td width="50%" align="center">
 
-<img src="docs/images/unity/exact_knife_session.jpg" width="300"/>
+<img src="docs/images/unity/exact_knife_session.jpeg" width="300"/>
 
 **Exact localisation during an active session**
 
@@ -595,7 +595,7 @@ The interface distinguishes between hazards that are currently supported by the 
 <tr>
 <td width="50%" align="center">
 
-<img src="docs/images/unity/possible_pan_handle.jpg" width="300"/>
+<img src="docs/images/unity/possible_pan_handle.jpeg" width="300"/>
 
 **Possible hazard**
 
@@ -604,7 +604,7 @@ An outward-facing pan handle is classified as a possible hazard and includes its
 </td>
 <td width="50%" align="center">
 
-<img src="docs/images/unity/approximate_hand_hazard.jpg" width="300"/>
+<img src="docs/images/unity/approximate_hand_hazard.jpeg" width="300"/>
 
 **Present hazard with approximate localisation**
 
@@ -619,7 +619,7 @@ A bare-hand interaction with hot food is classified as present. Because the exac
 The system can provide an approximate visual region when a hazard is clearly visible but cannot be reliably represented by an exact YOLO bounding box.
 
 <p align="center">
-<img src="docs/images/unity/approximate_plastic_bag.jpg" width="300"/>
+<img src="docs/images/unity/approximate_plastic_bag.jpeg" width="300"/>
 </p>
 
 <p align="center">
@@ -633,7 +633,7 @@ The approximate marker is visually labelled as `APPROX. AREA` so that it is not 
 When the user stops a cooking session, the application aggregates the hazards observed across the analysed frames, removes repeated entries, and displays separate present and possible hazard lists.
 
 <p align="center">
-<img src="docs/images/unity/session_summary.jpg" width="300"/>
+<img src="docs/images/unity/session_summary.jpeg" width="300"/>
 </p>
 
 <p align="center">
