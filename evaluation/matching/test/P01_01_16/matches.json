@@ -1,0 +1,34 @@
+{
+    "clip_id": "P01_01_16",
+    "ground_truth_hazards": [
+        {
+            "id": "P01_01_16_GT001",
+            "description": "A cabinet door or drawer below the counter is left open and protrudes into the standing area.",
+            "severity": "low",
+            "evidence_frames": [
+                "frame_0000.jpg"
+            ],
+            "is_novel_relative_to_rule_baseline": true
+        }
+    ],
+    "vlm_predictions": [
+        {
+            "id": "P01_01_16_H001",
+            "description": "A cabinet door or drawer below the counter is left open and protrudes into the standing area.",
+            "severity": "medium",
+            "evidence_frames": [
+                "frame_0001.jpg",
+                "frame_0002.jpg"
+            ]
+        }
+    ],
+    "baseline_predictions": [],
+    "vlm_matches": [
+        {
+            "prediction_id": "P01_01_16_H001",
+            "ground_truth_id": "P01_01_16_GT001",
+            "is_match": true
+        }
+    ],
+    "baseline_matches": []
+}

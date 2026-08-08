@@ -1,0 +1,64 @@
+{
+    "clip_id": "P06_105_25",
+    "ground_truth_hazards": [
+        {
+            "id": "P06_105_25_GT001",
+            "description": "The person is barefoot while cooking at a gas stove and working near sharp utensils.",
+            "severity": "medium",
+            "evidence_frames": [
+                "frame_0001.jpg",
+                "frame_0002.jpg",
+                "frame_0003.jpg",
+                "frame_0004.jpg",
+                "frame_0005.jpg"
+            ],
+            "is_novel_relative_to_rule_baseline": true
+        }
+    ],
+    "vlm_predictions": [
+        {
+            "id": "P06_105_25_H001",
+            "description": "The person is barefoot while cooking at a gas stove and working near sharp utensils.",
+            "severity": "medium",
+            "evidence_frames": [
+                "frame_0001.jpg",
+                "frame_0002.jpg",
+                "frame_0003.jpg",
+                "frame_0004.jpg",
+                "frame_0005.jpg"
+            ]
+        },
+        {
+            "id": "P06_105_25_H002",
+            "description": "The person is reaching to touch or move a pot lid on the stove with bare hands while oven gloves remain unused on the counter.",
+            "severity": "medium",
+            "evidence_frames": [
+                "frame_0000.jpg",
+                "frame_0006.jpg",
+                "frame_0008.jpg"
+            ]
+        }
+    ],
+    "baseline_predictions": [
+        {
+            "id": "P06_105_25_B001",
+            "description": "A detected bottle is very close to an oven or toaster.",
+            "severity": "medium",
+            "evidence_frames": [
+                "frame_0000.jpg",
+                "frame_0007.jpg",
+                "frame_0008.jpg"
+            ],
+            "triggered_rule_id": "R013",
+            "rule_name": "Bottle very close to oven or toaster"
+        }
+    ],
+    "vlm_matches": [
+        {
+            "prediction_id": "P06_105_25_H001",
+            "ground_truth_id": "P06_105_25_GT001",
+            "is_match": true
+        }
+    ],
+    "baseline_matches": []
+}

@@ -1,0 +1,105 @@
+{
+    "clip_id": "P01_01_83",
+    "ground_truth_hazards": [
+        {
+            "id": "P01_01_83_GT001",
+            "description": "The person is handling the knife in an unsafe manner by positioning the fingers close to the blade while slicing onions.",
+            "severity": "medium",
+            "evidence_frames": [
+                "frame_0000.jpg",
+                "frame_0002.jpg",
+                "frame_0004.jpg",
+                "frame_0005.jpg",
+                "frame_0006.jpg",
+                "frame_0007.jpg",
+                "frame_0008.jpg",
+                "frame_0009.jpg",
+                "frame_0010.jpg",
+                "frame_0011.jpg",
+                "frame_0012.jpg"
+            ],
+            "is_novel_relative_to_rule_baseline": true
+        }
+    ],
+    "vlm_predictions": [
+        {
+            "id": "P01_01_83_H001",
+            "description": "The user is slicing a small onion while stabilizing it with flat, extended fingers rather than a tucked claw grip.",
+            "severity": "medium",
+            "evidence_frames": [
+                "frame_0002.jpg",
+                "frame_0004.jpg",
+                "frame_0005.jpg",
+                "frame_0006.jpg",
+                "frame_0007.jpg",
+                "frame_0008.jpg",
+                "frame_0009.jpg"
+            ]
+        }
+    ],
+    "baseline_predictions": [
+        {
+            "id": "P01_01_83_B001",
+            "description": "A detected bottle is close to the edge of its supporting work surface.",
+            "severity": "low",
+            "evidence_frames": [
+                "frame_0004.jpg",
+                "frame_0007.jpg",
+                "frame_0010.jpg"
+            ],
+            "triggered_rule_id": "R004",
+            "rule_name": "Bottle close to work-surface edge"
+        },
+        {
+            "id": "P01_01_83_B002",
+            "description": "A detected bowl is close to the edge of its supporting work surface.",
+            "severity": "low",
+            "evidence_frames": [
+                "frame_0000.jpg",
+                "frame_0002.jpg",
+                "frame_0004.jpg",
+                "frame_0005.jpg",
+                "frame_0006.jpg",
+                "frame_0007.jpg",
+                "frame_0008.jpg",
+                "frame_0009.jpg",
+                "frame_0010.jpg",
+                "frame_0011.jpg",
+                "frame_0012.jpg"
+            ],
+            "triggered_rule_id": "R006",
+            "rule_name": "Bowl close to work-surface edge"
+        },
+        {
+            "id": "P01_01_83_B003",
+            "description": "A detected person is very close to a detected knife.",
+            "severity": "medium",
+            "evidence_frames": [
+                "frame_0010.jpg"
+            ],
+            "triggered_rule_id": "R014",
+            "rule_name": "Person very close to knife"
+        },
+        {
+            "id": "P01_01_83_B004",
+            "description": "A detected person is very close to detected scissors.",
+            "severity": "medium",
+            "evidence_frames": [
+                "frame_0002.jpg",
+                "frame_0005.jpg",
+                "frame_0007.jpg",
+                "frame_0008.jpg"
+            ],
+            "triggered_rule_id": "R015",
+            "rule_name": "Person very close to scissors"
+        }
+    ],
+    "vlm_matches": [
+        {
+            "prediction_id": "P01_01_83_H001",
+            "ground_truth_id": "P01_01_83_GT001",
+            "is_match": true
+        }
+    ],
+    "baseline_matches": []
+}

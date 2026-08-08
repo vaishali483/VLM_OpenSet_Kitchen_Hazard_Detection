@@ -1,0 +1,72 @@
+{
+    "clip_id": "P01_05_75",
+    "ground_truth_hazards": [
+        {
+            "id": "P01_05_75_GT001",
+            "description": "The person is handling the knife in an unsafe manner by positioning the fingers close to the blade while peeling a potato.",
+            "severity": "high",
+            "evidence_frames": [
+                "frame_0000.jpg",
+                "frame_0001.jpg",
+                "frame_0002.jpg",
+                "frame_0003.jpg",
+                "frame_0004.jpg",
+                "frame_0005.jpg",
+                "frame_0006.jpg",
+                "frame_0008.jpg",
+                "frame_0009.jpg",
+                "frame_0011.jpg",
+                "frame_0012.jpg",
+                "frame_0013.jpg",
+                "frame_0014.jpg",
+                "frame_0016.jpg"
+            ],
+            "is_novel_relative_to_rule_baseline": false
+        }
+    ],
+    "vlm_predictions": [
+        {
+            "id": "P01_05_75_H001",
+            "description": "The user is peeling a potato by drawing the knife blade directly towards their thumb and holding hand.",
+            "severity": "medium",
+            "evidence_frames": [
+                "frame_0000.jpg",
+                "frame_0004.jpg",
+                "frame_0005.jpg",
+                "frame_0014.jpg"
+            ]
+        }
+    ],
+    "baseline_predictions": [
+        {
+            "id": "P01_05_75_B001",
+            "description": "A detected person is very close to a detected knife.",
+            "severity": "medium",
+            "evidence_frames": [
+                "frame_0000.jpg",
+                "frame_0001.jpg",
+                "frame_0002.jpg",
+                "frame_0004.jpg",
+                "frame_0005.jpg",
+                "frame_0006.jpg",
+                "frame_0008.jpg",
+                "frame_0009.jpg",
+                "frame_0011.jpg",
+                "frame_0012.jpg",
+                "frame_0013.jpg",
+                "frame_0014.jpg",
+                "frame_0016.jpg"
+            ],
+            "triggered_rule_id": "R014",
+            "rule_name": "Person very close to knife"
+        }
+    ],
+    "vlm_matches": [
+        {
+            "prediction_id": "P01_05_75_H001",
+            "ground_truth_id": "P01_05_75_GT001",
+            "is_match": true
+        }
+    ],
+    "baseline_matches": []
+}

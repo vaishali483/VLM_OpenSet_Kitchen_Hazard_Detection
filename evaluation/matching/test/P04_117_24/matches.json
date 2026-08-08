@@ -1,0 +1,91 @@
+{
+    "clip_id": "P04_117_24",
+    "ground_truth_hazards": [
+        {
+            "id": "P04_117_24_GT001",
+            "description": "A wooden cutting board and other kitchen tools are placed directly on the stovetop surface near active burners while slicing bread.",
+            "severity": "medium",
+            "evidence_frames": [
+                "frame_0000.jpg",
+                "frame_0001.jpg",
+                "frame_0002.jpg",
+                "frame_0003.jpg",
+                "frame_0004.jpg"
+            ],
+            "is_novel_relative_to_rule_baseline": true
+        },
+        {
+            "id": "P04_117_24_GT002",
+            "description": "The workspace is very cluttered near the stove.",
+            "severity": "low",
+            "evidence_frames": [
+                "frame_0000.jpg",
+                "frame_0001.jpg",
+                "frame_0002.jpg",
+                "frame_0003.jpg",
+                "frame_0004.jpg"
+            ],
+            "is_novel_relative_to_rule_baseline": true
+        }
+    ],
+    "vlm_predictions": [
+        {
+            "id": "P04_117_24_H001",
+            "description": "The wooden cutting board is placed directly on the smooth glass surface of the induction cooktop while slicing bread.",
+            "severity": "medium",
+            "evidence_frames": [
+                "frame_0000.jpg",
+                "frame_0001.jpg",
+                "frame_0002.jpg",
+                "frame_0003.jpg",
+                "frame_0004.jpg"
+            ]
+        }
+    ],
+    "baseline_predictions": [
+        {
+            "id": "P04_117_24_B001",
+            "description": "A sharp tool is very close to a frequently handled drink container.",
+            "severity": "low",
+            "evidence_frames": [
+                "frame_0003.jpg",
+                "frame_0004.jpg"
+            ],
+            "triggered_rule_id": "R009",
+            "rule_name": "Sharp tool close to drink container"
+        },
+        {
+            "id": "P04_117_24_B002",
+            "description": "A sharp tool is very close to a detected bowl.",
+            "severity": "low",
+            "evidence_frames": [
+                "frame_0000.jpg",
+                "frame_0001.jpg",
+                "frame_0003.jpg",
+                "frame_0004.jpg"
+            ],
+            "triggered_rule_id": "R010",
+            "rule_name": "Sharp tool close to bowl"
+        },
+        {
+            "id": "P04_117_24_B003",
+            "description": "A detected person is very close to a detected knife.",
+            "severity": "medium",
+            "evidence_frames": [
+                "frame_0001.jpg",
+                "frame_0003.jpg",
+                "frame_0004.jpg"
+            ],
+            "triggered_rule_id": "R014",
+            "rule_name": "Person very close to knife"
+        }
+    ],
+    "vlm_matches": [
+        {
+            "prediction_id": "P04_117_24_H001",
+            "ground_truth_id": "P04_117_24_GT001",
+            "is_match": true
+        }
+    ],
+    "baseline_matches": []
+}

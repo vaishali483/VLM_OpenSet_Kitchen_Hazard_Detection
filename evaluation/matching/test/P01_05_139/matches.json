@@ -1,0 +1,49 @@
+{
+    "clip_id": "P01_05_139",
+    "ground_truth_hazards": [
+        {
+            "id": "P01_05_139_GT001",
+            "description": "The person is handling the knife in an unsafe manner by positioning the fingers close to the blade while slicing bread.",
+            "severity": "high",
+            "evidence_frames": [
+                "frame_0000.jpg",
+                "frame_0001.jpg",
+                "frame_0004.jpg"
+            ],
+            "is_novel_relative_to_rule_baseline": true
+        }
+    ],
+    "vlm_predictions": [
+        {
+            "id": "P01_05_139_H001",
+            "description": "The person is holding the food item with a flat hand grip rather than a safe claw grip while slicing.",
+            "severity": "medium",
+            "evidence_frames": [
+                "frame_0000.jpg",
+                "frame_0001.jpg",
+                "frame_0004.jpg"
+            ]
+        }
+    ],
+    "baseline_predictions": [
+        {
+            "id": "P01_05_139_B001",
+            "description": "A detected person is very close to a detected knife.",
+            "severity": "medium",
+            "evidence_frames": [
+                "frame_0000.jpg",
+                "frame_0006.jpg"
+            ],
+            "triggered_rule_id": "R014",
+            "rule_name": "Person very close to knife"
+        }
+    ],
+    "vlm_matches": [
+        {
+            "prediction_id": "P01_05_139_H001",
+            "ground_truth_id": "P01_05_139_GT001",
+            "is_match": true
+        }
+    ],
+    "baseline_matches": []
+}

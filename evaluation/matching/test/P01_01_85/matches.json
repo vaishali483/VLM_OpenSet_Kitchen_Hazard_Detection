@@ -1,0 +1,76 @@
+{
+    "clip_id": "P01_01_85",
+    "ground_truth_hazards": [
+        {
+            "id": "P01_01_85_GT001",
+            "description": "The person is handling the knife in a very unsafe manner by scraping the knife over his fingers.",
+            "severity": "high",
+            "evidence_frames": [
+                "frame_0000.jpg",
+                "frame_0001.jpg",
+                "frame_0002.jpg"
+            ],
+            "is_novel_relative_to_rule_baseline": false
+        }
+    ],
+    "vlm_predictions": [
+        {
+            "id": "P01_01_85_H001",
+            "description": "The user is holding a sharp knife with the blade resting directly against or extremely close to their open left hand.",
+            "severity": "high",
+            "evidence_frames": [
+                "frame_0000.jpg"
+            ]
+        }
+    ],
+    "baseline_predictions": [
+        {
+            "id": "P01_01_85_B001",
+            "description": "A detected fork is close to the edge of its supporting work surface.",
+            "severity": "low",
+            "evidence_frames": [
+                "frame_0000.jpg"
+            ],
+            "triggered_rule_id": "R003",
+            "rule_name": "Fork close to work-surface edge"
+        },
+        {
+            "id": "P01_01_85_B002",
+            "description": "A detected bottle is close to the edge of its supporting work surface.",
+            "severity": "low",
+            "evidence_frames": [
+                "frame_0000.jpg"
+            ],
+            "triggered_rule_id": "R004",
+            "rule_name": "Bottle close to work-surface edge"
+        },
+        {
+            "id": "P01_01_85_B003",
+            "description": "A detected bowl is close to the edge of its supporting work surface.",
+            "severity": "low",
+            "evidence_frames": [
+                "frame_0000.jpg"
+            ],
+            "triggered_rule_id": "R006",
+            "rule_name": "Bowl close to work-surface edge"
+        },
+        {
+            "id": "P01_01_85_B004",
+            "description": "A detected person is very close to a detected knife.",
+            "severity": "medium",
+            "evidence_frames": [
+                "frame_0000.jpg"
+            ],
+            "triggered_rule_id": "R014",
+            "rule_name": "Person very close to knife"
+        }
+    ],
+    "vlm_matches": [
+        {
+            "prediction_id": "P01_01_85_H001",
+            "ground_truth_id": "P01_01_85_GT001",
+            "is_match": true
+        }
+    ],
+    "baseline_matches": []
+}

@@ -1,0 +1,76 @@
+{
+    "clip_id": "P04_110_20",
+    "ground_truth_hazards": [
+        {
+            "id": "P04_110_20_GT001",
+            "description": "A sharp knife is left in an unsafe position on the chopping board near the active workspace.",
+            "severity": "medium",
+            "evidence_frames": [
+                "frame_0000.jpg"
+            ],
+            "is_novel_relative_to_rule_baseline": true
+        },
+        {
+            "id": "P04_110_20_GT002",
+            "description": "A wooden rolling pin and some jars are resting directly on the stovetop surface near active burners.",
+            "severity": "medium",
+            "evidence_frames": [
+                "frame_0000.jpg",
+                "frame_0002.jpg",
+                "frame_0003.jpg"
+            ],
+            "is_novel_relative_to_rule_baseline": true
+        },
+        {
+            "id": "P04_110_20_GT003",
+            "description": "A crumpled dark cloth or garment is lying on the floor directly in the user's stepping area in front of the oven.",
+            "severity": "medium",
+            "evidence_frames": [
+                "frame_0002.jpg",
+                "frame_0003.jpg"
+            ],
+            "is_novel_relative_to_rule_baseline": true
+        }
+    ],
+    "vlm_predictions": [
+        {
+            "id": "P04_110_20_H001",
+            "description": "A crumpled dark cloth or garment is lying on the floor directly in the user's stepping area in front of the oven.",
+            "severity": "high",
+            "evidence_frames": [
+                "frame_0001.jpg",
+                "frame_0002.jpg"
+            ]
+        }
+    ],
+    "baseline_predictions": [
+        {
+            "id": "P04_110_20_B001",
+            "description": "A sharp tool is very close to a frequently handled drink container.",
+            "severity": "low",
+            "evidence_frames": [
+                "frame_0000.jpg"
+            ],
+            "triggered_rule_id": "R009",
+            "rule_name": "Sharp tool close to drink container"
+        },
+        {
+            "id": "P04_110_20_B002",
+            "description": "A sharp tool is very close to a detected bowl.",
+            "severity": "low",
+            "evidence_frames": [
+                "frame_0000.jpg"
+            ],
+            "triggered_rule_id": "R010",
+            "rule_name": "Sharp tool close to bowl"
+        }
+    ],
+    "vlm_matches": [
+        {
+            "prediction_id": "P04_110_20_H001",
+            "ground_truth_id": "P04_110_20_GT003",
+            "is_match": true
+        }
+    ],
+    "baseline_matches": []
+}

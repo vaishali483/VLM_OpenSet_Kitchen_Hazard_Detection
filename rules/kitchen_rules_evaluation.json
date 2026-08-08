@@ -1,0 +1,317 @@
+{
+    "name": "kitchen_rules_evaluation",
+    "version": "3.0",
+    "description": "Frozen closed-set kitchen hazard ruleset for the dissertation evaluation. Every rule is executable using only YOLO object classes, confidences, bounding boxes, image dimensions and sampled-frame evidence available in scene.json.",
+    "frozen_before_final_evaluation": true,
+    "evaluation_policy": {
+        "require_only_available_scene_json_evidence": true,
+        "distance_normalisation": "image_diagonal",
+        "camera_frame_boundary_is_not_a_work_surface_edge": true, 
+        "supported_rule_types": [
+            "object_proximity",
+            "object_overlap",
+            "surface_edge_proximity"
+        ],
+        "notes": [
+            "No rule assumes appliance power state, heat, flame, liquid contents, user intention or hidden conditions.",
+            "Surface-edge rules require a detected supporting dining-table/work-surface box; the image boundary is never used as a substitute.",
+            "The ruleset is intentionally fixed and closed-set so that it can serve as a transparent baseline against the open-set VLM system."
+        ]
+    },
+    "rules": [
+        {
+            "rule_id": "R001",
+            "name": "Knife close to work-surface edge",
+            "type": "surface_edge_proximity",
+            "object_classes": [
+                "knife"
+            ],
+            "surface_classes": [
+                "dining table"
+            ],
+            "min_confidence": 0.3,
+            "min_surface_confidence": 0.3,
+            "minimum_support_overlap_ratio": 0.15,
+            "max_edge_gap_ratio": 0.035,
+            "severity": "medium",
+            "description": "A detected knife is close to the edge of its supporting work surface.",
+            "explanation": "The knife could be knocked or fall from the work surface.",
+            "older_adult_relevance": "Reduced peripheral vision or reaction speed may make a falling sharp object harder to avoid.",
+            "recommended_action": "Place the knife flat and farther from the work-surface edge."
+        },
+        {
+            "rule_id": "R002",
+            "name": "Scissors close to work-surface edge",
+            "type": "surface_edge_proximity",
+            "object_classes": [
+                "scissors"
+            ],
+            "surface_classes": [
+                "dining table"
+            ],
+            "min_confidence": 0.3,
+            "min_surface_confidence": 0.3,
+            "minimum_support_overlap_ratio": 0.15,
+            "max_edge_gap_ratio": 0.035,
+            "severity": "medium",
+            "description": "Detected scissors are close to the edge of their supporting work surface.",
+            "explanation": "The scissors could be knocked off and create a cutting or puncture risk.",
+            "older_adult_relevance": "Reduced peripheral vision or reaction speed may make a falling sharp object harder to avoid.",
+            "recommended_action": "Place the scissors closed and farther from the work-surface edge."
+        },
+        {
+            "rule_id": "R003",
+            "name": "Fork close to work-surface edge",
+            "type": "surface_edge_proximity",
+            "object_classes": [
+                "fork"
+            ],
+            "surface_classes": [
+                "dining table"
+            ],
+            "min_confidence": 0.3,
+            "min_surface_confidence": 0.3,
+            "minimum_support_overlap_ratio": 0.15,
+            "max_edge_gap_ratio": 0.03,
+            "severity": "low",
+            "description": "A detected fork is close to the edge of its supporting work surface.",
+            "explanation": "The fork could fall or be knocked from the surface.",
+            "older_adult_relevance": "A small falling utensil may be harder to notice or avoid with reduced vision or mobility.",
+            "recommended_action": "Move the fork inward and leave it flat on the work surface."
+        },
+        {
+            "rule_id": "R004",
+            "name": "Bottle close to work-surface edge",
+            "type": "surface_edge_proximity",
+            "object_classes": [
+                "bottle"
+            ],
+            "surface_classes": [
+                "dining table"
+            ],
+            "min_confidence": 0.3,
+            "min_surface_confidence": 0.3,
+            "minimum_support_overlap_ratio": 0.15,
+            "max_edge_gap_ratio": 0.04,
+            "severity": "low",
+            "description": "A detected bottle is close to the edge of its supporting work surface.",
+            "explanation": "The bottle could fall, break or spill if it is knocked.",
+            "older_adult_relevance": "A fallen container may create clutter or a slipping risk that is harder to recover from.",
+            "recommended_action": "Move the bottle farther inward onto a stable part of the surface."
+        },
+        {
+            "rule_id": "R005",
+            "name": "Cup or glass close to work-surface edge",
+            "type": "surface_edge_proximity",
+            "object_classes": [
+                "cup",
+                "wine glass"
+            ],
+            "surface_classes": [
+                "dining table"
+            ],
+            "min_confidence": 0.3,
+            "min_surface_confidence": 0.3,
+            "minimum_support_overlap_ratio": 0.15,
+            "max_edge_gap_ratio": 0.04,
+            "severity": "low",
+            "description": "A detected cup or glass is close to the edge of its supporting work surface.",
+            "explanation": "The container could be knocked over or fall from the surface.",
+            "older_adult_relevance": "Spilled liquid or broken glass may create a slipping or cutting hazard.",
+            "recommended_action": "Move the cup or glass farther from the work-surface edge."
+        },
+        {
+            "rule_id": "R006",
+            "name": "Bowl close to work-surface edge",
+            "type": "surface_edge_proximity",
+            "object_classes": [
+                "bowl"
+            ],
+            "surface_classes": [
+                "dining table"
+            ],
+            "min_confidence": 0.3,
+            "min_surface_confidence": 0.3,
+            "minimum_support_overlap_ratio": 0.15,
+            "max_edge_gap_ratio": 0.04,
+            "severity": "low",
+            "description": "A detected bowl is close to the edge of its supporting work surface.",
+            "explanation": "The bowl could be knocked over or fall from the surface.",
+            "older_adult_relevance": "Spilled food or a fallen bowl may create clutter and require sudden movement.",
+            "recommended_action": "Move the bowl farther inward onto the work surface."
+        },
+        {
+            "rule_id": "R007",
+            "name": "Knife overlapping sink area",
+            "type": "object_overlap",
+            "object_group_1": [
+                "knife"
+            ],
+            "object_group_2": [
+                "sink"
+            ],
+            "min_confidence": 0.3,
+            "minimum_subject_overlap_ratio": 0.2,
+            "severity": "high",
+            "description": "A detected knife overlaps the visible sink area.",
+            "explanation": "A knife in the sink area may be obscured during washing or handling.",
+            "older_adult_relevance": "Reduced vision or touch sensitivity may make a partly concealed blade harder to notice.",
+            "recommended_action": "Remove the knife carefully and wash or store it separately."
+        },
+        {
+            "rule_id": "R008",
+            "name": "Scissors overlapping sink area",
+            "type": "object_overlap",
+            "object_group_1": [
+                "scissors"
+            ],
+            "object_group_2": [
+                "sink"
+            ],
+            "min_confidence": 0.3,
+            "minimum_subject_overlap_ratio": 0.2,
+            "severity": "high",
+            "description": "Detected scissors overlap the visible sink area.",
+            "explanation": "Scissors in the sink area may be obscured among dishes or water.",
+            "older_adult_relevance": "Reduced visual contrast sensitivity or hand control may increase accidental contact risk.",
+            "recommended_action": "Remove the scissors and store them closed in a clearly visible place."
+        },
+        {
+            "rule_id": "R009",
+            "name": "Sharp tool close to drink container",
+            "type": "object_proximity",
+            "object_group_1": [
+                "knife",
+                "scissors"
+            ],
+            "object_group_2": [
+                "cup",
+                "wine glass",
+                "bottle"
+            ],
+            "min_confidence": 0.3,
+            "max_gap_ratio": 0.045,
+            "severity": "low",
+            "description": "A sharp tool is very close to a frequently handled drink container.",
+            "explanation": "Reaching for the container may cause accidental contact with the nearby sharp tool.",
+            "older_adult_relevance": "Reduced hand coordination or visual awareness may increase accidental contact.",
+            "recommended_action": "Separate sharp tools from cups, glasses and bottles."
+        },
+        {
+            "rule_id": "R010",
+            "name": "Sharp tool close to bowl",
+            "type": "object_proximity",
+            "object_group_1": [
+                "knife",
+                "scissors"
+            ],
+            "object_group_2": [
+                "bowl"
+            ],
+            "min_confidence": 0.3,
+            "max_gap_ratio": 0.04,
+            "severity": "low",
+            "description": "A sharp tool is very close to a detected bowl.",
+            "explanation": "Moving or reaching for the bowl may cause accidental contact with the sharp tool.",
+            "older_adult_relevance": "Reduced hand coordination or visual awareness may increase accidental contact.",
+            "recommended_action": "Move knives and scissors away from frequently handled bowls."
+        },
+        {
+            "rule_id": "R011",
+            "name": "Metal utensil overlapping microwave",
+            "type": "object_overlap",
+            "object_group_1": [
+                "fork",
+                "knife",
+                "spoon",
+                "scissors"
+            ],
+            "object_group_2": [
+                "microwave"
+            ],
+            "min_confidence": 0.3,
+            "minimum_subject_overlap_ratio": 0.25,
+            "severity": "high",
+            "description": "A detected metal utensil overlaps the visible microwave area.",
+            "explanation": "The utensil may be inside or immediately against the microwave opening.",
+            "older_adult_relevance": "A confusing appliance setup may increase the chance of unsafe microwave use.",
+            "recommended_action": "Check and remove metal utensils before operating the microwave."
+        },
+        {
+            "rule_id": "R012",
+            "name": "Metal utensil overlapping toaster",
+            "type": "object_overlap",
+            "object_group_1": [
+                "fork",
+                "knife",
+                "spoon",
+                "scissors"
+            ],
+            "object_group_2": [
+                "toaster"
+            ],
+            "min_confidence": 0.3,
+            "minimum_subject_overlap_ratio": 0.2,
+            "severity": "high",
+            "description": "A detected metal utensil overlaps the visible toaster area.",
+            "explanation": "The utensil may be touching or entering the toaster area.",
+            "older_adult_relevance": "Reduced dexterity may increase the chance of unsafe contact around a toaster.",
+            "recommended_action": "Do not insert metal utensils into a toaster; disconnect it before safe removal."
+        },
+        {
+            "rule_id": "R013",
+            "name": "Bottle very close to oven or toaster",
+            "type": "object_proximity",
+            "object_group_1": [
+                "bottle"
+            ],
+            "object_group_2": [
+                "oven",
+                "toaster"
+            ],
+            "min_confidence": 0.3,
+            "max_gap_ratio": 0.045,
+            "severity": "medium",
+            "description": "A detected bottle is very close to an oven or toaster.",
+            "explanation": "The bottle may be knocked, heated or spilled while the nearby appliance is used.",
+            "older_adult_relevance": "Reduced grip strength or reaction speed may make a spill or hot container harder to manage.",
+            "recommended_action": "Move the bottle to a stable area away from the appliance."
+        },
+        {
+            "rule_id": "R014",
+            "name": "Person very close to knife",
+            "type": "object_proximity",
+            "object_group_1": [
+                "person"
+            ],
+            "object_group_2": [
+                "knife"
+            ],
+            "min_confidence": 0.3,
+            "max_gap_ratio": 0.035,
+            "severity": "medium",
+            "description": "A detected person is very close to a detected knife.",
+            "explanation": "Close interaction with a knife may create a cutting risk.",
+            "older_adult_relevance": "Reduced dexterity, grip stability or reaction speed may increase injury risk.",
+            "recommended_action": "Keep fingers clear of the blade and use a stable cutting surface."
+        },
+        {
+            "rule_id": "R015",
+            "name": "Person very close to scissors",
+            "type": "object_proximity",
+            "object_group_1": [
+                "person"
+            ],
+            "object_group_2": [
+                "scissors"
+            ],
+            "min_confidence": 0.3,
+            "max_gap_ratio": 0.035,
+            "severity": "medium",
+            "description": "A detected person is very close to detected scissors.",
+            "explanation": "Close interaction with scissors may create a cutting or puncture risk.",
+            "older_adult_relevance": "Reduced dexterity or slower hand control may increase injury risk.",
+            "recommended_action": "Handle scissors carefully and keep them closed when not in use."
+        }
+    ]
+}

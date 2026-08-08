@@ -1,0 +1,56 @@
+{
+    "clip_id": "P07_10_246",
+    "ground_truth_hazards": [
+        {
+            "id": "P07_10_246_GT001",
+            "description": "The person is handling the knife in a very unsafe manner by directing the blade towards their hand.",
+            "severity": "high",
+            "evidence_frames": [
+                "frame_0000.jpg",
+                "frame_0002.jpg",
+                "frame_0003.jpg"
+            ],
+            "is_novel_relative_to_rule_baseline": true
+        }
+    ],
+    "vlm_predictions": [
+        {
+            "id": "P07_10_246_H001",
+            "description": "The user is chopping ingredients with their non-dominant hand flat and fingers extended close to the knife blade.",
+            "severity": "medium",
+            "evidence_frames": [
+                "frame_0002.jpg"
+            ]
+        },
+        {
+            "id": "P07_10_246_H002",
+            "description": "A pan handle is protruding outwards over the edge of the stove on the left side of the counter.",
+            "severity": "medium",
+            "evidence_frames": [
+                "frame_0000.jpg",
+                "frame_0002.jpg",
+                "frame_0003.jpg"
+            ]
+        }
+    ],
+    "baseline_predictions": [
+        {
+            "id": "P07_10_246_B001",
+            "description": "A detected person is very close to detected scissors.",
+            "severity": "medium",
+            "evidence_frames": [
+                "frame_0003.jpg"
+            ],
+            "triggered_rule_id": "R015",
+            "rule_name": "Person very close to scissors"
+        }
+    ],
+    "vlm_matches": [
+        {
+            "prediction_id": "P07_10_246_H001",
+            "ground_truth_id": "P07_10_246_GT001",
+            "is_match": true
+        }
+    ],
+    "baseline_matches": []
+}

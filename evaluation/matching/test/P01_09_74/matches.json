@@ -1,0 +1,53 @@
+{
+    "clip_id": "P01_09_74",
+    "ground_truth_hazards": [],
+    "vlm_predictions": [
+        {
+            "id": "P01_09_74_H001",
+            "description": "The user is holding a small bottle cap directly over the mixing bowl while pouring oil.",
+            "severity": "low",
+            "evidence_frames": [
+                "frame_0000.jpg",
+                "frame_0001.jpg",
+                "frame_0002.jpg"
+            ]
+        }
+    ],
+    "baseline_predictions": [
+        {
+            "id": "P01_09_74_B001",
+            "description": "A detected cup or glass is close to the edge of its supporting work surface.",
+            "severity": "low",
+            "evidence_frames": [
+                "frame_0000.jpg",
+                "frame_0001.jpg"
+            ],
+            "triggered_rule_id": "R005",
+            "rule_name": "Cup or glass close to work-surface edge"
+        },
+        {
+            "id": "P01_09_74_B002",
+            "description": "A sharp tool is very close to a frequently handled drink container.",
+            "severity": "low",
+            "evidence_frames": [
+                "frame_0000.jpg"
+            ],
+            "triggered_rule_id": "R009",
+            "rule_name": "Sharp tool close to drink container"
+        },
+        {
+            "id": "P01_09_74_B003",
+            "description": "A detected person is very close to a detected knife.",
+            "severity": "medium",
+            "evidence_frames": [
+                "frame_0000.jpg",
+                "frame_0001.jpg",
+                "frame_0002.jpg"
+            ],
+            "triggered_rule_id": "R014",
+            "rule_name": "Person very close to knife"
+        }
+    ],
+    "vlm_matches": [],
+    "baseline_matches": []
+}

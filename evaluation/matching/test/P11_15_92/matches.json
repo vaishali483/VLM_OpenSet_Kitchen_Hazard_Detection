@@ -1,0 +1,19 @@
+{
+    "clip_id": "P11_15_92",
+    "ground_truth_hazards": [],
+    "vlm_predictions": [
+        {
+            "id": "P11_15_92_H001",
+            "description": "Transferring a pot filled with liquid into a low oven requires bending and balancing.",
+            "severity": "medium",
+            "evidence_frames": [
+                "frame_0001.jpg",
+                "frame_0002.jpg",
+                "frame_0003.jpg"
+            ]
+        }
+    ],
+    "baseline_predictions": [],
+    "vlm_matches": [],
+    "baseline_matches": []
+}

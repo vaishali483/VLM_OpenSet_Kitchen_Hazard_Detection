@@ -1,6 +1,3 @@
-epic-kitchens-download-scripts/
-pipeline/11_remove_local_paths.py
-
 # ==========================================================
 # Python
 # ==========================================================
@@ -11,36 +8,44 @@ __pycache__/
 *.pyd
 *.so
 
-# Virtual environments
+
+# ==========================================================
+# Virtual Environments
+# ==========================================================
+
 venv/
 .venv/
 env/
 ENV/
 
-# VS Code
-.vscode/
-
-# Jupyter
-.ipynb_checkpoints/
 
 # ==========================================================
-# Environment Variables
+# IDE / Editor Files
+# ==========================================================
+
+.vscode/
+
+
+# ==========================================================
+# Jupyter
+# ==========================================================
+
+.ipynb_checkpoints/
+
+
+# ==========================================================
+# Environment Variables / Secrets
 # ==========================================================
 
 .env
 
-# ==========================================================
-# Logs
-# ==========================================================
-
-*.log
-logs/
 
 # ==========================================================
-# Dataset (Large Files)
+# Dataset - Large / Generated Files
 # ==========================================================
 
 Data_Extraction/
+epic-kitchens-download-scripts/
 
 dataset/raw_videos/
 dataset/clips/
@@ -48,22 +53,82 @@ dataset/frames/
 dataset/annotated_frames/
 dataset/detections/
 dataset/scene_json/
-dataset/keyframes/
-dataset/old_scene_understanding/
+
+
+# ==========================================================
+# Keyframes
+# ==========================================================
+
+# Ignore generated keyframes by default.
+dataset/keyframes/*
+
+# Keep the final test subset keyframes in Git.
+!dataset/keyframes/test/
+!dataset/keyframes/test/**
+
+
+# ==========================================================
+# Live Cooking Session Data
+# ==========================================================
+
+# Session images and session JSON files are generated locally
+# during Unity/FastAPI testing and should not be committed.
 data/sessions/
 
-# Keep demo dataset if desired
-!dataset/demo/
-!dataset/keyframes/demo/
-!dataset/annotated_frames/demo/
 
 # ==========================================================
-# Generated Outputs
+# Evaluation
 # ==========================================================
 
-outputs/
-results/
-reports/
+# KEEP evaluation files in Git.
+#
+# This includes:
+#   evaluation/matching/P07/
+#   evaluation/matching/test/
+#   evaluation/results/P07/
+#   evaluation/results/test/
+#
+# including matches.json, evaluation_summary.json,
+# per_clip_summary.csv and system_comparison.csv.
+
+!evaluation/
+!evaluation/matching/
+!evaluation/matching/**
+!evaluation/results/
+!evaluation/results/**
+
+
+# ==========================================================
+# Kitchen Hazard Rules
+# ==========================================================
+
+# KEEP rule definitions in Git, including:
+#   rules/kitchen_rules.json
+#   rules/kitchen_rules_evaluation.json
+
+!rules/
+!rules/*.json
+
+
+# ==========================================================
+# Pipeline Files Not Intended for Repository
+# ==========================================================
+
+# Local utility used to remove machine-specific paths.
+pipeline/11_remove_local_paths.py
+
+
+# ==========================================================
+# Other Generated Results
+# ==========================================================
+
+# Ignore ONLY a top-level folder called "results".
+#
+# The leading slash is important.
+# Using "results/" without the slash could also match
+# evaluation/results/, which we want to keep.
+/results/
+
 
 # ==========================================================
 # Model Weights
@@ -73,7 +138,9 @@ reports/
 *.onnx
 *.engine
 *.torchscript
+
 models/
+
 
 # ==========================================================
 # Temporary Files
@@ -83,19 +150,22 @@ models/
 *.temp
 *.bak
 
+
 # ==========================================================
-# Operating System
+# Operating System Files
 # ==========================================================
 
 .DS_Store
 Thumbs.db
 
+
 # ==========================================================
-# Hugging Face Cache
+# Hugging Face / ML Cache
 # ==========================================================
 
 .cache/
 huggingface/
+
 
 # ==========================================================
 # Build / Distribution
@@ -105,16 +175,18 @@ build/
 dist/
 *.egg-info/
 
+
 # ==========================================================
-# Testing
+# Testing / Coverage
 # ==========================================================
 
 .pytest_cache/
 .coverage
 htmlcov/
 
+
 # ==========================================================
-# Miscellaneous
+# Archives
 # ==========================================================
 
 *.zip

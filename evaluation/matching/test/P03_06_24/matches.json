@@ -1,0 +1,90 @@
+{
+    "clip_id": "P03_06_24",
+    "ground_truth_hazards": [
+        {
+            "id": "P03_06_24_GT001",
+            "description": "The user is holding a pot filled with hot liquid by its handle with only one hand while stirring.",
+            "severity": "medium",
+            "evidence_frames": [
+                "frame_0001.jpg",
+                "frame_0002.jpg",
+                "frame_0003.jpg"
+            ],
+            "is_novel_relative_to_rule_baseline": true
+        },
+        {
+            "id": "P03_06_24_GT002",
+            "description": "The handle of the small pot on the countertop is pointing outwards towards the edge of the workspace.",
+            "severity": "low",
+            "evidence_frames": [
+                "frame_0002.jpg",
+                "frame_0003.jpg"
+            ],
+            "is_novel_relative_to_rule_baseline": true
+        }
+    ],
+    "vlm_predictions": [
+        {
+            "id": "P03_06_24_H001",
+            "description": "The user is holding a pot filled with hot liquid by its handle with only one hand while stirring.",
+            "severity": "medium",
+            "evidence_frames": [
+                "frame_0002.jpg",
+                "frame_0003.jpg"
+            ]
+        },
+        {
+            "id": "P03_06_24_H002",
+            "description": "The handle of the small pot on the countertop is pointing outwards towards the edge of the workspace.",
+            "severity": "low",
+            "evidence_frames": [
+                "frame_0002.jpg",
+                "frame_0003.jpg"
+            ]
+        },
+        {
+            "id": "P03_06_24_H003",
+            "description": "Extremely bright sunlight is reflecting directly off the countertop and the pot, creating intense glare.",
+            "severity": "low",
+            "evidence_frames": [
+                "frame_0002.jpg",
+                "frame_0003.jpg"
+            ]
+        }
+    ],
+    "baseline_predictions": [
+        {
+            "id": "P03_06_24_B001",
+            "description": "A detected cup or glass is close to the edge of its supporting work surface.",
+            "severity": "low",
+            "evidence_frames": [
+                "frame_0003.jpg"
+            ],
+            "triggered_rule_id": "R005",
+            "rule_name": "Cup or glass close to work-surface edge"
+        },
+        {
+            "id": "P03_06_24_B002",
+            "description": "A detected bowl is close to the edge of its supporting work surface.",
+            "severity": "low",
+            "evidence_frames": [
+                "frame_0003.jpg"
+            ],
+            "triggered_rule_id": "R006",
+            "rule_name": "Bowl close to work-surface edge"
+        }
+    ],
+    "vlm_matches": [
+        {
+            "prediction_id": "P03_06_24_H001",
+            "ground_truth_id": "P03_06_24_GT001",
+            "is_match": true
+        },
+        {
+            "prediction_id": "P03_06_24_H002",
+            "ground_truth_id": "P03_06_24_GT002",
+            "is_match": true
+        }
+    ],
+    "baseline_matches": []
+}

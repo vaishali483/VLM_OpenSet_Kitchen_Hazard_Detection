@@ -1,0 +1,54 @@
+{
+    "clip_id": "P01_01_20",
+    "ground_truth_hazards": [
+        {
+            "id": "P01_01_20_GT001",
+            "description": "The person is holding a sharp knife.",
+            "severity": "medium",
+            "evidence_frames": [
+                "frame_0000.jpg",
+                "frame_0001.jpg"
+            ],
+            "is_novel_relative_to_rule_baseline": false 
+        },
+        {
+            "id": "P01_01_20_GT002",
+            "description": "Sharp kitchen knives are stored loose in the drawer.",
+            "severity": "medium",
+            "evidence_frames": [
+                "frame_0000.jpg",
+                "frame_0001.jpg"
+            ],
+            "is_novel_relative_to_rule_baseline": true 
+        }
+    ],
+    "vlm_predictions": [
+        {
+            "id": "P01_01_20_H001",
+            "description": "A waste bin or lower drawer is left open at floor level to the left of the user.",
+            "severity": "medium",
+            "evidence_frames": [
+                "frame_0000.jpg",
+                "frame_0001.jpg"
+            ]
+        },
+        {
+            "id": "P01_01_20_H002",
+            "description": "Sharp kitchen knives are stored loose and unsheathed inside the cutlery drawer compartments.",
+            "severity": "medium",
+            "evidence_frames": [
+                "frame_0000.jpg",
+                "frame_0001.jpg"
+            ]
+        }
+    ],
+    "baseline_predictions": [],
+    "vlm_matches": [
+        {
+            "prediction_id": "P01_01_20_H002",
+            "ground_truth_id": "P01_01_20_GT002",
+            "is_match": true
+        }
+    ],
+    "baseline_matches": []
+}

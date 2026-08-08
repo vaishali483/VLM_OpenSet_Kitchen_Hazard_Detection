@@ -1,0 +1,86 @@
+{
+    "clip_id": "P07_10_217",
+    "ground_truth_hazards": [
+        {
+            "id": "P07_10_217_GT001",
+            "description": "The person is handling the knife in an unsafe manner by positioning the fingers close to the blade while slicing tomatoes.",
+            "severity": "high",
+            "evidence_frames": [
+                "frame_0000.jpg",
+                "frame_0001.jpg",
+                "frame_0002.jpg",
+                "frame_0003.jpg"
+            ],
+            "is_novel_relative_to_rule_baseline": true
+        },
+        {
+            "id": "P07_10_217_GT002",
+            "description": "The saucepan handle appears to protrude into the active working area, which can easily be bumped.",
+            "severity": "low",
+            "evidence_frames": [
+                "frame_0000.jpg",
+                "frame_0001.jpg",
+                "frame_0002.jpg",
+                "frame_0003.jpg"
+            ],
+            "is_novel_relative_to_rule_baseline": true
+        }
+    ],
+    "vlm_predictions": [
+        {
+            "id": "P07_10_217_H001",
+            "description": "The handle of the pot on the stove is turned outward toward the active prep area.",
+            "severity": "medium",
+            "evidence_frames": [
+                "frame_0000.jpg",
+                "frame_0001.jpg",
+                "frame_0002.jpg",
+                "frame_0003.jpg"
+            ]
+        },
+        {
+            "id": "P07_10_217_H002",
+            "description": "The user is holding the tomato with flat, extended fingers rather than a protective claw grip while slicing.",
+            "severity": "medium",
+            "evidence_frames": [
+                "frame_0001.jpg",
+                "frame_0002.jpg"
+            ]
+        }
+    ],
+    "baseline_predictions": [
+        {
+            "id": "P07_10_217_B001",
+            "description": "A detected person is very close to a detected knife.",
+            "severity": "medium",
+            "evidence_frames": [
+                "frame_0000.jpg"
+            ],
+            "triggered_rule_id": "R014",
+            "rule_name": "Person very close to knife"
+        },
+        {
+            "id": "P07_10_217_B002",
+            "description": "A detected person is very close to detected scissors.",
+            "severity": "medium",
+            "evidence_frames": [
+                "frame_0001.jpg"
+            ],
+            "triggered_rule_id": "R015",
+            "rule_name": "Person very close to scissors"
+        }
+    ],
+    "vlm_matches": [
+        {
+            "prediction_id": "P07_10_217_H001",
+            "ground_truth_id": "P07_10_217_GT002",
+            "is_match": true
+        },
+        {
+            "prediction_id": "P07_10_217_H002",
+            "ground_truth_id": "P07_10_217_GT001",
+            "is_match": true
+        }
+    ],
+    "baseline_matches": []
+}

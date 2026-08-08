@@ -1,0 +1,62 @@
+{
+    "clip_id": "P26_02_64",
+    "ground_truth_hazards": [
+        {
+            "id": "P26_02_64_GT001",
+            "description": "Slicing a baguette directly on its plastic packaging without a cutting board.",
+            "severity": "medium",
+            "evidence_frames": [
+                "frame_0001.jpg",
+                "frame_0002.jpg",
+                "frame_0003.jpg"
+            ],
+            "is_novel_relative_to_rule_baseline": true
+        },
+        {
+            "id": "P26_02_64_GT002",
+            "description": "Flammable plastic packaging is positioned very close to an active gas stove burner.",
+            "severity": "high",
+            "evidence_frames": [
+                "frame_0001.jpg",
+                "frame_0002.jpg",
+                "frame_0003.jpg"
+            ],
+            "is_novel_relative_to_rule_baseline": true
+        }
+    ],
+    "vlm_predictions": [
+        {
+            "id": "P26_02_64_H001",
+            "description": "Slicing a baguette directly on its plastic packaging without a cutting board.",
+            "severity": "medium",
+            "evidence_frames": [
+                "frame_0001.jpg",
+                "frame_0002.jpg",
+                "frame_0003.jpg"
+            ]
+        },
+        {
+            "id": "P26_02_64_H002",
+            "description": "Flammable plastic packaging is positioned very close to an active gas stove burner.",
+            "severity": "high",
+            "evidence_frames": [
+                "frame_0001.jpg",
+                "frame_0002.jpg"
+            ]
+        }
+    ],
+    "baseline_predictions": [],
+    "vlm_matches": [
+        {
+            "prediction_id": "P26_02_64_H001",
+            "ground_truth_id": "P26_02_64_GT001",
+            "is_match": true
+        },
+        {
+            "prediction_id": "P26_02_64_H002",
+            "ground_truth_id": "P26_02_64_GT002",
+            "is_match": true
+        }
+    ],
+    "baseline_matches": []
+}

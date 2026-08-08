@@ -1,0 +1,69 @@
+{
+    "clip_id": "P08_05_217",
+    "ground_truth_hazards": [
+        {
+            "id": "P08_05_217_GT001",
+            "description": "An exposed food processor blade assembly is sitting upright on the countertop next to the cutting board.",
+            "severity": "high",
+            "evidence_frames": [
+                "frame_0000.jpg",
+                "frame_0001.jpg",
+                "frame_0002.jpg",
+                "frame_0003.jpg",
+                "frame_0004.jpg",
+                "frame_0005.jpg"
+            ],
+            "is_novel_relative_to_rule_baseline": true
+        },
+        {
+            "id": "P08_05_217_GT002",
+            "description": "The countertop is cluttered.",
+            "severity": "low",
+            "evidence_frames": [
+                "frame_0000.jpg",
+                "frame_0001.jpg",
+                "frame_0002.jpg",
+                "frame_0003.jpg",
+                "frame_0004.jpg",
+                "frame_0005.jpg"
+            ],
+            "is_novel_relative_to_rule_baseline": true
+        }
+    ],
+    "vlm_predictions": [
+        {
+            "id": "P08_05_217_H001",
+            "description": "An exposed food processor blade assembly is sitting upright on the countertop next to the cutting board.",
+            "severity": "high",
+            "evidence_frames": [
+                "frame_0000.jpg",
+                "frame_0001.jpg",
+                "frame_0002.jpg",
+                "frame_0003.jpg",
+                "frame_0004.jpg",
+                "frame_0005.jpg"
+            ]
+        }
+    ],
+    "baseline_predictions": [
+        {
+            "id": "P08_05_217_B001",
+            "description": "A detected person is very close to a detected knife.",
+            "severity": "medium",
+            "evidence_frames": [
+                "frame_0001.jpg",
+                "frame_0005.jpg"
+            ],
+            "triggered_rule_id": "R014",
+            "rule_name": "Person very close to knife"
+        }
+    ],
+    "vlm_matches": [
+        {
+            "prediction_id": "P08_05_217_H001",
+            "ground_truth_id": "P08_05_217_GT001",
+            "is_match": true
+        }
+    ],
+    "baseline_matches": []
+}

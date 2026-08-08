@@ -1,0 +1,99 @@
+{
+    "clip_id": "P04_05_178",
+    "ground_truth_hazards": [
+        {
+            "id": "P04_05_178_GT001",
+            "description": "A sharp knife is left in an unsafe position on the chopping board, which is at the edge of the countertop, and may fall.",
+            "severity": "high",
+            "evidence_frames": [
+                "frame_0000.jpg",
+                "frame_0002.jpg",
+                "frame_0003.jpg"
+            ],
+            "is_novel_relative_to_rule_baseline": true
+        },
+        {
+            "id": "P04_05_178_GT002",
+            "description": "Loose metal kitchen tools and a detachable handle are resting directly on the stovetop surface near active burners.",
+            "severity": "medium",
+            "evidence_frames": [
+                "frame_0000.jpg",
+                "frame_0002.jpg",
+                "frame_0003.jpg"
+            ],
+            "is_novel_relative_to_rule_baseline": true
+        }
+    ],
+    "vlm_predictions": [
+        {
+            "id": "P04_05_178_H001",
+            "description": "A large chef's knife is lying on the cutting board with its blade exposed near the active workspace.",
+            "severity": "medium",
+            "evidence_frames": [
+                "frame_0000.jpg",
+                "frame_0002.jpg",
+                "frame_0003.jpg"
+            ]
+        },
+        {
+            "id": "P04_05_178_H002",
+            "description": "Loose metal kitchen tools and a detachable handle are resting directly on the stovetop surface near active burners.",
+            "severity": "medium",
+            "evidence_frames": [
+                "frame_0002.jpg",
+                "frame_0003.jpg"
+            ]
+        },
+        {
+            "id": "P04_05_178_H003",
+            "description": "A frying pan is being heated and stirred on the stovetop without its detachable handle securely attached.",
+            "severity": "medium",
+            "evidence_frames": [
+                "frame_0002.jpg",
+                "frame_0003.jpg"
+            ]
+        }
+    ],
+    "baseline_predictions": [
+        {
+            "id": "P04_05_178_B001",
+            "description": "A sharp tool is very close to a frequently handled drink container.",
+            "severity": "low",
+            "evidence_frames": [
+                "frame_0000.jpg",
+                "frame_0002.jpg"
+            ],
+            "triggered_rule_id": "R009",
+            "rule_name": "Sharp tool close to drink container"
+        },
+        {
+            "id": "P04_05_178_B002",
+            "description": "A sharp tool is very close to a detected bowl.",
+            "severity": "low",
+            "evidence_frames": [
+                "frame_0002.jpg"
+            ],
+            "triggered_rule_id": "R010",
+            "rule_name": "Sharp tool close to bowl"
+        },
+        {
+            "id": "P04_05_178_B003",
+            "description": "A detected person is very close to a detected knife.",
+            "severity": "medium",
+            "evidence_frames": [
+                "frame_0000.jpg",
+                "frame_0002.jpg"
+            ],
+            "triggered_rule_id": "R014",
+            "rule_name": "Person very close to knife"
+        }
+    ],
+    "vlm_matches": [
+        {
+            "prediction_id": "P04_05_178_H002",
+            "ground_truth_id": "P04_05_178_GT002",
+            "is_match": true
+        }
+    ],
+    "baseline_matches": []
+}

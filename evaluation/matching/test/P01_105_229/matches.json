@@ -1,0 +1,62 @@
+{
+    "clip_id": "P01_105_229",
+    "ground_truth_hazards": [
+        {
+            "id": "P01_105_229_GT001",
+            "description": "The person is holding a sharp knife.",
+            "severity": "medium",
+            "evidence_frames": [
+                "frame_0000.jpg",
+                "frame_0001.jpg"
+            ],
+            "is_novel_relative_to_rule_baseline": false
+        }
+    ],
+    "vlm_predictions": [
+        {
+            "id": "P01_105_229_H001",
+            "description": "Cutting a hand-held food package with a large kitchen knife.",
+            "severity": "high",
+            "evidence_frames": [
+                "frame_0000.jpg",
+                "frame_0001.jpg"
+            ]
+        }
+    ],
+    "baseline_predictions": [
+        {
+            "id": "P01_105_229_B001",
+            "description": "A detected person is very close to a detected knife.",
+            "severity": "medium",
+            "evidence_frames": [
+                "frame_0000.jpg"
+            ],
+            "triggered_rule_id": "R014",
+            "rule_name": "Person very close to knife"
+        },
+        {
+            "id": "P01_105_229_B002",
+            "description": "A detected person is very close to detected scissors.",
+            "severity": "medium",
+            "evidence_frames": [
+                "frame_0000.jpg"
+            ],
+            "triggered_rule_id": "R015",
+            "rule_name": "Person very close to scissors"
+        }
+    ],
+    "vlm_matches": [
+        {
+            "prediction_id": "P01_105_229_H001",
+            "ground_truth_id": "P01_105_229_GT001",
+            "is_match": true
+        }
+    ],
+    "baseline_matches": [
+        {
+            "prediction_id": "P01_105_229_B001",
+            "ground_truth_id": "P01_105_229_GT001",
+            "is_match": true
+        }
+    ]
+}
