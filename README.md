@@ -22,12 +22,12 @@ The project is focused on **hazard detection**. Action recognition and short-ter
 
 The current system supports two complementary workflows.
 
-### 1. Offline Dissertation Evaluation
+### 1. Offline Evaluation Pipeline
 
 A curated subset of EPIC-KITCHENS clips is processed through an offline evaluation pipeline that compares:
 
 - an **open-set VLM-grounded hazard-analysis agent**
-- a **fixed closed-set rule-based kitchen-safety baseline**
+- a **fixed closed-set rule-based kitchen safety baseline**
 
 The final evaluation workflow uses manually written ground-truth hazards and manually reviewed semantic matches between predictions and ground truth.
 
@@ -42,24 +42,7 @@ The Unity application periodically captures a camera frame and sends it to the F
 5. display of hazard cards and visual markers in Unity
 6. optional short-term cooking-session context and session-level hazard tracking
 
-The live application analyses **sampled frames** rather than recording or processing continuous video.
-
----
-
-## Research Objectives
-
-The project aims to:
-
-- detect open-set kitchen hazards beyond a fixed predefined checklist
-- use YOLO detections as supporting visual evidence
-- use a Vision-Language Model to reason about object relationships and scene context
-- compare the VLM-grounded approach with a fixed rule-based baseline
-- classify detected risks as `present` or `possible`
-- avoid displaying misleading bounding boxes when localisation is uncertain
-- provide concise warnings suitable for a mobile AR interface
-- maintain lightweight textual context during a cooking session
-- produce a deduplicated session-end hazard summary
-- evaluate both systems using hazard-level and clip-level safety metrics
+The live application analyses sampled frames rather than recording or processing continuous video.
 
 ---
 
@@ -137,7 +120,7 @@ Single structured Gemini request
           ▼
 Backend validation
           │
-          ├── Exact YOLO-confirmed box
+          ├── Exact YOLO-grounded box
           ├── VLM approximate region
           └── Warning only when location is uncertain
           │
@@ -154,10 +137,10 @@ Unity mobile interface
 
 ## Cooking Session Mode
 
-The live application supports one sampled-frame cooking session with:
+The live application supports sampled-frame cooking sessions with:
 
 - **Start Session**
-- **Pause Session/Resume Session**
+- **Pause Session / Resume Session**
 - **Stop Session**
 
 During a session:
@@ -187,10 +170,10 @@ POSSIBLE HAZARDS
 The final hazard list is deduplicated and ordered according to the highest severity observed during the session.
 
 ---
+## Hazard Status and Localisation
+### Hazard Status Definitions
 
-## Hazard Status Definitions
-
-### Present Hazard
+#### Present Hazard
 
 A hazard is classified as `present` when the current visual evidence supports a currently hazardous condition.
 
@@ -201,7 +184,7 @@ Examples include:
 - a hand visibly close to a sharp blade
 - a visible liquid spill in a walking area
 
-### Possible Hazard
+#### Possible Hazard
 
 A hazard is classified as `possible` when:
 
@@ -216,13 +199,11 @@ Examples include:
 
 The system does not claim that a user intends to activate an appliance, and it does not claim that a surface is hot without sufficient evidence.
 
----
-
-## Hazard Localisation
+### Hazard Localisation
 
 Hazard recognition and hazard localisation are treated as separate tasks.
 
-### Exact Bounding Box
+#### Exact Bounding Box
 
 A solid bounding box is shown only when:
 
@@ -233,7 +214,7 @@ A solid bounding box is shown only when:
 - the box is not excessively broad or too small
 - the hazard description refers to the selected object class
 
-### Approximate Region
+#### Approximate Region
 
 An approximate visual region may be shown when:
 
@@ -244,7 +225,7 @@ An approximate visual region may be shown when:
 
 Approximate regions are visually distinguished from exact detector bounding boxes.
 
-### Warning Only
+#### Warning Only
 
 No visual marker is shown when localisation is not sufficiently reliable.
 
@@ -271,7 +252,7 @@ The frozen rule-based evaluation ruleset is stored at:
 
 ```text
 rules/kitchen_rules_evaluation.json
-````
+```
 
 ### Final Test-Set Results
 
@@ -291,24 +272,10 @@ rules/kitchen_rules_evaluation.json
 | High/Critical Hazard Recall    | **0.8462 (11/13)** |       0.0000 (0/13) |
 | Medium/Low Hazard Recall       | **0.7931 (23/29)** |       0.0345 (1/29) |
 
-### Recall by Ground-Truth Severity
-
-| Severity |           VLM Open-Set Agent |          Rule-Based Baseline |
-| -------- | ---------------------------: | ---------------------------: |
-| Low      |           **0.8000 (12/15)** |                0.0000 (0/15) |
-| Medium   |           **0.7857 (11/14)** |                0.0714 (1/14) |
-| High     |           **0.8462 (11/13)** |                0.0000 (0/13) |
-| Critical | N/A (0 ground-truth hazards) | N/A (0 ground-truth hazards) |
 
 ### Evaluation Summary
 
-The VLM-based system detected at least one correct hazard in **all 28 hazardous clips**, while the fixed rule-based baseline detected a matching hazard in only one.
-
-The largest difference was observed for hazards outside the predefined rule set. The VLM detected **33 of 40 novel ground-truth hazards**, corresponding to a Novel Hazard Detection Rate of **0.8250**, whereas the rule-based baseline detected none of the novel hazards.
-
-The VLM also produced fewer false warnings overall, with **0.375 false-positive predictions per clip**, compared with **1.125 per clip** for the rule-based system.
-
-The rule-based baseline achieved a lower false-positive rate on the four completely safe clips. However, this occurred alongside very low hazard recall, indicating that the baseline generally produced fewer correct detections rather than providing stronger overall hazard recognition.
+The VLM-grounded system detected at least one correct hazard in all 28 hazardous clips and identified 33 of the 40 hazards labelled novel relative to the frozen baseline. The baseline detected none of the novel hazards. Although the baseline achieved a lower false-positive rate on the four safe clips, this occurred alongside substantially lower overall hazard recall.
 
 The complete evaluation outputs are available under:
 
@@ -351,17 +318,7 @@ The ruleset is frozen before final evaluation to avoid changing the baseline aft
 
 The offline pipeline uses a curated subset of the **EPIC-KITCHENS-100** egocentric cooking dataset.
 
-A broader project subset of approximately 210 cooking clips was prepared to represent activities such as:
-
-- chopping
-- cutting and slicing
-- peeling
-- stirring
-- pouring
-- opening cupboards and refrigerators
-- switching appliances on or off
-- handling knives and utensils
-- placing or moving kitchen objects
+A project subset of cooking clips was prepared to represent activities such as chopping, cutting and slicing, peeling, stirring, pouring, opening cupboards and refrigerators, switching appliances on or off, handling knives and utensils, and placing or moving kitchen objects.
 
 A separate 32-clip subset is used for the final manual evaluation.
 
@@ -486,41 +443,6 @@ The Unity application was developed using **Unity 6.3 LTS**, AR Foundation and C
 
 The Unity project is maintained separately from the Python backend.
 
-#### Current Unity Scene Hierarchy
-
-```text
-KitchenAR
-│
-├── AR Session
-├── Scene Light
-├── EventSystem
-├── AR Origin
-│
-├── App Canvas
-│   │
-│   ├── App Header Panel
-│   ├── Analysed Frame Panel
-│   ├── Hazard Results Panel
-│   ├── Analysis Control Panel
-│   ├── Session Control Panel
-│   └── Session Summary Panel
-└── App Manager
-```
-
-#### Unity client
-```text
-KitchenSafetyAR/
-└── Assets/
-    └── _KitchenSafety/
-        └── Scripts/
-            ├── Capture/
-            ├── Models/
-            ├── Networking/
-            ├── Scanning/
-            ├── Sessions/
-            └── UI/
-```
-
 ### Main Interface Components
 
 The current application provides:
@@ -531,7 +453,7 @@ The current application provides:
 - present/possible hazard status
 - severity and recommended action
 - exact or approximate hazard localisation
-- **Session controls** (Start, Paue/Resume, Stop)
+- **Session controls** (Start, Pause/Resume, Stop)
 - full-screen session-end hazard summary
 
 **Analysed Frame Preview:** The visual hazard markers are displayed against the last analysed frame rather than being left over the continuously changing camera feed. This keeps each bounding box or approximate region spatially associated with the image that actually produced the corresponding hazard result.
@@ -643,43 +565,17 @@ When the user stops a cooking session, the application aggregates the hazards ob
 The summary provides a concise record of hazards observed throughout the session rather than displaying every individual frame-level warning.
 
 --- 
-
 ## Session Data and Privacy
 
-The live application does not record or process a continuous cooking video.
-
-For each cooking session, the backend may locally store:
-
-- sampled JPEG images
-- capture IDs
-- UTC timestamps
-- current action observations
-- scene summaries
-- scene observations
-- detected hazards
-- severity
-- confidence
-- present/possible status
-- trigger conditions
-- first and last observation times
-- occurrence counts
-
-Session data is stored locally under:
-
-```text
-data/sessions/<session_id>/
-```
-
-with a structure similar to:
+The live application analyses sampled frames rather than recording continuous video. During a cooking session, sampled JPEG frames and structured session metadata are stored locally under:
 
 ```text
 data/sessions/<session_id>/
 ├── session.json
 └── frames/
-    ├── 0001_<capture_id>.jpg
-    ├── 0002_<capture_id>.jpg
-    └── ...
 ```
+
+Only the current sampled image is sent to Gemini for each analysis. Previous session images are not resent; recent observations may instead be supplied as compact textual context.
 
 ---
 
@@ -689,49 +585,25 @@ data/sessions/<session_id>/
 
 - Python 3.12
 - FastAPI
-- Uvicorn
-- Pydantic
 - Ultralytics YOLO11s
 - Google Gemini Flash models
-- Google Gen AI Python SDK
 - OpenCV
-- Pillow
-- Pandas
-- NumPy
-- FFmpeg
 
 ### Mobile AR Client
 
 - Unity 6.3 LTS
-- C#
 - AR Foundation
-- TextMeshPro
-- Unity UI
-- UnityWebRequest
-
-### Development and Evaluation
-
-- Visual Studio Code
-- Swagger / OpenAPI
-- Android development tools
-- Git
-- GitLab
 
 ---
 
 ## Known Limitations
 
-- Gemini response latency is variable and may occasionally be high.
-- Gemini may temporarily return service-unavailable errors during periods of high demand.
-- YOLO11s uses generic COCO object classes and may miss kitchen-specific objects or object parts.
-- Small hazards such as flames, hands, spills and pan handles may not receive exact YOLO detector boxes.
-- Approximate VLM localisation is intentionally labelled as approximate.
-- Some correctly identified hazards are displayed without visual markers when localisation is uncertain.
-- Sampled-frame analysis may miss brief hazardous events occurring between captures.
-- The VLM cannot directly measure heat, temperature, gas concentration or appliance electrical state.
-- Session context is observational and must not be treated as evidence of future user intention.
-- The rule-based baseline is restricted to its fixed predefined rule set and the objects represented by the YOLO-derived scene data.
-- Manual ground-truth annotation and semantic prediction matching introduce an element of human judgement into the final evaluation.
+- Gemini API latency is variable, so the prototype uses sampled-frame near-real-time analysis rather than continuous video processing.
+- YOLO11s uses generic COCO classes and may miss kitchen-specific objects, small hazards or object parts.
+- Some hazards cannot be reliably localised and are therefore shown using an approximate region or warning-only output.
+- Vision alone cannot directly verify physical conditions such as heat, temperature, gas concentration or appliance electrical state.
+- The final evaluation is limited to 32 clips, including only four safe clips and two known hazards.
+- Ground-truth annotation and semantic prediction matching involve human judgement.
 
 ---
 
