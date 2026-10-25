@@ -1,0 +1,14 @@
+Metric,VLM Open-Set Agent,Rule-Based Baseline
+True Positives,34,1
+False Positives,12,36
+False Negatives,8,41
+Precision,0.7391,0.027
+Recall,0.8095,0.0238
+F1 Score,0.7727,0.0253
+Hazardous Clip Detection Rate,1.0,0.0357
+Clip-Level False Positive Rate,0.5,0.25
+Mean False Warnings per Clip,0.375,1.125
+Novel Hazard Detection Rate,0.825,0.0
+Known Hazard Recall,0.5,0.5
+High/Critical Hazard Recall,0.8462,0.0
+Medium/Low Hazard Recall,0.7931,0.0345

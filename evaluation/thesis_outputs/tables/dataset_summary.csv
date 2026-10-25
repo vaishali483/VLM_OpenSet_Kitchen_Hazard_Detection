@@ -1,0 +1,11 @@
+Property,Value
+Total clips,32
+Hazardous clips,28
+Safe clips,4
+Ground-truth hazards,42
+Novel hazards,40
+Known hazards,2
+Low-severity hazards,15
+Medium-severity hazards,14
+High-severity hazards,13
+Critical hazards,0
